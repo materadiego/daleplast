@@ -1,0 +1,27 @@
+.NavBar {
+  height: 26vw;
+  background-color: rgba($color-claro, $alpha: 0.85);
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.NavBar-Container {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  &__Logo {
+    width: 65%;
+  }
+  &__MenuButton {
+    width: 10vw;
+    height: 10vw;
+    @include basic-flex;
+    &--Image {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.Hero {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 177vw;
+  background-color: $color-variacion1;
+  background-image: url(../../utils/images/hero-mobile-bg.png);
+  @include basic-image;
+}
+
+.Hero-Overlay {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  // background-color: rgba($color: $color-variacion4, $alpha: 0.7);
+  background: rgb(27, 118, 122);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 89, 102, 0.84) 26%,
+    rgba(9, 89, 102, 0.6) 70%,
+    rgba(9, 89, 102, 0.4) 90%
+  );
+}
+
+.Hero-Container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 2;
+  border: 2px solid $color-variacion6;
+  &__Text {
+    border: 2px solid red;
+    color: $color-claro;
+    width: 100%;
+    @include basic-flex;
+  }
+  &__ButtonContainer {
+    border: 2px solid red;
+  }
+}

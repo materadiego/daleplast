@@ -1,0 +1,89 @@
+.AboutUs {
+  padding: 14vw 0;
+  position: relative;
+  background-color: $color-variacion5;
+}
+
+.AboutUs-TextContainer {
+  width: 85%;
+  margin: 0 auto 8vw;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  color: $color-claro;
+  &__Title {
+    @include section-title;
+  }
+  &__TextOne {
+    text-align: center;
+    font-size: 4.2vw;
+    font-weight: 600;
+  }
+  &__TextTwo {
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 6vw;
+  }
+}
+
+.AboutUs-BoxContainer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__Box {
+    width: 75vw;
+    height: 75vw;
+    margin-bottom: 12vw;
+    border-top-left-radius: 12vw;
+    border-bottom-right-radius: 10vw;
+    flex-direction: column;
+    background-color: $color-variacion2;
+    @include basic-flex;
+    &--Image {
+      width: 22vw;
+      height: 22vw;
+      margin-bottom: 4vw;
+      @include basic-image;
+    }
+    &--Text {
+      width: 50vw;
+      text-align: center;
+      font-weight: 500;
+      font-size: 5.3vw;
+      line-height: 120%;
+      color: $color-variacion5;
+    }
+  }
+}
+
+.AboutUs-ImageOne {
+  background-image: url(../../utils/images/aboutus-box1.svg);
+}
+
+.AboutUs-ImageTwo {
+  background-image: url(../../utils/images/aboutus-box2.svg);
+}
+
+.AboutUs-ImageThree {
+  background-image: url(../../utils/images/aboutus-box3.svg);
+}
+
+.AboutUs-FinalLineContainer {
+  height: 20vw;
+  width: 100%;
+  bottom: -10vw;
+  position: absolute;
+  overflow: hidden;
+  &__Line {
+    display: flex;
+    width: 500vw;
+    height: 500vw;
+    margin-left: -200vw;
+    border-radius: 100%;
+    border: 10vw solid #abc6cb;
+  }
+}

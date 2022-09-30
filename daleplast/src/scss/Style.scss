@@ -1,5 +1,9 @@
+@import "./Components/bootstrap_reboot";
+@import "./Components/breakpoints";
 @import "./Components/variables";
 @import "./Components/mixins";
 @import "./Components/globals";
 @import "../Components/NavBar/NavBars";
-@import "../Components/Hero/Heros";
+@import "../Components/HomeHero/HomeHeros";
+@import "../Components/HomeAboutUs/HomeAboutUs";
+@import "../Components/HomeProducts/HomeProducts";

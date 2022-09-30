@@ -9,3 +9,21 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@mixin button {
+  border-radius: 50vw;
+  height: 12vw;
+  font-size: 5.3vw;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-family: $Fuente1;
+  color: $color-claro;
+  background-color: $color-variacion6;
+}
+
+@mixin section-title {
+  font-size: 5.3vw;
+  font-weight: 500;
+  margin: 0vw 0 4vw;
+}

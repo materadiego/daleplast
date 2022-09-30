@@ -1,9 +1,9 @@
 .NavBar {
   height: 26vw;
-  background-color: rgba($color-claro, $alpha: 0.85);
-  position: absolute;
   top: 0;
   z-index: 3;
+  position: absolute;
+  background-color: rgba($color-claro, $alpha: 0.85);
 }
 
 .NavBar-Container {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = () => {
+const HomeHero = () => {
   return (
     <div className="Hero">
       <div className="Hero-Overlay"></div>
@@ -19,4 +19,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomeHero;

@@ -1,13 +1,12 @@
-import Hero from "./Components/Hero/Hero";
 import NavBar from "./Components/NavBar/NavBar";
-import logo from "./logo.svg";
+import Homepage from "./Pages/HomePage";
 import "./scss/Style.scss";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Hero />
+      <Homepage />
     </div>
   );
 }

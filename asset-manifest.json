@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/daleplast/static/css/main.d2427f0f.css",
+    "main.js": "/daleplast/static/js/main.912b3f04.js",
+    "static/js/787.2a34aaf6.chunk.js": "/daleplast/static/js/787.2a34aaf6.chunk.js",
+    "static/media/hero-mobile-bg.png": "/daleplast/static/media/hero-mobile-bg.574ae96c46c56c352839.png",
+    "static/media/services-bg.png": "/daleplast/static/media/services-bg.56aa62f9cf43c343744f.png",
+    "static/media/products-image.png": "/daleplast/static/media/products-image.82fea680f7e7b19d27ec.png",
+    "static/media/navbar-logo.svg": "/daleplast/static/media/navbar-logo.10ec43ed0af0d4fc52e1d32c5fc8390e.svg",
+    "static/media/aboutus-box2.svg": "/daleplast/static/media/aboutus-box2.98a4aa1d7e9a06dde3f2.svg",
+    "static/media/aboutus-box1.svg": "/daleplast/static/media/aboutus-box1.2d93ff3a0a117ab2cb49.svg",
+    "static/media/aboutus-box3.svg": "/daleplast/static/media/aboutus-box3.a137a03810086706c17e.svg",
+    "index.html": "/daleplast/index.html",
+    "static/media/navbar-menu.svg": "/daleplast/static/media/navbar-menu.f7f0f13579b00cb4f1ac6c49f4d6be92.svg",
+    "main.d2427f0f.css.map": "/daleplast/static/css/main.d2427f0f.css.map",
+    "main.912b3f04.js.map": "/daleplast/static/js/main.912b3f04.js.map",
+    "787.2a34aaf6.chunk.js.map": "/daleplast/static/js/787.2a34aaf6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2427f0f.css",
+    "static/js/main.912b3f04.js"
+  ]
+}

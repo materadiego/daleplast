@@ -1,0 +1,76 @@
+.Contact {
+  padding: 2vw 0 10vw;
+}
+
+.Contact-Container {
+  width: 90%;
+  margin: 0 auto;
+  &__Title {
+    font-size: 6vw;
+    font-weight: 500;
+    margin-top: 8vw;
+    color: $color-variacion5;
+  }
+  &__Text {
+    font-size: 4.1vw;
+    font-weight: 400;
+    line-height: 120%;
+    opacity: 0.9;
+  }
+  &__Link {
+    width: 90%;
+    margin: 4vw 0;
+    border-radius: 5vw;
+    height: 12vw;
+    font-size: 4.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-family: $Fuente1;
+    color: $color-claro;
+    background-color: $color-variacion6;
+  }
+  &__Form {
+    display: flex;
+    flex-direction: column;
+
+    &--Input {
+      width: 100%;
+      margin: 1.5vw 0;
+      border-radius: 1.5vw;
+      outline: none;
+      font-size: 3.8vw;
+      letter-spacing: 1px;
+      padding: 1.8vw;
+      border: 0.4vw solid #b3b3b3;
+      color: $color-variacion5;
+      &::placeholder {
+        color: #b3b3b3;
+      }
+    }
+    &--TextArea {
+      width: 100%;
+      margin: 1.5vw 0;
+      border-radius: 1.5vw;
+      outline: none;
+      font-size: 3.8vw;
+      letter-spacing: 1px;
+      padding: 1.8vw;
+      resize: none;
+      height: 24vw;
+      border: 0.4vw solid #b3b3b3;
+      color: $color-variacion5;
+      &::placeholder {
+        color: #b3b3b3;
+      }
+    }
+    &--Submit {
+      width: 50%;
+      margin: 2.5vw 0 0 auto;
+      @include button;
+    }
+  }
+}

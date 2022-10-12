@@ -1,0 +1,107 @@
+.Footer {
+  background-color: black;
+  width: 100%;
+}
+.Footer-Container {
+  width: 80%;
+  margin: 0 auto;
+  &__Title {
+    padding: 8vw 0 0;
+    &--Image {
+      width: 55vw;
+    }
+  }
+  &__Contactanos {
+    padding: 6vw 0 0;
+    &--Contacto {
+      width: 100%;
+      &---txt {
+        &----txt {
+          color: white;
+          font-size: 4vw;
+          font-weight: 600;
+        }
+      }
+      &---Telefono {
+        display: flex;
+        flex-direction: row;
+        padding: 4vw 0 0;
+        &----Image {
+          width: 6vw;
+        }
+        &----txt {
+          color: white;
+          font-size: 3.5vw;
+          margin-left: 2vw;
+        }
+      }
+      &---Whatsapp {
+        display: flex;
+        flex-direction: row;
+        padding: 4vw 0 0;
+        &----Image {
+          width: 6vw;
+        }
+        &----txt {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1vw;
+          &-----txt1 {
+            color: white;
+            font-size: 3.5vw;
+          }
+          &-----txt2 {
+            color: white;
+            font-size: 3.5vw;
+          }
+        }
+      }
+      &---Mail {
+        display: flex;
+        flex-direction: row;
+        padding: 4vw 0 6vw;
+        &----Image {
+          width: 6vw;
+        }
+        &----txt {
+          color: white;
+          font-size: 3.5vw;
+          margin-left: 1vw;
+        }
+      }
+    }
+  }
+  &__BorderSize {
+    width: 50%;
+    margin-left: 0;
+    &--Border {
+      border-bottom: 4px solid $color-variacion1;
+    }
+  }
+  &__Seguinos {
+    &--Redes {
+      &---Title {
+        color: white;
+        font-size: 4vw;
+        font-weight: 600;
+        padding: 6vw 0 4vw;
+      }
+      &---Links {
+        display: flex;
+        flex-direction: row;
+        &----Facebook {
+          margin-right: 4vw;
+          &-----Image {
+            width: 8vw;
+          }
+        }
+        &----Instagram {
+          margin-right: 4vw;
+          &-----Image {
+            width: 8vw;
+          }
+        }
+      }
+    }
+  }
+}

@@ -21,10 +21,8 @@
     color: $color-variacion5;
   }
   &__Text {
-    text-align: center;
-    line-height: 120%;
-    font-size: 4.1vw;
     color: $color-terciario;
+    @include section-description;
     & span {
       color: $color-variacion5;
     }

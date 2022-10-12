@@ -1,0 +1,52 @@
+.Environment {
+  padding: 10vw 0 6vw;
+}
+
+.Environment-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__Title {
+    text-align: center;
+    width: 70vw;
+    color: $color-variacion5;
+    @include section-title;
+  }
+  &__Description {
+    width: 85vw;
+    margin: 0 0 4vw;
+    @include section-description;
+  }
+  &__Button {
+    width: 85vw;
+    height: 26vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5vw 0;
+    padding: 1vw 6vw;
+    border-radius: 6vw;
+    box-shadow: $light-shadow;
+    &--Image {
+      width: 20vw;
+      height: 20vw;
+      border-radius: 100vw;
+      margin-right: 4.5vw;
+      border: $border3;
+    }
+    &--Title {
+      width: 47vw;
+      font-weight: 500;
+      font-size: 4vw;
+      line-height: 110%;
+      color: $color-variacion5;
+    }
+    &--VerMas {
+      width: 47vw;
+      font-size: 3.6vw;
+      font-weight: 500;
+      color: $color-variacion1;
+    }
+  }
+}

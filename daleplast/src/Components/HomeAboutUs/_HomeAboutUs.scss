@@ -18,12 +18,12 @@
   &__TextOne {
     text-align: center;
     font-size: 4.2vw;
-    font-weight: 600;
+    line-height: 120%;
+    font-weight: 500;
   }
   &__TextTwo {
-    text-align: center;
-    font-size: 4vw;
     margin-top: 6vw;
+    @include section-description;
   }
 }
 

@@ -27,3 +27,11 @@
   font-weight: 500;
   margin: 0vw 0 4vw;
 }
+
+@mixin section-description {
+  font-size: 4.1vw;
+  font-weight: 400;
+  text-align: center;
+  line-height: 120%;
+  opacity: 0.9;
+}

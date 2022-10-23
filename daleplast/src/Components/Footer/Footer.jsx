@@ -42,14 +42,13 @@ const Footer = () => {
                 alt="LogoWhatsapp"
                 className="Footer-Container__Contactanos--Contacto---Whatsapp----Image"
               />
-              <div className="Footer-Container__Contactanos--Contacto---Whatsapp----txt">
-                <p className="Footer-Container__Contactanos--Contacto---Whatsapp----txt-----txt1">
-                  (2964)503046
-                </p>
-                <p className="Footer-Container__Contactanos--Contacto---Whatsapp----txt-----txt2">
-                  (2964)503045
-                </p>
-              </div>
+
+              <p className="Footer-Container__Contactanos--Contacto---Whatsapp-----txt1">
+                (2964)503046
+              </p>
+              <p className="Footer-Container__Contactanos--Contacto---Whatsapp-----txt1">
+                (2964)503045
+              </p>
             </div>
             <div className="Footer-Container__Contactanos--Contacto---Mail">
               <img

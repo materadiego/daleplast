@@ -5,14 +5,17 @@
 .Footer-Container {
   width: 80%;
   margin: 0 auto;
+
   &__Title {
     padding: 8vw 0 0;
+
     &--Image {
       width: 55vw;
     }
   }
   &__Contactanos {
     padding: 6vw 0 0;
+
     &--Contacto {
       width: 100%;
       &---txt {
@@ -36,25 +39,28 @@
         }
       }
       &---Whatsapp {
+        height: 11vw;
         display: flex;
-        flex-direction: row;
-        padding: 4vw 0 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
         &----Image {
           width: 6vw;
         }
-        &----txt {
-          display: flex;
-          flex-direction: column;
-          margin-left: 1vw;
-          &-----txt1 {
-            color: white;
-            font-size: 3.5vw;
-          }
-          &-----txt2 {
-            color: white;
-            font-size: 3.5vw;
-          }
+        // &----txt {
+        //   display: flex;
+        //   flex-direction: column;
+        //   border: 2px solid red;
+
+        //   margin-left: 1vw;
+        &-----txt1 {
+          color: white;
+          margin-left: -33vw;
+          font-size: 3.5vw;
         }
+
+        // }
       }
       &---Mail {
         display: flex;

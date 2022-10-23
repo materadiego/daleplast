@@ -6,11 +6,14 @@
   width: 80%;
   margin: 0 auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   &__Title {
     padding: 8vw 0 0;
 
 =======
+=======
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
   color: $color-claro;
 }
 .Footer-Logo {
@@ -28,6 +31,9 @@
     display: flex;
     align-items: center;
     margin: 4vw 0;
+<<<<<<< HEAD
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
+=======
 >>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
     &--Image {
       width: 7vw;
@@ -39,6 +45,7 @@
       background-size: 100%;
       background-color: $color-variacion2;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
   }
   &__Contactanos {
@@ -108,6 +115,11 @@
       font-size: 3.5vw;
       line-height: 120%;
 >>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
+=======
+    &--txt {
+      font-size: 3.5vw;
+      line-height: 120%;
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
     }
   }
 }
@@ -138,6 +150,7 @@
     background-size: 100%;
     background-image: url(../../utils/images/FooterInstagram.svg);
     background-color: $color-variacion2;
+<<<<<<< HEAD
   }
   &__Linkedin {
     width: 9.5vw;
@@ -163,6 +176,33 @@
     font-size: 3.3vw;
     margin-left: 3vw;
   }
+=======
+  }
+  &__Linkedin {
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-top: 3vw;
+    margin-right: 5vw;
+    border-radius: 100%;
+    border: $border3;
+  }
+}
+.Footer-Maps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  &__Image {
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 100%;
+    border: $border3;
+  }
+  &__txt {
+    font-size: 3.3vw;
+    margin-left: 3vw;
+  }
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
   &__Map {
     margin: 5vw 0;
     border: 0;

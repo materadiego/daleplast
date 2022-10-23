@@ -13,6 +13,7 @@ const Footer = () => {
             <p className="Footer-Contact__Data--txt">(2964)431328</p>
           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="Footer-Container__Contactanos">
             <div className="Footer-Container__Contactanos--Contacto">
               <div className="Footer-Container__Contactanos--Contacto---txt">
@@ -56,6 +57,8 @@ const Footer = () => {
               </p>
             </div>
 =======
+=======
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
           <div className="Footer-Contact__Data">
             <div className="Footer-Contact__Data--Image Whatsapp"></div>
             <p className="Footer-Contact__Data--txt">
@@ -63,6 +66,9 @@ const Footer = () => {
               <br />
               (2964)503045
             </p>
+<<<<<<< HEAD
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
+=======
 >>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
           </div>
           <div className="Footer-Contact__Data">

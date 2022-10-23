@@ -1,17 +1,45 @@
 .Footer {
-  background-color: black;
-  width: 100%;
+  padding: 10vw 0;
+  background-color: $color-primario;
 }
 .Footer-Container {
   width: 80%;
   margin: 0 auto;
+<<<<<<< HEAD
 
   &__Title {
     padding: 8vw 0 0;
 
+=======
+  color: $color-claro;
+}
+.Footer-Logo {
+  width: 60vw;
+  margin: 0 0 4vw;
+}
+.Footer-Title {
+  font-size: 4.5vw;
+  font-weight: 600;
+  margin: 4vw 0;
+  width: 100%;
+}
+.Footer-Contact {
+  &__Data {
+    display: flex;
+    align-items: center;
+    margin: 4vw 0;
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
     &--Image {
-      width: 55vw;
+      width: 7vw;
+      height: 7vw;
+      border-radius: 100vw;
+      margin-right: 3vw;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      background-color: $color-variacion2;
     }
+<<<<<<< HEAD
   }
   &__Contactanos {
     padding: 6vw 0 0;
@@ -75,39 +103,82 @@
           margin-left: 1vw;
         }
       }
+=======
+    &--txt {
+      font-size: 3.5vw;
+      line-height: 120%;
+>>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
     }
   }
-  &__BorderSize {
-    width: 50%;
-    margin-left: 0;
-    &--Border {
-      border-bottom: 4px solid $color-variacion1;
-    }
+}
+.Footer-Redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__Facebook {
+    width: 9.5vw;
+    height: 9.5vw;
+    border-radius: 3vw;
+    margin-top: 3vw;
+    margin-right: 5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../../utils/images/FooterFacebook.svg);
+    background-color: $color-variacion2;
   }
-  &__Seguinos {
-    &--Redes {
-      &---Title {
-        color: white;
-        font-size: 4vw;
-        font-weight: 600;
-        padding: 6vw 0 4vw;
-      }
-      &---Links {
-        display: flex;
-        flex-direction: row;
-        &----Facebook {
-          margin-right: 4vw;
-          &-----Image {
-            width: 8vw;
-          }
-        }
-        &----Instagram {
-          margin-right: 4vw;
-          &-----Image {
-            width: 8vw;
-          }
-        }
-      }
-    }
+  &__Instagram {
+    width: 9.5vw;
+    height: 9.5vw;
+    border-radius: 100vw;
+    margin-top: 3vw;
+    margin-right: 5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../../utils/images/FooterInstagram.svg);
+    background-color: $color-variacion2;
   }
+  &__Linkedin {
+    width: 9.5vw;
+    height: 9.5vw;
+    margin-top: 3vw;
+    margin-right: 5vw;
+    border-radius: 100%;
+    border: $border3;
+  }
+}
+.Footer-Maps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  &__Image {
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 100%;
+    border: $border3;
+  }
+  &__txt {
+    font-size: 3.3vw;
+    margin-left: 3vw;
+  }
+  &__Map {
+    margin: 5vw 0;
+    border: 0;
+  }
+}
+.Green-Line {
+  width: 50%;
+  margin: 8vw 0 4vw;
+  border-bottom: 2px solid $color-variacion2;
+}
+.Phone {
+  background-image: url(../../utils/images/FooterTelefono.svg);
+}
+.Whatsapp {
+  background-image: url(../../utils/images/FooterWhatsapp.svg);
+}
+.Mail {
+  background-image: url(../../utils/images/FooterMail.svg);
 }

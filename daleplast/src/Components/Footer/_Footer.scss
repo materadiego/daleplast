@@ -93,12 +93,17 @@
   &__Map {
     margin: 5vw 0;
     border: 0;
+    width: 100%;
+    height: 45vw;
   }
 }
 .Green-Line {
   width: 50%;
   margin: 8vw 0 4vw;
   border-bottom: 2px solid $color-variacion2;
+}
+.Green-Line__Logo {
+  display: none;
 }
 .Phone {
   background-image: url(../../utils/images/FooterTelefono.svg);
@@ -108,4 +113,99 @@
 }
 .Mail {
   background-image: url(../../utils/images/FooterMail.svg);
+}
+@media screen and (min-width: 1199px) {
+  .Footer {
+    padding: 2vw 0;
+  }
+  .Footer-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .Footer-SubContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .Footer-Logo {
+    width: 35%;
+    margin: 0 0 4vw;
+  }
+  .Footer-Title {
+    width: 80%;
+    font-size: 1.1vw;
+    margin: 0 10%;
+  }
+  .Footer-Contact {
+    width: 35%;
+    &__Data {
+      margin: 1.5vw 10%;
+      &--Image {
+        width: 1vw;
+        height: 1vw;
+        margin-right: 0.7vw;
+      }
+      &--txt {
+        font-size: 0.5vw;
+      }
+    }
+  }
+  .Footer-SubContainer2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .Footer-Redes {
+    width: 35%;
+    flex-direction: column;
+    &__Facebook {
+      width: 3vw;
+      height: 3vw;
+      margin: 1vw 0 0 10%;
+    }
+    &__Instagram {
+      width: 3vw;
+      height: 3vw;
+      margin: 1vw 0 0 10%;
+    }
+    &__Linkedin {
+      width: 3vw;
+      height: 3vw;
+      margin: 1vw 0 0 10%;
+    }
+  }
+  .Footer-Maps {
+    width: 35%;
+    &__Image {
+      width: 1vw;
+      height: 1vw;
+      margin: 1vw 0 0 10%;
+    }
+    &__txt {
+      font-size: 0.8vw;
+      margin-top: 1vw;
+      margin-left: 0.5vw;
+    }
+    &__Map {
+      margin: 2vw 10%;
+      border: 0;
+      width: 80%;
+      height: 10vw;
+    }
+  }
+  .Green-Line {
+    width: 0;
+    height: 5vw;
+    border-bottom: none;
+    height: 17vw;
+    margin: 0;
+    border-left: 2px solid $color-variacion2;
+  }
+  .Green-Line__Logo {
+    display: flex;
+  }
 }

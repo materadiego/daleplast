@@ -24,6 +24,10 @@
   &__TextTwo {
     margin-top: 6vw;
     @include section-description;
+
+    &--Desktop {
+      display: none;
+    }
   }
 }
 
@@ -38,7 +42,7 @@
     width: 75vw;
     height: 75vw;
     margin-bottom: 12vw;
-    border-top-left-radius: 12vw;
+    border-top-left-radius: 10vw;
     border-bottom-right-radius: 10vw;
     flex-direction: column;
     background-color: $color-variacion2;
@@ -85,5 +89,87 @@
     margin-left: -200vw;
     border-radius: 100%;
     border: 10vw solid #abc6cb;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .AboutUs {
+    padding: 6vw 0;
+  }
+  .AboutUs-TextContainer {
+    width: 55%;
+    margin: 0 auto;
+    &__TextOne {
+      font-size: 1.55vw;
+      line-height: 120%;
+      text-align: start;
+    }
+    &__TextTwo {
+      margin-top: 3vw;
+      &--Mobile {
+        display: none;
+      }
+      &--Desktop {
+        display: flex;
+      }
+    }
+  }
+
+  .AboutUs-BoxContainer {
+    position: relative;
+    width: 55%;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: space-between;
+    &__Box {
+      width: 16vw;
+      height: 14vw;
+      margin: 0;
+      border-top-left-radius: 2vw;
+      border-bottom-right-radius: 2vw;
+      justify-content: flex-start;
+      transition: 0.3s ease-in-out;
+      will-change: transform background-color scale color box-shadow;
+      &--Image {
+        width: 4vw;
+        height: 4vw;
+        margin: 1vw 0;
+        transition: 0.5s ease-in-out;
+        will-change: background-image;
+      }
+      &--Text {
+        width: 90%;
+        font-size: 1.3vw;
+        transition: 0.5s ease-in-out;
+        will-change: color;
+      }
+      &:hover {
+        transform: scale(1.17);
+        background-color: $color-variacion5;
+        color: $color-claro;
+        box-shadow: $light-shadow;
+        & p {
+          color: $color-claro;
+        }
+        & .AboutUs-ImageOne {
+          background-image: url(../../utils/images/aboutus-box1a.svg);
+        }
+        & .AboutUs-ImageTwo {
+          background-image: url(../../utils/images/aboutus-box2a.svg);
+        }
+        & .AboutUs-ImageThree {
+          background-image: url(../../utils/images/aboutus-box3a.svg);
+        }
+      }
+    }
+  }
+
+  .AboutUs-FinalLineContainer {
+    bottom: -7vw;
+    z-index: 1;
+    &__Line {
+      border: 1vw solid #abc6cb;
+      background-color: $color-claro;
+    }
   }
 }

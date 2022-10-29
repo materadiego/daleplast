@@ -1,15 +1,24 @@
 import React from "react";
+import { useState } from "react";
 import Logo from "../../utils/images/navbar-logo.svg";
 import Logo2 from "../../utils/images/navbar-logo2.svg";
 import Menu from "../../utils/images/navbar-menu.svg";
 import MenuX from "../../utils/images/navbar-x.png";
 
 const NavBar = () => {
+  const [menu, setMenu] = useState(false);
+  const [menuButton, setMenuButton] = useState(false);
+  const [menuIsActive, setMenuIsActive] = useState(false);
+  const toggleMenu = () => {
+    setMenu(!menu);
+    setMenuButton(!menuButton);
+    setMenuIsActive(!menuIsActive);
+  };
   return (
     <div className="NavBar">
       <div className="NavBar-Container">
         <img src={Logo} alt="Logo" className="NavBar-Container__Logo"></img>
-        <div className="NavBar-Container__MenuButton">
+        <div className="NavBar-Container__MenuButton" onClick={toggleMenu}>
           <img
             src={Menu}
             alt="Menu-Button"
@@ -17,8 +26,8 @@ const NavBar = () => {
           />
         </div>
       </div>
-      <div className="Menu">
-        <div className="Menu-Close">
+      <div className={`Menu ${menu ? "isActive" : ""}`}>
+        <div className="Menu-Close" onClick={toggleMenu}>
           <img alt="" src={MenuX} className="Menu-Close__Image" />
         </div>
         <div className="Logo">

@@ -1,7 +1,7 @@
 import NavBar from "./Components/NavBar/NavBar";
 import Homepage from "./Pages/HomePage";
 import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import "./scss/Style.scss";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <NavBar />
       <Homepage />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

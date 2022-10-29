@@ -20,12 +20,20 @@
   font-family: $Fuente1;
   color: $color-claro;
   background-color: $color-variacion6;
+  @include media(desktop-s) {
+    height: 2.8vw;
+    font-size: 1.2vw;
+  }
 }
 
 @mixin section-title {
   font-size: 5.3vw;
   font-weight: 500;
   margin: 0vw 0 4vw;
+  @include media(desktop-s) {
+    font-size: 2vw;
+    margin: 0 0 4vw;
+  }
 }
 
 @mixin section-description {
@@ -34,4 +42,9 @@
   text-align: center;
   line-height: 120%;
   opacity: 0.9;
+  @include media(desktop-s) {
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin: 0 0 4vw;
+  }
 }

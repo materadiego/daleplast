@@ -43,6 +43,9 @@
     color: $color-claro;
     @include basic-flex;
   }
+  &__Description {
+    display: none;
+  }
   &__ButtonContainer {
     width: 46vw;
     height: 12vw;
@@ -51,5 +54,70 @@
       width: 100%;
       @include button;
     }
+  }
+}
+
+.Hero-Text-Desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .Hero {
+    height: 49vw;
+    background-size: 100%;
+    background-image: url(../../utils/images/hero-desktop-bg.png);
+  }
+
+  .Hero-Overlay {
+    background: rgb(27, 118, 122);
+    background: linear-gradient(
+      90deg,
+      rgba(9, 89, 102, 0.7) 0%,
+      rgba(9, 89, 102, 0.5) 50%,
+      rgba(9, 89, 102, 0.35) 80%
+    );
+  }
+
+  .Hero-Container {
+    width: 70%;
+    height: 20vw;
+    margin: 17vw auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0;
+
+    &__Text {
+      width: 66%;
+      font-size: 2.5vw;
+      height: auto;
+      line-height: 120%;
+      justify-content: flex-start;
+    }
+    &__Description {
+      display: flex;
+      width: 48%;
+      margin: 2vw 0;
+      font-size: 1.35vw;
+      font-weight: 300;
+      line-height: 110%;
+
+      color: $color-claro;
+    }
+    &__ButtonContainer {
+      width: 13vw;
+      height: 3vw;
+      &--Button {
+        width: 100%;
+      }
+    }
+  }
+
+  .Hero-Text-Mobile {
+    display: none;
+  }
+
+  .Hero-Text-Desktop {
+    display: flex;
   }
 }

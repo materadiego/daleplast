@@ -11,10 +11,15 @@ const HomeAboutUs = () => {
           del Fuego, dedicada a la fabricación y comercialización de bolsas,
           film y láminas de polietileno oxi-biodegradables.
         </p>
-        <p className="AboutUs-TextContainer__TextTwo">
+        <p className="AboutUs-TextContainer__TextTwo  AboutUs-TextContainer__TextTwo--Mobile ">
           El compromiso, la responsabilidad y la honestidad son los pilares que
           nos fundaron y que nos impulsan a trabajar para mejorar la experiencia
           de nuestros clientes.
+        </p>
+        <p className="AboutUs-TextContainer__TextTwo AboutUs-TextContainer__TextTwo--Desktop">
+          El compromiso, la responsabilidad y la honestidad son los pilares que
+          nos fundaron, que hoy mantenemos, y que nos impulsan a trabajar día a
+          día para mejorar la experiencia de nuestros clientes.
         </p>
       </div>
       <div className="AboutUs-BoxContainer">
@@ -38,9 +43,9 @@ const HomeAboutUs = () => {
             BRINDAMOS <br></br> SERVICIO <br></br> PERSONALIZADO
           </p>
         </div>
-        <div className="AboutUs-FinalLineContainer">
-          <div className="AboutUs-FinalLineContainer__Line"></div>
-        </div>
+      </div>
+      <div className="AboutUs-FinalLineContainer">
+        <div className="AboutUs-FinalLineContainer__Line"></div>
       </div>
     </div>
   );

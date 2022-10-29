@@ -5,15 +5,6 @@
 .Footer-Container {
   width: 80%;
   margin: 0 auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-  &__Title {
-    padding: 8vw 0 0;
-
-=======
-=======
->>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
   color: $color-claro;
 }
 .Footer-Logo {
@@ -31,10 +22,6 @@
     display: flex;
     align-items: center;
     margin: 4vw 0;
-<<<<<<< HEAD
->>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
-=======
->>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
     &--Image {
       width: 7vw;
       height: 7vw;
@@ -45,81 +32,9 @@
       background-size: 100%;
       background-color: $color-variacion2;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  }
-  &__Contactanos {
-    padding: 6vw 0 0;
-
-    &--Contacto {
-      width: 100%;
-      &---txt {
-        &----txt {
-          color: white;
-          font-size: 4vw;
-          font-weight: 600;
-        }
-      }
-      &---Telefono {
-        display: flex;
-        flex-direction: row;
-        padding: 4vw 0 0;
-        &----Image {
-          width: 6vw;
-        }
-        &----txt {
-          color: white;
-          font-size: 3.5vw;
-          margin-left: 2vw;
-        }
-      }
-      &---Whatsapp {
-        height: 11vw;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        &----Image {
-          width: 6vw;
-        }
-        // &----txt {
-        //   display: flex;
-        //   flex-direction: column;
-        //   border: 2px solid red;
-
-        //   margin-left: 1vw;
-        &-----txt1 {
-          color: white;
-          margin-left: -33vw;
-          font-size: 3.5vw;
-        }
-
-        // }
-      }
-      &---Mail {
-        display: flex;
-        flex-direction: row;
-        padding: 4vw 0 6vw;
-        &----Image {
-          width: 6vw;
-        }
-        &----txt {
-          color: white;
-          font-size: 3.5vw;
-          margin-left: 1vw;
-        }
-      }
-=======
     &--txt {
       font-size: 3.5vw;
       line-height: 120%;
->>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
-=======
-    &--txt {
-      font-size: 3.5vw;
-      line-height: 120%;
->>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
     }
   }
 }
@@ -150,7 +65,6 @@
     background-size: 100%;
     background-image: url(../../utils/images/FooterInstagram.svg);
     background-color: $color-variacion2;
-<<<<<<< HEAD
   }
   &__Linkedin {
     width: 9.5vw;
@@ -176,42 +90,20 @@
     font-size: 3.3vw;
     margin-left: 3vw;
   }
-=======
-  }
-  &__Linkedin {
-    width: 9.5vw;
-    height: 9.5vw;
-    margin-top: 3vw;
-    margin-right: 5vw;
-    border-radius: 100%;
-    border: $border3;
-  }
-}
-.Footer-Maps {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  &__Image {
-    width: 7.5vw;
-    height: 7.5vw;
-    border-radius: 100%;
-    border: $border3;
-  }
-  &__txt {
-    font-size: 3.3vw;
-    margin-left: 3vw;
-  }
->>>>>>> 6124e44fb7af8c0731e89630b83cc1e671c33ee1
   &__Map {
     margin: 5vw 0;
     border: 0;
+    width: 100%;
+    height: 45vw;
   }
 }
 .Green-Line {
   width: 50%;
   margin: 8vw 0 4vw;
   border-bottom: 2px solid $color-variacion2;
+}
+.Green-Line__Logo {
+  display: none;
 }
 .Phone {
   background-image: url(../../utils/images/FooterTelefono.svg);
@@ -221,4 +113,99 @@
 }
 .Mail {
   background-image: url(../../utils/images/FooterMail.svg);
+}
+@media screen and (min-width: 1199px) {
+  .Footer {
+    padding: 2vw 0;
+  }
+  .Footer-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .Footer-SubContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .Footer-Logo {
+    width: 35%;
+    margin: 0 0 4vw;
+  }
+  .Footer-Title {
+    width: 80%;
+    font-size: 1.1vw;
+    margin: 0 10%;
+  }
+  .Footer-Contact {
+    width: 35%;
+    &__Data {
+      margin: 1.5vw 10%;
+      &--Image {
+        width: 1vw;
+        height: 1vw;
+        margin-right: 0.7vw;
+      }
+      &--txt {
+        font-size: 0.5vw;
+      }
+    }
+  }
+  .Footer-SubContainer2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .Footer-Redes {
+    width: 35%;
+    flex-direction: column;
+    &__Facebook {
+      width: 3vw;
+      height: 3vw;
+      margin: 1vw 0 0 10%;
+    }
+    &__Instagram {
+      width: 3vw;
+      height: 3vw;
+      margin: 1vw 0 0 10%;
+    }
+    &__Linkedin {
+      width: 3vw;
+      height: 3vw;
+      margin: 1vw 0 0 10%;
+    }
+  }
+  .Footer-Maps {
+    width: 35%;
+    &__Image {
+      width: 1vw;
+      height: 1vw;
+      margin: 1vw 0 0 10%;
+    }
+    &__txt {
+      font-size: 0.8vw;
+      margin-top: 1vw;
+      margin-left: 0.5vw;
+    }
+    &__Map {
+      margin: 2vw 10%;
+      border: 0;
+      width: 80%;
+      height: 10vw;
+    }
+  }
+  .Green-Line {
+    width: 0;
+    height: 5vw;
+    border-bottom: none;
+    height: 17vw;
+    margin: 0;
+    border-left: 2px solid $color-variacion2;
+  }
+  .Green-Line__Logo {
+    display: flex;
+  }
 }

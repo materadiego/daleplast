@@ -23,24 +23,29 @@
     width: 80vw;
     height: 70vw;
     border-radius: 4vw;
-    margin: 5vw 0;
+    margin: 6vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $color-variacion5;
+    background-color: $color-variacion3;
     &--Image {
       width: 30vw;
       height: 14vw;
       margin-top: -4vw;
       border-radius: 2.5vw;
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: center;
       background-color: $color-claro;
-      border: $border3;
     }
     &--Arrow {
       width: 4vw;
       height: 4vw;
       margin: 4vw 0;
-      border: $border3;
+      background-image: url(../../utils/images/services-arrowa.svg);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     &--Title {
       width: 80%;
@@ -56,7 +61,94 @@
       font-weight: 300;
       text-align: center;
       opacity: 0.8;
+
       color: $color-claro;
     }
+  }
+}
+
+.Services-Box-Title-Desktop {
+  display: none;
+}
+
+.Services-Image1 {
+  background-image: url(../../utils/images/services-icon1.svg);
+}
+.Services-Image2 {
+  background-image: url(../../utils/images/services-icon2.svg);
+}
+.Services-Image3 {
+  background-image: url(../../utils/images/services-icon3.svg);
+}
+
+@media screen and (min-width: 1200px) {
+  .Services {
+    background-size: 100%;
+    padding: 6vw 0;
+  }
+
+  .Services-Container {
+    width: 65%;
+  }
+
+  .Services-Subcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__Box {
+      width: 20vw;
+      height: 23vw;
+      border-radius: 1.2vw;
+      will-change: background-color;
+      transition: $animation-transition;
+      &--Image {
+        width: 13vw;
+        border-radius: 0.4vw;
+        height: 6vw;
+        margin: -2vw 0 0;
+        background-size: 35%;
+        will-change: background-image;
+        transition: $animation-transition;
+      }
+      &--Arrow {
+        width: 1vw;
+        height: 1vw;
+        margin: 1vw 0;
+        will-change: background-image;
+
+        transition: $animation-transition;
+      }
+      &--Title {
+        font-size: 1.25vw;
+        width: 80%;
+        margin: 0 0 3vw;
+      }
+      &--Text {
+        font-size: 1vw;
+      }
+      &:hover {
+        background-color: $color-variacion5;
+        & .Services-Arrow {
+          background-image: url(../../utils/images/services-arrow.svg);
+        }
+        & .Services-Image1 {
+          background-image: url(../../utils/images/services-icon1a.svg);
+        }
+        & .Services-Image2 {
+          background-image: url(../../utils/images/services-icon2a.svg);
+        }
+        & .Services-Image3 {
+          background-image: url(../../utils/images/services-icon3a.svg);
+        }
+      }
+    }
+  }
+
+  .Services-Box-Title-Mobile {
+    display: none;
+  }
+  .Services-Box-Title-Desktop {
+    display: block;
   }
 }

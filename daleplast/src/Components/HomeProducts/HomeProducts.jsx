@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProductsImage from "../../utils/images/products-image.png";
+
 const HomeProducts = () => {
   return (
     <div className="Products">
@@ -29,7 +31,9 @@ const HomeProducts = () => {
       </div>
       <div className="Products-ButtonContainer">
         <button className="Products-ButtonContainer__Button">
-          VER CATÁLOGO
+          <Link className="link" to={"/Catalogo"}>
+            VER CATÁLOGO
+          </Link>
         </button>
       </div>
     </div>

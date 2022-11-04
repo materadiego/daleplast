@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../utils/images/navbar-logo.svg";
 import Logo2 from "../../utils/images/navbar-logo2.svg";
 import Menu from "../../utils/images/navbar-menu.svg";
@@ -35,9 +36,9 @@ const NavBar = () => {
         </div>
         <div className="Menu-Container">
           <div className="Menu-Container__Links">
-            <a href="#Home" className="Menu-Container__Links--Options">
+            <Link className="Menu-Container__Links--Options link" to={"/"}>
               HOME
-            </a>
+            </Link>
             <a href="#AboutUs" className="Menu-Container__Links--Options">
               NOSOTROS
             </a>

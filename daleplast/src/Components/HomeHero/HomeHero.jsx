@@ -5,6 +5,10 @@ const HomeHero = () => {
     <div className="Hero">
       <div className="Hero-Overlay"></div>
       <div className="Hero-Container">
+        <div className="Hero-Media-Container">
+          <div className="Hero-Media-Container__Image Hero-Media-Fb"></div>
+          <div className="Hero-Media-Container__Image Hero-Media-Ig"></div>
+        </div>
         <p className="Hero-Container__Text Hero-Text-Mobile">
           Somos una empresa familiar líder en la fabricación de bolsas, láminas
           y film de polietileno con tecnología oxi-biodegradable

@@ -1,8 +1,10 @@
 import React from "react";
+import ContactImage from "../../utils/images/contact-bg.png";
 
 const Contact = () => {
   return (
     <div className="Contact">
+      <img className="Contact-Image" src={ContactImage} alt="Contact"></img>
       <div className="Contact-Container">
         <div className="Orange-Line"></div>
         <h5 className="Contact-Container__Title">PEDÍ TU PRESUPUESTO</h5>

@@ -94,7 +94,7 @@
 
 @media screen and (min-width: 1200px) {
   .AboutUs {
-    padding: 6vw 0;
+    padding: 6vw 0 2vw;
   }
   .AboutUs-TextContainer {
     width: 55%;
@@ -165,7 +165,8 @@
   }
 
   .AboutUs-FinalLineContainer {
-    bottom: -7vw;
+    height: 10vw;
+    bottom: 0vw;
     z-index: 1;
     &__Line {
       border: 1vw solid #abc6cb;

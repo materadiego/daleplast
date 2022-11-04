@@ -26,6 +26,10 @@
   );
 }
 
+.Hero-Media-Container {
+  display: none;
+}
+
 .Hero-Container {
   width: 85%;
   height: 88vw;
@@ -78,6 +82,32 @@
     );
   }
 
+  .Hero-Media-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 2.5vw;
+    height: 5vw;
+    position: absolute;
+    right: 4vw;
+    top: 10vw;
+    &__Image {
+      width: 2vw;
+      height: 2vw;
+      border-radius: 50vw;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .Hero-Media-Fb {
+    background-image: url(../../utils/images/hero-media-fb.svg);
+  }
+  .Hero-Media-Ig {
+    background-image: url(../../utils/images/hero-media-ig.svg);
+  }
   .Hero-Container {
     width: 70%;
     height: 20vw;

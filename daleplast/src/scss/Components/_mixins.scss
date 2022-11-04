@@ -23,6 +23,15 @@
   @include media(desktop-s) {
     height: 2.8vw;
     font-size: 1.2vw;
+    will-change: color;
+    cursor: pointer;
+    border: 0.3vw solid $color-variacion6;
+    transition: $animation-transition;
+  }
+  &:hover {
+    @include media(desktop-s) {
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -31,7 +40,7 @@
   font-weight: 500;
   margin: 0vw 0 4vw;
   @include media(desktop-s) {
-    font-size: 2vw;
+    font-size: 1.6vw;
     margin: 0 0 4vw;
   }
 }

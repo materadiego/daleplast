@@ -15,9 +15,10 @@
   &__Subtitle {
     text-align: center;
     font-size: 6vw;
+    width: 75%;
     font-weight: 500;
     line-height: 120%;
-    margin: 6vw 0 4vw;
+    margin: 5vw 0 4vw;
     color: $color-variacion5;
   }
   &__Text {
@@ -61,5 +62,60 @@
   &__Button {
     width: 100%;
     @include button;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Products {
+    padding: 4vw 0 8vw;
+    position: relative;
+  }
+
+  .Products-TextContainer {
+    width: 75%;
+    padding: 0 0 10vw;
+    margin: 0 auto;
+    &__Title {
+      width: 100%;
+      text-align: center;
+    }
+    &__Subtitle {
+      font-size: 1.8vw;
+      width: 26%;
+      text-align: start;
+      margin: 0 19% 1.5vw 45%;
+    }
+    &__Text {
+      font-size: 1.4vw;
+      width: 50%;
+      text-align: start;
+      margin: 0 0 0 50%;
+    }
+  }
+
+  .Products-ImageContainer {
+    width: 75%;
+    margin: 0%;
+    position: absolute;
+    top: 13vw;
+    left: 12.5%;
+    &__Image {
+      width: 46%;
+    }
+    &__Text {
+      font-size: 1.4vw;
+      font-weight: 500;
+      padding: 1.5vw 2vw;
+      width: 35vw;
+      margin: -1vw auto 0;
+      line-height: 120%;
+      border-radius: 0.4vw;
+    }
+  }
+
+  .Products-ButtonContainer {
+    width: 14vw;
+    height: 3vw;
+    margin: 4vw auto 0;
   }
 }

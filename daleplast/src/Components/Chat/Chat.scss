@@ -1,0 +1,58 @@
+.Chat {
+  position: fixed;
+  width: 15vw;
+  height: 15vw;
+  bottom: 14vw;
+  right: 8%;
+  z-index: 3;
+  border-radius: 50vw;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  &__Link {
+    width: 100%;
+    height: 100%;
+    &--Text {
+      display: none;
+    }
+    &--Image {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../utils/images/chat-icon.svg);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Chat {
+    border-radius: 0.4vw;
+    width: 14vw;
+    height: 4vw;
+    bottom: 5vw;
+    right: 4vw;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: $color-variacion3;
+    &__Link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &--Text {
+        display: flex;
+        text-align: end;
+        width: 8vw;
+        font-weight: 300;
+        font-size: 1vw;
+        margin-right: 0.7vw;
+        line-height: 120%;
+        color: $color-claro;
+      }
+      &--Image {
+        width: 3vw;
+        height: 3vw;
+      }
+    }
+  }
+}

@@ -33,7 +33,9 @@
       height: 20vw;
       border-radius: 100vw;
       margin-right: 4.5vw;
-      border: $border3;
+      background-size: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     &--Title {
       width: 47vw;
@@ -47,6 +49,108 @@
       font-size: 3.6vw;
       font-weight: 500;
       color: $color-variacion1;
+    }
+  }
+}
+
+.Environment-Icon1 {
+  background-image: url(../../utils/images/environment-icon1.svg);
+}
+.Environment-Icon2 {
+  background-image: url(../../utils/images/environment-icon2.svg);
+}
+.Environment-Icon3 {
+  background-image: url(../../utils/images/environment-icon3.svg);
+}
+
+.Environment-Button-Text-Desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .Environment {
+    padding: 6vw 0 11vw;
+    position: relative;
+  }
+
+  #Environment-Line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Environment-Container {
+    width: 65%;
+
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__Title {
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 35%;
+    }
+    &__Description {
+      text-align: start;
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    &__Button {
+      width: 20vw;
+      height: 18vw;
+      border-radius: 0;
+      border-top-left-radius: 2vw;
+      border-bottom-right-radius: 2vw;
+      margin: 1vw 0 0;
+      z-index: 2;
+      background-color: $color-claro;
+      padding: 0;
+      justify-content: flex-start;
+      align-items: center;
+      &--Image {
+        width: 7vw;
+        height: 7vw;
+        margin: 1.5vw 0 1vw;
+      }
+      &--Title {
+        font-size: 1.45079vw;
+        width: 80%;
+        text-align: center;
+      }
+      &--VerMas {
+        display: none;
+      }
+    }
+  }
+  .Environment-Button-Text-Mobile {
+    display: none;
+  }
+  .Environment-Button-Text-Desktop {
+    display: flex;
+  }
+
+  .Environment-FinalLineContainer {
+    height: 30vw;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0.34;
+    background-color: $color-variacion5;
+
+    &__Line {
+      display: flex;
+      width: 500vw;
+      height: 500vw;
+      bottom: 23vw;
+
+      position: absolute;
+      margin-left: -200vw;
+      border-radius: 100%;
+      background-color: $color-claro;
+      border: 1vw solid $color-variacion5;
     }
   }
 }

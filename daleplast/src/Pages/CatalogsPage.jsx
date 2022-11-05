@@ -1,10 +1,14 @@
 import React from "react";
-import CatalogsIndex from "../Components/CatalogsIndex/CatalogsIndex";
+import CatalogsTitle from "../Components/CatalogsTitle/CatalogsTitle";
+import CatalogsMenu from "../Components/CatalogsMenu/CatalogsMenu";
+import CatalogsItemContainer from "../Components/CatalogsItemContainer/CatalogsItemContainer";
 
 const CatalogsPage = () => {
   return (
     <>
-      <CatalogsIndex />
+      <CatalogsTitle />
+      <CatalogsMenu />
+      <CatalogsItemContainer />
     </>
   );
 };

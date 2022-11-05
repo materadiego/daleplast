@@ -1,0 +1,34 @@
+.ContactsIndex {
+  width: 100%;
+  padding: 5vw 0;
+}
+.ContactsIndex-IndexContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5vw auto;
+  padding: 4vw 0;
+  width: 90%;
+  border-radius: 2vw;
+  background-color: #abc6cb;
+  &__Index {
+    width: 90%;
+    &--txt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      & p {
+        font-size: 5vw;
+        font-weight: 500;
+        text-align: center;
+        color: $color-variacion5;
+      }
+    }
+  }
+}
+.Line {
+  width: 100%;
+  margin: 3vw 0;
+  border-bottom: 1.5px solid $color-variacion5;
+}

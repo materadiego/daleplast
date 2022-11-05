@@ -1,64 +1,63 @@
 import React from "react";
 
-const CatalogsIndex = () => {
+const CatalogsMenu = () => {
   return (
     <>
       <div className="ContactsIndex">
-        <div className="ContactsIndex-Title">
-          <div className="Orange-Line"></div>
-          <p className="ContactsIndex-Title__txt">NUESTROS PRODUCTOS</p>
-        </div>
-        <div className="ContactsIndex-CercleContainer">
-          <div className="ContactsIndex-CercleContainer__Cercle"></div>
-        </div>
         <div className="ContactsIndex-IndexContainer">
           <div className="ContactsIndex-IndexContainer__Index">
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              RESIUDUOS
+              <p>RESIUDUOS</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              TIPO CAMISETA
+              <p>TIPO CAMISETA</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              DE ARRANQUE
+              <p>DE ARRANQUE</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              CON MANIJA TIPO OVALO O RINON
+              <p>CON MANIJA TIPO OVALO O RINON</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              MANIJAS FLEXIBLES
+              <p>MANIJAS FLEXIBLES</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              ENVASADO AL VACIO
+              <p>ENVASADO AL VACIO</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              PARA ALMACENAR Y COMERCIALIZAR PRODUCTOS
+              <p>
+                PARA ALMACENAR Y<br /> COMERCIALIZAR PRODUCTOS
+              </p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              ANTIESTATICAS/TERMOCONTAIBLES
+              <p>
+                ANTIESTATICAS/TERMO-
+                <br />
+                CONTAIBLES
+              </p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              FILM AGROPOL
+              <p>FILM AGROPOL</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              FILM STRETCH
+              <p>FILM STRETCH</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              ARTICULOS DESCARTABLES
+              <p>ARTICULOS DESCARTABLES</p>
             </a>
             <div className="Line"></div>
             <a className="ContactsIndex-IndexContainer__Index--txt" href="">
-              TODOS
+              <p>TODOS</p>
             </a>
           </div>
         </div>
@@ -67,4 +66,4 @@ const CatalogsIndex = () => {
   );
 };
 
-export default CatalogsIndex;
+export default CatalogsMenu;

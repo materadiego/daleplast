@@ -51,9 +51,9 @@ const NavBar = () => {
             <a href="#Compromise" className="Menu-Container__Links--Options">
               COMPROMISO
             </a>
-            <a href="#FAQs" className="Menu-Container__Links--Options">
-              PREGUNRAS FRECUENTES
-            </a>
+            <Link to={"/FAQs"} className="Menu-Container__Links--Options">
+              PREGUNTAS FRECUENTES
+            </Link>
 
             <a href="#Contact" className="Menu-Container__Links--Contact">
               PEDIR PRESUPUESTO

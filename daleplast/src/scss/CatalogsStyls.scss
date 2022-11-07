@@ -1,1 +1,82 @@
+@import "./Components/bootstrap_reboot";
+@import "./Components/breakpoints";
+@import "./Components/variables";
+@import "./Components/mixins";
+@import "./Components/globals";
 @import "../Components/CatalogsMenu/CatalogsMenu";
+
+.ContainerProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0;
+}
+
+.Catalog-Loader {
+  width: 20vw;
+}
+
+.CatalogCardsContainer {
+  width: 90%;
+}
+
+.CategoryTitleContainer {
+  margin-bottom: 5vw;
+  &__Title {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-variacion5;
+  }
+  &__Description {
+    font-style: italic;
+    font-size: 3.5vw;
+    font-weight: 500;
+  }
+}
+
+.Card {
+  display: flex;
+  margin: 8vw 0;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2vw;
+  padding: 5vw 0;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  &__Image {
+    width: 90%;
+    margin: 0 0 4vw;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__Info {
+    width: 90%;
+    margin: 0;
+
+    &--Name {
+      font-size: 3.6vw;
+      text-transform: uppercase;
+      margin: 0 0 2vw;
+      font-weight: 500;
+      color: $color-variacion5;
+    }
+    &--Description {
+      font-size: 3vw;
+      margin-bottom: 6vw;
+    }
+    &--StockInfo {
+      border-radius: 2vw;
+
+      padding: 4vw;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.StockInfo-Title {
+  font-size: 3.5vw;
+  font-weight: 500;
+  color: $color-variacion5;
+}
+
+.StockInfo-Measures {
+  font-size: 3.6vw;
+}

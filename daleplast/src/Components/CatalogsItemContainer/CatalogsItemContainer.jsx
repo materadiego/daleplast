@@ -1,33 +1,32 @@
 import React from "react";
+import { getProducts } from "./products";
 import { useEffect, useState } from "react";
-import CatalogsItem from "../CatalogsItem/CatalogsItem";
 import CatalogsList from "../CatalogsList/CatalogsList";
-import Products from "./Products";
+import loader from "../../utils/images/loader.svg";
+
+import { useParams } from "react-router-dom";
 
 const CatalogsItemContainer = () => {
-  const [Items, setItems] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const { categoryId } = useParams();
 
-  let isOk = true;
-  const customFetch = (time, task) => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (isOk) {
-          resolve(task);
-        } else {
-          reject("error");
-        }
-      }, time);
-    });
-  };
   useEffect(() => {
-    customFetch(1000, Items)
-      .then((result) => setItems(result))
-      .catch((error) => console.log(error));
-  }, [Items]);
+    getProducts(categoryId)
+      .then((res) => setProducts(res))
+      .catch((error) => console.log(error))
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [categoryId]);
 
   return (
     <div className="ContainerProducts">
-      <CatalogsList Products={Items} />
+      {loading ? (
+        <img src={loader} alt="loader" className="Catalog-Loader" />
+      ) : (
+        <CatalogsList products={products} />
+      )}
     </div>
   );
 };

@@ -1,15 +1,19 @@
 import React from "react";
 
-function CatalogsItem(Id, Url, Nombre, Desc, StockTitle, StockMedidas) {
+const CatalogsItem = ({ product }) => {
   return (
-    <div className="ItemCard" key={Id}>
-      <img className="ItemCard__Url">{Url}</img>
-      <p className="ItemCard__Title">{Nombre}</p>
-      <p className="ItemCard__Desc">{Desc}</p>
-      <p className="ItemCard__STockTitle">{StockTitle}</p>
-      <p className="ItemCard__STockMedidas">{StockMedidas}</p>
+    <div className="Card">
+      <img src={product.img} alt={product.name} className="Card__Image" />
+      <div className="Card__Info">
+        <p className="Card__Info--Name">{product.name}</p>
+        <p className="Card__Info--Description">{product.desc}</p>
+        <div className="Card__Info--StockInfo">
+          <p className="StockInfo-Title">{product.stockTitle}</p>
+          <p className="StockInfo-Measures">{product.stockMedidas}</p>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default CatalogsItem;

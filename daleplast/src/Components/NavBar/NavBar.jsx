@@ -36,7 +36,10 @@ const NavBar = () => {
         </div>
         <div className="Menu-Container">
           <div className="Menu-Container__Links">
-            <Link className="Menu-Container__Links--Options link" to={"/"}>
+            <Link
+              className="Menu-Container__Links--Options link"
+              to={"/daleplast"}
+            >
               HOME
             </Link>
             <a href="#AboutUs" className="Menu-Container__Links--Options">

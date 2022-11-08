@@ -178,10 +178,11 @@
         font-weight: 400;
         border-radius: 0.5vw;
         padding: 0.3vw 0.5vw;
-        transition: 0.3s;
         text-decoration: none;
 
         will-change: color background-color;
+        transition: $animation-transition;
+
         color: $color-variacion5;
         &:hover {
           color: $color-claro;
@@ -195,9 +196,10 @@
         margin: 0;
         font-weight: 600;
         font-size: 1vw;
-        transition: 0.3s;
         text-decoration: none;
         will-change: color background-color;
+        transition: $animation-transition;
+
         border: 0.1vw solid $color-variacion5;
         color: $color-variacion5;
         &:hover {

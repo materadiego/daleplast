@@ -31,7 +31,6 @@ p {
   margin-bottom: 25vw;
   position: relative;
   overflow: hidden;
-  z-index: 10;
 
   background-color: $color-variacion5;
   &__Subcontainer {
@@ -61,12 +60,21 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .Pages-Title-Container {
-    height: 10vw;
+    height: 16vw;
     bottom: 0vw;
     z-index: 1;
-    &__Line {
-      border: 1vw solid #abc6cb;
-      background-color: $color-claro;
+    top: 7vw;
+    margin-bottom: 15vw;
+    &__Subcontainer {
+      margin-top: 3vw;
+      &--Title {
+        font-size: 2vw;
+      }
+      &--Line {
+        border: none;
+        margin-top: 13vw;
+        background-color: $color-claro;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
 import Chat from "./Components/Chat/Chat";
-import Homepage from "./Pages/HomePage";
+import HomePage from "../src/Pages/HomePage";
 import CatalogsPage from "./Pages/CatalogsPage";
 import FAQs from "./Pages/FAQs";
 import Contact from "./Components/Contact/Contact";
@@ -15,9 +15,9 @@ function App() {
         <NavBar />
         <Chat />
         <Routes>
-          <Route path="/" element={<Homepage />}></Route>
-          <Route path="/Catalogo" element={<CatalogsPage />}></Route>
-          <Route path="/FAQs" element={<FAQs />}></Route>
+          <Route path="/daleplast" element={<HomePage />} />
+          <Route path="/Catalogo" element={<CatalogsPage />} />
+          <Route path="/FAQs" element={<FAQs />} />
         </Routes>
         <Contact />
         <Footer />

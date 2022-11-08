@@ -32,7 +32,9 @@
     height: 4vw;
     bottom: 5vw;
     right: 4vw;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    transition: $animation-transition;
+    will-change: box-shadow;
     background-color: $color-variacion3;
     &__Link {
       text-decoration: none;
@@ -53,6 +55,9 @@
         width: 3vw;
         height: 3vw;
       }
+    }
+    &:hover {
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
     }
   }
 }

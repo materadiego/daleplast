@@ -1,4 +1,7 @@
 import React from "react";
+import icon1 from "../../utils/images/aboutus-box1.svg";
+import icon2 from "../../utils/images/aboutus-box2.svg";
+import icon3 from "../../utils/images/aboutus-box3.svg";
 
 const HomeAboutUs = () => {
   return (
@@ -24,21 +27,34 @@ const HomeAboutUs = () => {
       </div>
       <div className="AboutUs-BoxContainer">
         <div className="AboutUs-BoxContainer__Box">
-          <div className="AboutUs-BoxContainer__Box--Image AboutUs-ImageOne"></div>
+          {/* <div className="AboutUs-BoxContainer__Box--Image AboutUs-ImageOne"></div> */}
+          <img
+            src={icon1}
+            alt="box-icon"
+            className="AboutUs-BoxContainer__Box--Image"
+          ></img>
           <p className="AboutUs-BoxContainer__Box--Text">
             FABRICAMOS <br></br> PRODUCTOS <br></br> DE PRIMERA <br></br>{" "}
             CALIDAD
           </p>
         </div>
         <div className="AboutUs-BoxContainer__Box">
-          <div className="AboutUs-BoxContainer__Box--Image AboutUs-ImageTwo"></div>
+          <img
+            src={icon2}
+            alt="box-icon"
+            className="AboutUs-BoxContainer__Box--Image"
+          ></img>
           <p className="AboutUs-BoxContainer__Box--Text">
             ESTAMOS <br></br> COMPROMETIDOS <br></br> CON EL MEDIO <br></br>{" "}
             AMBIENTE
           </p>
         </div>
         <div className="AboutUs-BoxContainer__Box">
-          <div className="AboutUs-BoxContainer__Box--Image AboutUs-ImageThree"></div>
+          <img
+            src={icon3}
+            alt="box-icon"
+            className="AboutUs-BoxContainer__Box--Image"
+          ></img>
           <p className="AboutUs-BoxContainer__Box--Text">
             BRINDAMOS <br></br> SERVICIO <br></br> PERSONALIZADO
           </p>

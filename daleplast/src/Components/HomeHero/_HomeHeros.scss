@@ -56,6 +56,9 @@
     @include basic-flex;
     &--Button {
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       @include button;
     }
   }
@@ -92,22 +95,20 @@
     position: absolute;
     right: 4vw;
     top: 10vw;
-    &__Image {
+    &__Link {
       width: 2vw;
       height: 2vw;
+      display: flex;
       border-radius: 50vw;
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
+      &--Image {
+        width: 100%;
+      }
     }
   }
 
-  .Hero-Media-Fb {
-    background-image: url(../../utils/images/hero-media-fb.svg);
-  }
-  .Hero-Media-Ig {
-    background-image: url(../../utils/images/hero-media-ig.svg);
-  }
   .Hero-Container {
     width: 70%;
     height: 20vw;
@@ -137,9 +138,7 @@
     &__ButtonContainer {
       width: 13vw;
       height: 3vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
       &--Button {
         width: 100%;
         display: flex;

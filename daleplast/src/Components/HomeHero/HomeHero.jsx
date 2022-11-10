@@ -22,9 +22,13 @@ const HomeHero = () => {
           servicio de la provincia.
         </p>
         <div className="Hero-Container__ButtonContainer">
-          <button className="Hero-Container__ButtonContainer--Button">
+          <a
+            href="#Nosotros"
+            style={{ textDecoration: "inherit" }}
+            className="Hero-Container__ButtonContainer--Button"
+          >
             SABER MÁS
-          </button>
+          </a>
         </div>
       </div>
     </div>

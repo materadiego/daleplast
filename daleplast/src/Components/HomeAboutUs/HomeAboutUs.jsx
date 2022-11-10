@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeAboutUs = () => {
   return (
-    <div className="AboutUs">
+    <div className="AboutUs" id="Nosotros">
       <div className="AboutUs-TextContainer">
         <div className="Orange-Line"></div>
         <h5 className="AboutUs-TextContainer__Title">NOSOTROS</h5>

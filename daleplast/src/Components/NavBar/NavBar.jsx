@@ -37,28 +37,60 @@ const NavBar = () => {
         <div className="Menu-Container">
           <div className="Menu-Container__Links">
             <Link
+              style={{ textDecoration: "inherit" }}
               className="Menu-Container__Links--Options link"
               to={"/daleplast"}
+              onClick={toggleMenu}
             >
               HOME
             </Link>
-            <a href="#AboutUs" className="Menu-Container__Links--Options">
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="#AboutUs"
+              className="Menu-Container__Links--Options"
+              onClick={toggleMenu}
+            >
               NOSOTROS
             </a>
-            <a href="#Products" className="Menu-Container__Links--Options">
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="#Products"
+              className="Menu-Container__Links--Options"
+              onClick={toggleMenu}
+            >
               PRODUCTOS
             </a>
-            <a href="#Services" className="Menu-Container__Links--Options">
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="#Services"
+              className="Menu-Container__Links--Options"
+              onClick={toggleMenu}
+            >
               SERVICIOS
             </a>
-            <a href="#Compromise" className="Menu-Container__Links--Options">
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="#Compromise"
+              className="Menu-Container__Links--Options"
+              onClick={toggleMenu}
+            >
               COMPROMISO
             </a>
-            <Link to={"/FAQs"} className="Menu-Container__Links--Options">
+            <Link
+              style={{ textDecoration: "inherit" }}
+              to={"/FAQs"}
+              className="Menu-Container__Links--Options"
+              onClick={toggleMenu}
+            >
               PREGUNTAS FRECUENTES
             </Link>
 
-            <a href="#Contact" className="Menu-Container__Links--Contact">
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="#Contact"
+              className="Menu-Container__Links--Contact"
+              onClick={toggleMenu}
+            >
               PEDIR PRESUPUESTO
             </a>
           </div>

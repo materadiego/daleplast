@@ -31,7 +31,11 @@ const HomeProducts = () => {
       </div>
       <div className="Products-ButtonContainer">
         <button className="Products-ButtonContainer__Button">
-          <Link className="link" to={"/Catalogo"}>
+          <Link
+            style={{ color: "inherit", textDecoration: "inherit" }}
+            className="link"
+            to={"/Catalogo"}
+          >
             VER CATÁLOGO
           </Link>
         </button>

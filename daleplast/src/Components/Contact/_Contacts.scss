@@ -81,6 +81,25 @@
   }
 }
 
+.contact-response {
+  width: 47%;
+  height: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-12vw);
+  color: $color-variacion6;
+}
+
+.contact-response-text {
+  font-size: 5vw;
+}
+
+.loader {
+  width: 10vw;
+  margin: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .Contact {
     width: 100%;
@@ -115,7 +134,7 @@
       margin: 0 0 1vw;
       width: 65%;
       border-radius: 5vw;
-      height: 3vw;
+      padding: 0.5vw 0;
       font-size: 1vw;
     }
     &__Form {
@@ -141,5 +160,23 @@
         width: 40%;
       }
     }
+  }
+
+  .contact-response {
+    width: 47%;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-2.7vw);
+    color: $color-variacion6;
+  }
+
+  .contact-response-text {
+    font-size: 1.2vw;
+  }
+
+  .loader {
+    width: 3vw;
   }
 }

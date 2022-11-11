@@ -33,9 +33,9 @@
       height: 14vw;
       margin-top: -4vw;
       border-radius: 2.5vw;
-      background-size: 40%;
-      background-repeat: no-repeat;
-      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: $color-claro;
     }
     &--Arrow {
@@ -67,18 +67,14 @@
   }
 }
 
-.Services-Box-Title-Desktop {
-  display: none;
+.Services-Icon {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(12%) saturate(1883%)
+    hue-rotate(130deg) brightness(88%) contrast(84%);
+  width: 40%;
 }
 
-.Services-Image1 {
-  background-image: url(../../utils/images/services-icon1.svg);
-}
-.Services-Image2 {
-  background-image: url(../../utils/images/services-icon2.svg);
-}
-.Services-Image3 {
-  background-image: url(../../utils/images/services-icon3.svg);
+.Services-Box-Title-Desktop {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -107,8 +103,6 @@
         border-radius: 0.4vw;
         height: 6vw;
         margin: -2vw 0 0;
-        background-size: 35%;
-        will-change: background-image;
         transition: $animation-transition;
       }
       &--Arrow {
@@ -132,14 +126,9 @@
         & .Services-Arrow {
           background-image: url(../../utils/images/services-arrow.svg);
         }
-        & .Services-Image1 {
-          background-image: url(../../utils/images/services-icon1a.svg);
-        }
-        & .Services-Image2 {
-          background-image: url(../../utils/images/services-icon2a.svg);
-        }
-        & .Services-Image3 {
-          background-image: url(../../utils/images/services-icon3a.svg);
+        & .Services-Icon {
+          filter: brightness(0) saturate(100%) invert(24%) sepia(16%)
+            saturate(4441%) hue-rotate(153deg) brightness(97%) contrast(93%);
         }
       }
     }

@@ -51,6 +51,8 @@
       width: 22vw;
       height: 22vw;
       margin-bottom: 4vw;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(177deg) brightness(104%) contrast(101%);
       @include basic-image;
     }
     &--Text {
@@ -64,9 +66,10 @@
   }
 }
 
-.AboutUs-ImageOne {
-  background-image: url(../../utils/images/aboutus-box1.svg);
-}
+// .AboutUs-ImageOne {
+
+//   background-image: url(../../utils/images/aboutus-box1.svg);
+// }
 
 .AboutUs-ImageTwo {
   background-image: url(../../utils/images/aboutus-box2.svg);
@@ -134,7 +137,7 @@
         width: 4vw;
         height: 4vw;
         margin: 1vw 0;
-        transition: 0.5s ease-in-out;
+        transition: 0.1s ease-in-out;
         will-change: background-image;
       }
       &--Text {
@@ -151,14 +154,9 @@
         & p {
           color: $color-claro;
         }
-        & .AboutUs-ImageOne {
-          background-image: url(../../utils/images/aboutus-box1a.svg);
-        }
-        & .AboutUs-ImageTwo {
-          background-image: url(../../utils/images/aboutus-box2a.svg);
-        }
-        & .AboutUs-ImageThree {
-          background-image: url(../../utils/images/aboutus-box3a.svg);
+        & .AboutUs-BoxContainer__Box--Image {
+          filter: brightness(0) saturate(100%) invert(13%) sepia(62%)
+            saturate(1364%) hue-rotate(151deg) brightness(98%) contrast(95%);
         }
       }
     }

@@ -1,4 +1,6 @@
 import React from "react";
+import fbLogo from "../../utils/images/hero-media-fb.svg";
+import igLogo from "../../utils/images/hero-media-ig.svg";
 
 const HomeHero = () => {
   return (
@@ -6,8 +8,28 @@ const HomeHero = () => {
       <div className="Hero-Overlay"></div>
       <div className="Hero-Container">
         <div className="Hero-Media-Container">
-          <div className="Hero-Media-Container__Image Hero-Media-Fb"></div>
-          <div className="Hero-Media-Container__Image Hero-Media-Ig"></div>
+          <a
+            href="www.facebook.com"
+            target="_blank"
+            className="Hero-Media-Container__Link Hero-Media-Fb"
+          >
+            <img
+              src={fbLogo}
+              alt="Facebook"
+              className="Hero-Media-Container__Link--Image"
+            ></img>
+          </a>
+          <a
+            href="www.instagram.com"
+            target="_blank"
+            className="Hero-Media-Container__Link Hero-Media-Ig"
+          >
+            <img
+              src={igLogo}
+              alt="Instagram"
+              className="Hero-Media-Container__Link--Image"
+            ></img>
+          </a>
         </div>
         <p className="Hero-Container__Text Hero-Text-Mobile">
           Somos una empresa familiar líder en la fabricación de bolsas, láminas
@@ -22,9 +44,13 @@ const HomeHero = () => {
           servicio de la provincia.
         </p>
         <div className="Hero-Container__ButtonContainer">
-          <button className="Hero-Container__ButtonContainer--Button">
+          <a
+            href="#Nosotros"
+            style={{ textDecoration: "inherit" }}
+            className="Hero-Container__ButtonContainer--Button"
+          >
             SABER MÁS
-          </button>
+          </a>
         </div>
       </div>
     </div>

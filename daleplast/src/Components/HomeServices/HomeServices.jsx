@@ -1,4 +1,7 @@
 import React from "react";
+import servicesIcon1 from "../../utils/images/services-icon1.svg";
+import servicesIcon2 from "../../utils/images/services-icon2.svg";
+import servicesIcon3 from "../../utils/images/services-icon3.svg";
 
 const HomeServices = () => {
   return (
@@ -11,7 +14,10 @@ const HomeServices = () => {
         <div className="Services-Subcontainer">
           {/* BOX 1 */}
           <div className="Services-Subcontainer__Box">
-            <div className="Services-Subcontainer__Box--Image Services-Image1"></div>
+            <div className="Services-Subcontainer__Box--Image Services-Image">
+              {" "}
+              <img src={servicesIcon1} className="Services-Icon" alt=""></img>
+            </div>
             <div className="Services-Subcontainer__Box--Arrow Services-Arrow"></div>
             <h6 className="Services-Subcontainer__Box--Title Services-Box-Title-Mobile">
               ATENCIÓN PERSONALIZADA
@@ -27,7 +33,9 @@ const HomeServices = () => {
           </div>
           {/* BOX 2 */}
           <div className="Services-Subcontainer__Box">
-            <div className="Services-Subcontainer__Box--Image Services-Image2"></div>
+            <div className="Services-Subcontainer__Box--Image">
+              <img src={servicesIcon2} className="Services-Icon" alt=""></img>
+            </div>
             <div className="Services-Subcontainer__Box--Arrow Services-Arrow"></div>
             <h6 className="Services-Subcontainer__Box--Title Services-Box-Title-Mobile">
               SEGUIMIENTO POST-VENTA
@@ -43,7 +51,9 @@ const HomeServices = () => {
           </div>
           {/* BOX 3 */}
           <div className="Services-Subcontainer__Box">
-            <div className="Services-Subcontainer__Box--Image Services-Image3"></div>
+            <div className="Services-Subcontainer__Box--Image">
+              <img src={servicesIcon3} className="Services-Icon" alt=""></img>
+            </div>
             <div className="Services-Subcontainer__Box--Arrow Services-Arrow"></div>
             <h6 className="Services-Subcontainer__Box--Title Services-Box-Title-Mobile">
               ENVÍOS SIN CARGO A TODA LA PROVINCIA DE TIERRA DEL FUEGO

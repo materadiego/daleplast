@@ -1,46 +1,52 @@
 .Footer {
-  padding: 10vw 0;
+  padding: 15vw 0;
   background-color: $color-primario;
 }
 .Footer-Container {
   width: 80%;
+
   margin: 0 auto;
   color: $color-claro;
 }
 .Footer-Logo {
   width: 60vw;
+
   margin: 0 0 4vw;
 }
 .Footer-Title {
   font-size: 4.5vw;
   font-weight: 600;
   margin: 4vw 0;
+
   width: 100%;
 }
 .Footer-Contact {
   &__Data {
     display: flex;
     align-items: center;
-    margin: 4vw 0;
+    margin: 6vw 0;
     &--Image {
-      width: 7vw;
-      height: 7vw;
+      width: 8vw;
+      height: 8vw;
+      display: flex;
+      align-items: center;
       border-radius: 100vw;
       margin-right: 3vw;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
-      background-color: $color-variacion2;
+      & img {
+        width: 100%;
+      }
     }
     &--txt {
       font-size: 3.5vw;
       line-height: 120%;
+      opacity: 0.7;
     }
   }
 }
 .Footer-Redes {
   display: flex;
   flex-direction: row;
+
   flex-wrap: wrap;
   &__Facebook {
     width: 9.5vw;
@@ -48,11 +54,10 @@
     border-radius: 3vw;
     margin-top: 3vw;
     margin-right: 5vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-image: url(../../utils/images/FooterFacebook.svg);
-    background-color: $color-variacion2;
+    background-color: $color-variacion3;
+    &--Image {
+      width: 100%;
+    }
   }
   &__Instagram {
     width: 9.5vw;
@@ -60,11 +65,9 @@
     border-radius: 100vw;
     margin-top: 3vw;
     margin-right: 5vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-image: url(../../utils/images/FooterInstagram.svg);
-    background-color: $color-variacion2;
+    &--Image {
+      width: 100%;
+    }
   }
   &__Linkedin {
     width: 9.5vw;
@@ -72,11 +75,14 @@
     margin-top: 3vw;
     margin-right: 5vw;
     border-radius: 100%;
-    border: $border3;
+    &--Image {
+      width: 100%;
+    }
   }
 }
 .Footer-Maps {
   display: flex;
+
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -84,11 +90,14 @@
     width: 7.5vw;
     height: 7.5vw;
     border-radius: 100%;
-    border: $border3;
+    &--img {
+      width: 100%;
+    }
   }
   &__txt {
     font-size: 3.3vw;
     margin-left: 3vw;
+    opacity: 0.7;
   }
   &__Map {
     margin: 5vw 0;
@@ -105,15 +114,7 @@
 .Green-Line__Logo {
   display: none;
 }
-.Phone {
-  background-image: url(../../utils/images/FooterTelefono.svg);
-}
-.Whatsapp {
-  background-image: url(../../utils/images/FooterWhatsapp.svg);
-}
-.Mail {
-  background-image: url(../../utils/images/FooterMail.svg);
-}
+
 @media screen and (min-width: 1199px) {
   .Footer {
     padding: 2vw 0;

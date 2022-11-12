@@ -5,7 +5,9 @@ const CatalogsTitle = () => {
     <div className="Pages-Title-Container">
       <div className="Pages-Title-Container__Subcontainer">
         <div className="Orange-Line"></div>
-        <p className="Pages-Title-Container__Subcontainer--Title">CATALOGO</p>
+        <p className="Pages-Title-Container__Subcontainer--Title">
+          NUESTROS PRODUCTOS
+        </p>
       </div>
       <div className="Pages-Title-Container__Subcontainer--Line"></div>
     </div>

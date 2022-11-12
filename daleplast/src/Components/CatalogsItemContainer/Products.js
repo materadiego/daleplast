@@ -83,28 +83,25 @@ const products = [
   },
   {
     id: 8,
-    category: "BOLSAS PARA HIELO",
+    category: "PARA ALMACENAR Y COMERCIALIZAR PRODUCTOS",
     categoryDescription:
       "Bolsas de polietileno de baja densidad impresas con tu logo. Fabricación 100% a medida según necesidad.",
     img: BolsasParaHielo,
+    name: "BOLSAS PARA HIELO",
     desc: "• Fabricamos colores y medidas personalizadas (ancho, largo y espesor). • Fabricamos medidas personalizadas a partir de 15kg.",
     stockTitle: "Fabricación a pedido",
   },
   {
     id: 9,
-    category: "BOLSAS PARA LEÑA Y ARENA",
-    categoryDescription:
-      "Bolsas de polietileno de baja densidad para el almacenamiento y comercialización de diferentes productos: fabricación 100% a medida según tu necesidad.",
     img: BolsaParaLenaYArena,
+    name: "BOLSAS PARA LEÑA Y ARENA",
     desc: "• Fabricamos colores y medidas personalizadas (ancho, largo y espesor).",
     stockTitle: "Fabricación a pedido",
   },
   {
     id: 10,
-    category: "BOLSAS PARA SUSTRATO/TURBA",
-    categoryDescription:
-      "Bolsas de polietileno de baja densidad para el almacenamiento y comercialización de diferentes productos: fabricación 100% a medida según tu necesidad.",
     img: BolsaParaSustratoTurba,
+    name: "BOLSAS PARA SUSTRATO/TURBA",
     desc: "• Fabricamos colores y medidas personalizadas (ancho, largo y espesor).",
     stockTitle: "Fabricación a pedido",
   },

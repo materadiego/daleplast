@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const CatalogsMenu = () => {
+const CatalogsMenuMovile = () => {
   return (
     <>
       <div className="ContactsIndex">
@@ -67,7 +67,13 @@ const CatalogsMenu = () => {
               <p>ENVASADO AL VACIO</p>
             </Link>
             <div className="Line"></div>
-            <Link className="ContactsIndex-IndexContainer__Index--txt" href="">
+            <Link
+              className="ContactsIndex-IndexContainer__Index--txt"
+              to="8"
+              offset={-50}
+              duration={1500}
+              smooth={true}
+            >
               <p>
                 PARA ALMACENAR Y<br /> COMERCIALIZAR PRODUCTOS
               </p>
@@ -133,4 +139,4 @@ const CatalogsMenu = () => {
   );
 };
 
-export default CatalogsMenu;
+export default CatalogsMenuMovile;

@@ -78,3 +78,66 @@
 .StockInfo-Measures {
   font-size: 3.6vw;
 }
+
+.CatalogCardsContainer2 {
+  width: 90%;
+}
+
+.CategoryTitleContainer2 {
+  margin-bottom: 5vw;
+  &__Title {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-variacion5;
+  }
+  &__Description {
+    font-style: italic;
+    font-size: 3.5vw;
+    font-weight: 500;
+  }
+}
+
+.Card2 {
+  display: flex;
+  margin: 8vw 0;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2vw;
+  padding: 5vw 0;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  &__Image {
+    width: 90%;
+    margin: 0 0 4vw;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__Info {
+    width: 90%;
+    margin: 0;
+    &--Name {
+      font-size: 3.6vw;
+      text-transform: uppercase;
+      margin: 0 0 2vw;
+      font-weight: 500;
+      color: $color-variacion5;
+    }
+    &--Description {
+      font-size: 3vw;
+      margin-bottom: 6vw;
+    }
+    &--StockInfo {
+      border-radius: 2vw;
+      padding: 4vw;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.StockInfo2-Title {
+  font-size: 3.5vw;
+  font-weight: 500;
+  color: $color-variacion5;
+}
+
+.StockInfo2-Measures {
+  font-size: 3.6vw;
+}

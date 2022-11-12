@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2vw 0;
+  border: 2px solid red;
 }
 
 .Catalog-Loader {
@@ -18,6 +19,7 @@
 
 .CatalogCardsContainer {
   width: 90%;
+  border: 2px solid red;
 }
 
 .CategoryTitleContainer {
@@ -79,22 +81,8 @@
   font-size: 3.6vw;
 }
 
-.CatalogCardsContainer2 {
-  width: 90%;
-}
-
-.CategoryTitleContainer2 {
-  margin-bottom: 5vw;
-  &__Title {
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $color-variacion5;
-  }
-  &__Description {
-    font-style: italic;
-    font-size: 3.5vw;
-    font-weight: 500;
-  }
+.CardContainer2 {
+  border: 2px solid red;
 }
 
 .Card2 {
@@ -140,4 +128,119 @@
 
 .StockInfo2-Measures {
   font-size: 3.6vw;
+}
+
+@media screen and (min-width: 1200px) {
+  .Catalogs-Page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+
+  .CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .CardContainer2 {
+    border: 2px solid red;
+    width: 60%;
+  }
+
+  .CatalogCardsContainer {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: c;
+  }
+
+  .ContainerProducts {
+    width: 60%;
+  }
+
+  .CategoryTitleContainer {
+    margin-bottom: 1vw;
+    width: 100%;
+    &__Description {
+      font-size: 1vw;
+    }
+  }
+
+  .Card {
+    width: 28%;
+    margin: 1vw 2vw 1vw 0;
+    border-radius: 0.4vw;
+    padding: 0.7vw 0;
+    height: auto;
+    &__Image {
+      margin: 0 0 1vw;
+    }
+    &__Info {
+      width: 90%;
+      margin: 0;
+      &--Name {
+        font-size: 1vw;
+        margin: 0 0 0.5vw;
+      }
+      &--Description {
+        font-size: 0.8vw;
+        margin-bottom: 0.5vw;
+      }
+      &--StockInfo {
+        border-radius: 0.4vw;
+        font-size: 1vw;
+
+        padding: 1vw;
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  .StockInfo-Title {
+    font-size: 0.7vw;
+  }
+
+  .StockInfo-Measures {
+    font-size: 0.7vw;
+  }
+
+  .Card2 {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2vw;
+    padding: 1vw 0;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    &__Image {
+      width: 60%;
+      margin: 0;
+    }
+    &__Info {
+      width: 25%;
+      margin: 0;
+      &--Name {
+        display: none;
+      }
+      &--Description {
+        font-size: 1vw;
+        margin: 1vw 0;
+      }
+      &--StockInfo {
+        border-radius: 0.4vw;
+        padding: 0;
+      }
+    }
+  }
+
+  .StockInfo2-Title {
+    font-size: 0.7vw;
+    font-weight: 500;
+    color: $color-variacion5;
+  }
+
+  .StockInfo2-Measures {
+    font-size: 0.7vw;
+  }
 }

@@ -5,11 +5,11 @@ import CatalogsItemContainer from "../Components/CatalogsItemContainer/CatalogsI
 import "../scss/CatalogsStyls.scss";
 const CatalogsPage = () => {
   return (
-    <>
+    <div className="Catalogs-Page">
       <CatalogsTitle />
       <CatalogsMenu />
       <CatalogsItemContainer />
-    </>
+    </div>
   );
 };
 

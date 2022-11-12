@@ -1,5 +1,5 @@
 import React from "react";
-import { getProducts } from "./products";
+import { getProducts } from "./Products";
 import { useEffect, useState } from "react";
 import CatalogsList from "../CatalogsList/CatalogsList";
 import loader from "../../utils/images/loader.svg";

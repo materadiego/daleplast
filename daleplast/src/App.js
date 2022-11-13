@@ -7,6 +7,7 @@ import FAQs from "./Pages/FAQs";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import "./scss/Style.scss";
+import HomeAboutUs from "./Components/HomeAboutUs/HomeAboutUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Chat />
         <Routes>
           <Route path="/daleplast" element={<HomePage />} />
+
           <Route path="/Catalogo" element={<CatalogsPage />} />
           <Route path="/FAQs" element={<FAQs />} />
         </Routes>

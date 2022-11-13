@@ -7,10 +7,10 @@
 }
 
 .NavBar-Container {
-  display: flex;
   height: 100%;
   width: 80%;
   margin: 0 auto;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   &__Logo {
@@ -41,9 +41,10 @@
 .Menu-Close {
   width: 10vw;
   height: 10vw;
-  position: absolute;
   right: 5vw;
   top: 8vw;
+  position: absolute;
+
   &__Image {
     width: 100%;
   }
@@ -67,16 +68,19 @@
 
   &__Links {
     width: 82.8%;
+    height: 120vw;
     margin: 10vw auto 6vw;
     display: flex;
     flex-direction: column;
-    height: 120vw;
     &--Options {
       margin: 4vw 0;
       font-size: 6vw;
       text-decoration: none;
-
+      transition: $animation-transition;
       color: $color-claro;
+      &:active {
+        color: $color-variacion6;
+      }
     }
     &--Contact {
       width: 90%;
@@ -86,17 +90,17 @@
       border-radius: 1.4vw;
       text-align: center;
       text-decoration: none;
-
       color: $color-claro;
       border: 0.5vw solid $color-claro;
     }
   }
   &__Social {
+    width: 80%;
     height: 20vw;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
+
     &--Image {
       width: 14vw;
       height: 14vw;

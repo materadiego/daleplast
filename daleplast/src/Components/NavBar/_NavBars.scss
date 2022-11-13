@@ -1,4 +1,5 @@
 .NavBar {
+  width: 100%;
   height: 26vw;
   top: 0;
   z-index: 3;
@@ -15,6 +16,9 @@
   justify-content: space-between;
   &__Logo {
     width: 65%;
+    &--Image {
+      width: 100%;
+    }
   }
   &__MenuButton {
     width: 10vw;
@@ -100,7 +104,6 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-
     &--Image {
       width: 14vw;
       height: 14vw;
@@ -146,10 +149,10 @@
   .Menu {
     position: absolute;
     margin: 0 auto;
+    padding: 0;
     left: 30%;
     width: 65%;
     height: auto;
-    padding: 0;
     background-color: transparent;
   }
 
@@ -183,10 +186,8 @@
         border-radius: 0.5vw;
         padding: 0.3vw 0.5vw;
         text-decoration: none;
-
         will-change: color background-color;
         transition: $animation-transition;
-
         color: $color-variacion5;
         &:hover {
           color: $color-claro;
@@ -206,7 +207,6 @@
         text-decoration: none;
         will-change: color background-color;
         transition: $animation-transition;
-
         border: 0.1vw solid $color-variacion5;
         color: $color-variacion5;
         &:hover {

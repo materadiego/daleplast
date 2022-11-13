@@ -18,11 +18,7 @@ const HomeProductsSlider = () => {
           disableOnInteraction: false,
         }}
         centeredSlides={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
+        modules={[Autoplay]}
         className="mySwiper Mobile-Slider"
       >
         <SwiperSlide>
@@ -67,7 +63,7 @@ const HomeProductsSlider = () => {
         }}
         navigation={true}
         modules={[Autoplay, Navigation]}
-        className="mySwiper"
+        className="mySwiper Desktop-Slider"
       >
         <SwiperSlide>
           <div className="Slide-Image Slide1"></div>

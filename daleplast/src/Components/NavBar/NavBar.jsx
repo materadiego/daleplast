@@ -19,7 +19,17 @@ const NavBar = () => {
     <div className="NavBar">
       <div className="NavBar-Container">
         {/* LOGO */}
-        <img src={Logo} alt="Logo" className="NavBar-Container__Logo"></img>
+        <Link
+          to={"/daleplast"}
+          style={{ textDecoration: "inherit" }}
+          className="NavBar-Container__Logo"
+        >
+          <img
+            src={Logo}
+            alt="Logo"
+            className="NavBar-Container__Logo--Image"
+          ></img>
+        </Link>
         {/* MENU BUTTON */}
         <div className="NavBar-Container__MenuButton" onClick={toggleMenu}>
           <img

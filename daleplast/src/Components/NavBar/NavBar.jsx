@@ -52,7 +52,7 @@ const NavBar = () => {
             <Link
               style={{ textDecoration: "inherit" }}
               className="Menu-Container__Links--Options link"
-              to={"/"}
+              to={"/daleplast"}
               onClick={toggleMenu}
             >
               HOME

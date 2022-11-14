@@ -8,16 +8,7 @@ import FAQs from "./Pages/FAQs";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import "./scss/Style.scss";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 2f33f629f813c9638e66807336ef90f71ee912b2
-=======
->>>>>>> 2f33f629f813c9638e66807336ef90f71ee912b2
-=======
->>>>>>> 2f33f629f813c9638e66807336ef90f71ee912b2
 import PageLoader from "./Components/PageLoader/PageLoader";
 
 function App() {

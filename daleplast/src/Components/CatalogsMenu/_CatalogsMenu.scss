@@ -46,11 +46,20 @@
       &--txt {
         font-weight: 500;
         justify-content: flex-start;
-        margin: 0.9vw;
+        margin: 0.9vw 0.3vw 0.9vw 0.3vw;
+        &:hover {
+          background-color: $color-variacion5;
+          color: white;
+          border-radius: 0.3vw;
+          margin-right: 1vw;
+        }
         & p {
           font-size: 1.2vw;
           font-weight: 500;
           text-align: start;
+          &:hover {
+            color: white;
+          }
         }
       }
     }

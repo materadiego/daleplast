@@ -95,6 +95,10 @@
     position: absolute;
     right: 4vw;
     top: 10vw;
+    opacity: 0;
+    will-change: opacity;
+    animation: loadAnimation 0.5s ease-in-out 1.4s 1 normal forwards;
+
     &__Link {
       width: 2vw;
       height: 2vw;
@@ -124,6 +128,9 @@
       height: auto;
       line-height: 120%;
       justify-content: flex-start;
+      opacity: 0;
+      will-change: opacity;
+      animation: loadAnimation 0.5s ease-in-out 0.5s 1 normal forwards;
     }
     &__Description {
       display: flex;
@@ -132,12 +139,18 @@
       font-size: 1.35vw;
       font-weight: 300;
       line-height: 110%;
+      opacity: 0;
+      will-change: opacity;
+      animation: loadAnimation 0.5s ease-in-out 0.7s 1 normal forwards;
 
       color: $color-claro;
     }
     &__ButtonContainer {
       width: 13vw;
       height: 3vw;
+      opacity: 0;
+      will-change: opacity;
+      animation: loadAnimation 0.5s ease-in-out 0.9s 1 normal forwards;
 
       &--Button {
         width: 100%;

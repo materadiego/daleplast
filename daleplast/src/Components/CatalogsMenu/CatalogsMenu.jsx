@@ -18,7 +18,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="3"
+            to="2"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -28,7 +28,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="4"
+            to="3"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -38,7 +38,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="5"
+            to="4"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -48,7 +48,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="6"
+            to="5"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -58,7 +58,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="7"
+            to="6"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -68,19 +68,37 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
+            to="7"
+            offset={-50}
+            duration={1500}
+            smooth={true}
+          >
+            <p>PARA HIELO</p>
+          </Link>
+          <div className="Line"></div>
+          <Link
+            className="ContactsIndex-IndexContainer__Index--txt"
             to="8"
             offset={-50}
             duration={1500}
             smooth={true}
           >
-            <p>
-              PARA ALMACENAR Y<br /> COMERCIALIZAR PRODUCTOS
-            </p>
+            <p>PARA LEÑA Y ARENA</p>
           </Link>
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="11"
+            to="9"
+            offset={-50}
+            duration={1500}
+            smooth={true}
+          >
+            <p>PARA TURBA /SUSTRATO</p>
+          </Link>
+          <div className="Line"></div>
+          <Link
+            className="ContactsIndex-IndexContainer__Index--txt"
+            to="10"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -94,7 +112,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="12"
+            to="11"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -104,7 +122,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="13"
+            to="12"
             offset={-50}
             duration={1500}
             smooth={true}
@@ -114,7 +132,7 @@ const CatalogsMenuMovile = () => {
           <div className="Line"></div>
           <Link
             className="ContactsIndex-IndexContainer__Index--txt"
-            to="14"
+            to="13"
             offset={-50}
             duration={1500}
             smooth={true}

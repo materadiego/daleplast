@@ -1,0 +1,42 @@
+.PageLoader-Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-claro;
+  &__Logo {
+    width: 75%;
+    margin-bottom: 6vw;
+    will-change: opacity;
+    animation: pageAnimation 0.6s ease-in-out 1.7s 1 normal forwards;
+  }
+  &__Loader {
+    width: 20%;
+    will-change: opacity;
+
+    animation: pageAnimation 0.6s ease-in-out 1.7s 1 normal forwards;
+  }
+}
+
+@keyframes pageAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageLoader-Container {
+    &__Logo {
+      width: 30%;
+      margin-bottom: 1vw;
+    }
+    &__Loader {
+      width: 8%;
+    }
+  }
+}

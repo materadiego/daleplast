@@ -3,7 +3,10 @@
   height: 26vw;
   top: 0;
   z-index: 3;
+  opacity: 0;
+  will-change: opacity;
   position: absolute;
+  animation: loadAnimation 0.5s ease-in-out 0s 1 normal forwards;
   background-color: rgba($color-claro, $alpha: 0.85);
 }
 

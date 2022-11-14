@@ -48,27 +48,48 @@ const Footer = () => {
         <div className="Footer-SubContainer2">
           <div className="Footer-Redes">
             <p className="Footer-Title">SEGUINOS EN NUESTRAS REDES</p>
-            <div className="Footer-Redes__Facebook">
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              className="Footer-Redes__Facebook"
+            >
               <img
                 src={fbIcon}
                 alt="Facebook"
-                className="Footer-Redes__Linkedin--Image"
+                className="Footer-Redes__Facebook--Image"
               ></img>
-            </div>
-            <div className="Footer-Redes__Instagram">
+              <p className="Footer-Redes-DesktopText">Facebook</p>
+            </a>
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              className="Footer-Redes__Instagram"
+            >
               <img
                 src={igIcon}
                 alt="Instagram"
-                className="Footer-Redes__Linkedin--Image"
+                className="Footer-Redes__Instagram--Image"
               ></img>
-            </div>
-            <div className="Footer-Redes__Linkedin">
+              <p className="Footer-Redes-DesktopText">Instagram</p>
+            </a>
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="https://www.linkedin.com/company/daleplast-srl/?originalSubdomain=ar"
+              target="_blank"
+              rel="noreferrer"
+              className="Footer-Redes__Linkedin"
+            >
               <img
                 src={inIcon}
                 alt="LinkedIn"
                 className="Footer-Redes__Linkedin--Image"
               ></img>
-            </div>
+              <p className="Footer-Redes-DesktopText">Linkedin</p>
+            </a>
           </div>
           <div className="Green-Line"></div>
           <div className="Footer-Maps">

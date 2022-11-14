@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProductsImage from "../../utils/images/products-image.png";
+import HomeProductsSlider from "./HomeProductsSlider";
 
 const HomeProducts = () => {
   return (
-    <div className="Products">
+    <div className="Products" id="Productos">
       <div className="Products-TextContainer">
         <div className="Orange-Line"></div>
         <h5 className="Products-TextContainer__Title">PRODUCTOS</h5>
@@ -29,6 +30,7 @@ const HomeProducts = () => {
           desees.
         </p>
       </div>
+      <HomeProductsSlider />
       <div className="Products-ButtonContainer">
         <button className="Products-ButtonContainer__Button">
           <Link

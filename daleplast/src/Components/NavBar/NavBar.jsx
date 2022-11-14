@@ -18,7 +18,19 @@ const NavBar = () => {
   return (
     <div className="NavBar">
       <div className="NavBar-Container">
-        <img src={Logo} alt="Logo" className="NavBar-Container__Logo"></img>
+        {/* LOGO */}
+        <Link
+          to={"/daleplast"}
+          style={{ textDecoration: "inherit" }}
+          className="NavBar-Container__Logo"
+        >
+          <img
+            src={Logo}
+            alt="Logo"
+            className="NavBar-Container__Logo--Image"
+          ></img>
+        </Link>
+        {/* MENU BUTTON */}
         <div className="NavBar-Container__MenuButton" onClick={toggleMenu}>
           <img
             src={Menu}
@@ -27,6 +39,7 @@ const NavBar = () => {
           />
         </div>
       </div>
+      {/* MENU */}
       <div className={`Menu ${menu ? "isActive" : ""}`}>
         <div className="Menu-Close" onClick={toggleMenu}>
           <img alt="" src={MenuX} className="Menu-Close__Image" />
@@ -46,7 +59,7 @@ const NavBar = () => {
             </Link>
             <a
               style={{ textDecoration: "inherit" }}
-              href="#AboutUs"
+              href="https://materadiego.github.io/daleplast#Nosotros"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -54,7 +67,7 @@ const NavBar = () => {
             </a>
             <a
               style={{ textDecoration: "inherit" }}
-              href="#Products"
+              href="https://materadiego.github.io/daleplast#Productos"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -62,7 +75,7 @@ const NavBar = () => {
             </a>
             <a
               style={{ textDecoration: "inherit" }}
-              href="#Services"
+              href="https://materadiego.github.io/daleplast#Servicios"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -70,7 +83,7 @@ const NavBar = () => {
             </a>
             <a
               style={{ textDecoration: "inherit" }}
-              href="#Compromise"
+              href="https://materadiego.github.io/daleplast#Compromiso"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -87,13 +100,14 @@ const NavBar = () => {
 
             <a
               style={{ textDecoration: "inherit" }}
-              href="#Contact"
+              href="https://materadiego.github.io/daleplast#Contacto"
               className="Menu-Container__Links--Contact"
               onClick={toggleMenu}
             >
               PEDIR PRESUPUESTO
             </a>
           </div>
+          {/* SOCIAL MEDIA */}
           <div className="Menu-Container__Social">
             <div className="Menu-Container__Social--Image fb"></div>
             <div className="Menu-Container__Social--Image ig"></div>

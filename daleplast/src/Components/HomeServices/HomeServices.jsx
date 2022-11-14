@@ -5,7 +5,7 @@ import servicesIcon3 from "../../utils/images/services-icon3.svg";
 
 const HomeServices = () => {
   return (
-    <div className="Services">
+    <div className="Services" id="Servicios">
       <div className="Services-Container">
         <div className="Orange-Line"></div>
         {/* TITLE */}

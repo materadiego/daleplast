@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact">
+    <div className="Contact" id="Contacto">
       <img className="Contact-Image" src={ContactImage} alt="Contact"></img>
       <div className="Contact-Container">
         <div className="Orange-Line"></div>

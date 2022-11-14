@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeEnvironment = () => {
   return (
-    <div className="Environment">
+    <div className="Environment" id="Compromiso">
       {/* SECTION CONTAINER */}
       <div className="Environment-Container">
         <div className="Orange-Line" id="Environment-Line"></div>

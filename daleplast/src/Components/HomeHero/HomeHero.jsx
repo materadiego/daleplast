@@ -9,8 +9,9 @@ const HomeHero = () => {
       <div className="Hero-Container">
         <div className="Hero-Media-Container">
           <a
-            href="www.facebook.com"
+            href="https://www.facebook.com"
             target="_blank"
+            rel="noreferrer"
             className="Hero-Media-Container__Link Hero-Media-Fb"
           >
             <img
@@ -20,8 +21,9 @@ const HomeHero = () => {
             ></img>
           </a>
           <a
-            href="www.instagram.com"
+            href="https://www.instagram.com"
             target="_blank"
+            rel="noreferrer"
             className="Hero-Media-Container__Link Hero-Media-Ig"
           >
             <img

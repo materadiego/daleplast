@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import "./scss/Style.scss";
 
 import PageLoader from "./Components/PageLoader/PageLoader";
+import CompromisePage from "./Pages/CompromisePage";
 
 function App() {
   const [pageLoading, setPageLoading] = useState(true);
@@ -36,6 +37,7 @@ function App() {
             <Route path="/daleplast" element={<HomePage />} />
             <Route path="/Catalogo" element={<CatalogsPage />} />
             <Route path="/FAQs" element={<FAQs />} />
+            <Route path="/Compromiso" element={<CompromisePage />} />
           </Routes>
           <Contact />
           <Footer />

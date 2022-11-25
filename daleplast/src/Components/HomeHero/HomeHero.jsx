@@ -4,7 +4,7 @@ import igLogo from "../../utils/images/hero-media-ig.svg";
 
 const HomeHero = () => {
   return (
-    <div className="Hero">
+    <div className="Hero" fetchpriority="high">
       <div className="Hero-Overlay"></div>
       <div className="Hero-Container">
         <div className="Hero-Media-Container">

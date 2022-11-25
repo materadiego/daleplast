@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/daleplast/static/css/main.83881ace.css",
-    "main.js": "/daleplast/static/js/main.a634fbb2.js",
+    "main.css": "/daleplast/static/css/main.7f37dea3.css",
+    "main.js": "/daleplast/static/js/main.d3aa8dc2.js",
     "static/js/787.2a34aaf6.chunk.js": "/daleplast/static/js/787.2a34aaf6.chunk.js",
     "static/media/hero-desktop-bg.png": "/daleplast/static/media/hero-desktop-bg.269653d694dfae151a41.png",
+    "static/media/compromise-herodesk.png": "/daleplast/static/media/compromise-herodesk.13d9c56dd85f758b1563.png",
     "static/media/hero-mobile-bg.png": "/daleplast/static/media/hero-mobile-bg.574ae96c46c56c352839.png",
     "static/media/services-bg.png": "/daleplast/static/media/services-bg.56aa62f9cf43c343744f.png",
+    "static/media/compromise-heromob.png": "/daleplast/static/media/compromise-heromob.5f2daaac76ba5f022683.png",
     "static/media/contact-bg.png": "/daleplast/static/media/contact-bg.057357ac580a00d169eb.png",
+    "static/media/compromise-planta.png": "/daleplast/static/media/compromise-planta.7cfce7261e0ad691162e.png",
     "static/media/products-image.png": "/daleplast/static/media/products-image.82fea680f7e7b19d27ec.png",
+    "static/media/compromise-etapas.png": "/daleplast/static/media/compromise-etapas.5372a891ad1ca1d429b1.png",
+    "static/media/compromise-fabricantes.png": "/daleplast/static/media/compromise-fabricantes.968ac9f331733d5c0a3e.png",
     "static/media/catalogitem-BolsasConCaracteristicasAntiestaticasYOTermoconraibles.png": "/daleplast/static/media/catalogitem-BolsasConCaracteristicasAntiestaticasYOTermoconraibles.1ff277832f4ca59cdfd4.png",
     "static/media/catalogitem-ResiduosNegra.png": "/daleplast/static/media/catalogitem-ResiduosNegra.8054e51922e50cf302e0.png",
     "static/media/catalogitem-BolsaDeArranqueOCorte.png": "/daleplast/static/media/catalogitem-BolsaDeArranqueOCorte.200cfa7f2be1f31ae761.png",
@@ -37,6 +42,7 @@
     "static/media/aboutus-box1.svg": "/daleplast/static/media/aboutus-box1.2d93ff3a0a117ab2cb497e203960d234.svg",
     "static/media/services-icon3.svg": "/daleplast/static/media/services-icon3.8a445a82c5196c69d20bbfe287023fb2.svg",
     "static/media/footer-phoneicon.svg": "/daleplast/static/media/footer-phoneicon.3428764fe7e51b60d5714d6508ce3170.svg",
+    "static/media/compromise-slider-icon1.svg": "/daleplast/static/media/compromise-slider-icon1.cf690037130f2ec7a083d64c8143fc2f.svg",
     "static/media/services-icon1.svg": "/daleplast/static/media/services-icon1.b81fba18b826da86ed85d8b5e2a23d09.svg",
     "static/media/hero-media-ig.svg": "/daleplast/static/media/hero-media-ig.843b449872f3701ed616ee4fca619a68.svg",
     "static/media/footer-igicon.svg": "/daleplast/static/media/footer-igicon.e1bb1e8a8c598cca2c4f6043c1776f6d.svg",
@@ -44,11 +50,15 @@
     "static/media/footer-inicon.svg": "/daleplast/static/media/footer-inicon.91499d85358cf161c1c297c46325f24f.svg",
     "static/media/navbar-ig.svg": "/daleplast/static/media/navbar-ig.86ca12b11f5ac4103caa.svg",
     "static/media/services-icon2.svg": "/daleplast/static/media/services-icon2.f94f893ded2d7b3633ed8391b67fb0ce.svg",
+    "static/media/compromise-icon1.svg": "/daleplast/static/media/compromise-icon1.2171825771f4cbdf1e476290ee123588.svg",
     "static/media/environment-icon1.svg": "/daleplast/static/media/environment-icon1.66ddd4d67161af1aa574.svg",
+    "static/media/compromise-icon3.svg": "/daleplast/static/media/compromise-icon3.e618dec2a297e380fd19f4b894208f58.svg",
     "static/media/environment-icon3.svg": "/daleplast/static/media/environment-icon3.c1e8d1fec701235e5c40.svg",
     "static/media/footer-wspicon.svg": "/daleplast/static/media/footer-wspicon.265d1ae895f253a27a9cdce694c1a637.svg",
     "static/media/chat-icon.svg": "/daleplast/static/media/chat-icon.b71a85b84b573c816e4a.svg",
+    "static/media/compromise-icon2.svg": "/daleplast/static/media/compromise-icon2.cf69145c4af9094762e533ed58ca624b.svg",
     "static/media/environment-icon2.svg": "/daleplast/static/media/environment-icon2.cf64d2b77fdbd74bd763.svg",
+    "static/media/compromise-slider-icon2.svg": "/daleplast/static/media/compromise-slider-icon2.a982c1f6a4b7240f4a341da32bacf70f.svg",
     "static/media/footer-mapicon.svg": "/daleplast/static/media/footer-mapicon.391a32e506e6cceb7c9db230259b16a7.svg",
     "static/media/footer-mailicon.svg": "/daleplast/static/media/footer-mailicon.38acabab646a6696b8a4aef9c4701b66.svg",
     "index.html": "/daleplast/index.html",
@@ -63,12 +73,12 @@
     "static/media/services-arrowa.svg": "/daleplast/static/media/services-arrowa.afa16bd7147d2042b817.svg",
     "static/media/services-arrow.svg": "/daleplast/static/media/services-arrow.7a26483033b54b4b9d76.svg",
     "static/media/navbar-fb.svg": "/daleplast/static/media/navbar-fb.6d4caa760868e068b33c.svg",
-    "main.83881ace.css.map": "/daleplast/static/css/main.83881ace.css.map",
-    "main.a634fbb2.js.map": "/daleplast/static/js/main.a634fbb2.js.map",
+    "main.7f37dea3.css.map": "/daleplast/static/css/main.7f37dea3.css.map",
+    "main.d3aa8dc2.js.map": "/daleplast/static/js/main.d3aa8dc2.js.map",
     "787.2a34aaf6.chunk.js.map": "/daleplast/static/js/787.2a34aaf6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83881ace.css",
-    "static/js/main.a634fbb2.js"
+    "static/css/main.7f37dea3.css",
+    "static/js/main.d3aa8dc2.js"
   ]
 }

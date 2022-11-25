@@ -33,7 +33,7 @@ function App() {
           <NavBar />
           <Chat />
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/daleplast" element={<HomePage />} />
             <Route path="/Catalogo" element={<CatalogsPage />} />
             <Route path="/FAQs" element={<FAQs />} />
           </Routes>

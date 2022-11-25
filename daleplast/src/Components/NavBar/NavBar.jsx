@@ -52,14 +52,14 @@ const NavBar = () => {
             <Link
               style={{ textDecoration: "inherit" }}
               className="Menu-Container__Links--Options link"
-              to={"/"}
+              to={"/daleplast"}
               onClick={toggleMenu}
             >
               HOME
             </Link>
             <a
               style={{ textDecoration: "inherit" }}
-              href="https://materadiego.github.io/daleplast#Nosotros"
+              href="#Nosotros"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -67,7 +67,7 @@ const NavBar = () => {
             </a>
             <a
               style={{ textDecoration: "inherit" }}
-              href="https://materadiego.github.io/daleplast#Productos"
+              href="#Productos"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -75,7 +75,7 @@ const NavBar = () => {
             </a>
             <a
               style={{ textDecoration: "inherit" }}
-              href="https://materadiego.github.io/daleplast#Servicios"
+              href="#Servicios"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -83,7 +83,7 @@ const NavBar = () => {
             </a>
             <a
               style={{ textDecoration: "inherit" }}
-              href="https://materadiego.github.io/daleplast#Compromiso"
+              href="#Compromiso"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
@@ -100,7 +100,7 @@ const NavBar = () => {
 
             <a
               style={{ textDecoration: "inherit" }}
-              href="https://materadiego.github.io/daleplast#Contacto"
+              href="#Contacto"
               className="Menu-Container__Links--Contact"
               onClick={toggleMenu}
             >

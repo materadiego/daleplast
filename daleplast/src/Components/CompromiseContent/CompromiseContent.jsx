@@ -124,26 +124,28 @@ const CompromiseContent = () => {
       </div>
       {/* SECTION 3 */}
       <div className="Compromise-Section Compromise-Section3 Compromise-Slider-Mobile">
-        {/* SECTION TITLE */}
-        <div className="Compromise-Section__TitleContainer">
+        <div className="Compromise-Section-Container">
+          {/* SECTION TITLE */}
+          <div className="Compromise-Section-Container__TitleContainer">
+            <img
+              src={icon3}
+              alt="Icon"
+              className="Compromise-Section-Container__TitleContainer--Image"
+            ></img>
+            <p className="Compromise-Section-Container__TitleContainer--Title">
+              SOMOS FABRICANTES CERTIFICADOS DE D2W
+            </p>
+          </div>
+          {/* LINE */}
+          <div className="Compromise-Section-Container__GreenLine"></div>
+          {/* SECTION CONTENT */}
+          <CompromiseContentSlider />
           <img
-            src={icon3}
-            alt="Icon"
-            className="Compromise-Section__TitleContainer--Image"
+            src={plantaFabricante}
+            alt=""
+            className="Compromise-Section-Container__Image"
           ></img>
-          <p className="Compromise-Section__TitleContainer--Title">
-            SOMOS FABRICANTES CERTIFICADOS DE D2W
-          </p>
         </div>
-        {/* LINE */}
-        <div className="Compromise-Section__GreenLine"></div>
-        {/* SECTION CONTENT */}
-        <CompromiseContentSlider />
-        <img
-          src={plantaFabricante}
-          alt=""
-          className="Compromise-Section__Image"
-        ></img>
       </div>
       <CompromiseContentSlider2 />
     </div>

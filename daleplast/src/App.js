@@ -8,7 +8,6 @@ import FAQs from "./Pages/FAQs";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import "./scss/Style.scss";
-
 import PageLoader from "./Components/PageLoader/PageLoader";
 import CompromisePage from "./Pages/CompromisePage";
 

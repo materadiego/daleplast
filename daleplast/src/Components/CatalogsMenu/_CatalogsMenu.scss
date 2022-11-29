@@ -13,13 +13,20 @@
   background-color: #f2f2f2;
   &__Index {
     width: 90%;
+    &--Button {
+      width: 100%;
+      & p {
+        font-size: 2.8vh;
+        color: $color-variacion5;
+      }
+    }
     &--txt {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       & p {
-        font-size: 5vw;
+        font-size: 4.95vw;
         font-weight: 500;
         text-align: center;
         color: $color-variacion5;
@@ -31,7 +38,9 @@
   background-color: #f2f2f2;
   height: 60vh;
   overflow: auto;
-  border: 2px solid red;
+}
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.ContactsIndex-IndexContainer__Index--Button.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  outline: none;
 }
 .Line {
   width: 100%;

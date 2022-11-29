@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/daleplast/static/css/main.34ee83b5.css",
-    "main.js": "/daleplast/static/js/main.9237c0aa.js",
+    "main.js": "/daleplast/static/js/main.3026c7bb.js",
     "static/js/787.2a34aaf6.chunk.js": "/daleplast/static/js/787.2a34aaf6.chunk.js",
     "static/media/hero-desktop-bg.png": "/daleplast/static/media/hero-desktop-bg.269653d694dfae151a41.png",
     "static/media/compromise-herodesk.png": "/daleplast/static/media/compromise-herodesk.13d9c56dd85f758b1563.png",
@@ -75,11 +75,11 @@
     "static/media/services-arrow.svg": "/daleplast/static/media/services-arrow.7a26483033b54b4b9d76.svg",
     "static/media/navbar-fb.svg": "/daleplast/static/media/navbar-fb.6d4caa760868e068b33c.svg",
     "main.34ee83b5.css.map": "/daleplast/static/css/main.34ee83b5.css.map",
-    "main.9237c0aa.js.map": "/daleplast/static/js/main.9237c0aa.js.map",
+    "main.3026c7bb.js.map": "/daleplast/static/js/main.3026c7bb.js.map",
     "787.2a34aaf6.chunk.js.map": "/daleplast/static/js/787.2a34aaf6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34ee83b5.css",
-    "static/js/main.9237c0aa.js"
+    "static/js/main.3026c7bb.js"
   ]
 }

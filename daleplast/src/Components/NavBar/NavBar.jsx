@@ -81,14 +81,14 @@ const NavBar = () => {
             >
               SERVICIOS
             </a>
-            <a
+            <Link
               style={{ textDecoration: "inherit" }}
-              href="#Compromiso"
+              to={"/Compromiso"}
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
               COMPROMISO
-            </a>
+            </Link>
             <Link
               style={{ textDecoration: "inherit" }}
               to={"/FAQs"}

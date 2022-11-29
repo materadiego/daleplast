@@ -23,6 +23,13 @@
 }
 
 .Compromise-Section {
+  &__Image {
+    width: 90%;
+    margin: 15vw 5% 0;
+  }
+}
+
+.Compromise-Section-Container {
   width: 100%;
   margin: 0 auto;
   padding: 14vw 0;
@@ -48,11 +55,15 @@
     border-radius: 50vw;
     background-color: #6fd5bd;
   }
+  &__DesktopSubtitle {
+    display: none;
+  }
   &__Content {
     line-height: 120%;
     width: 80%;
     font-size: 3.5vw;
     margin: 1vw auto;
+
     &--Image {
       width: 3.5vw;
       margin-right: 2vw;
@@ -61,10 +72,6 @@
       color: #6fd5bd;
       margin-right: 1vw;
     }
-  }
-  &__Image {
-    width: 90%;
-    margin: 15vw 5% 0;
   }
 }
 
@@ -78,59 +85,96 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .CompromiseContent {
+    padding: 0;
+  }
+
   .Compromise-TitleContainer {
-    margin: 1vw 0 0;
+    margin: 4vw 0 0;
 
     &__Title {
       margin-bottom: 1vw;
-      font-size: 1vw;
+      font-size: 1.8vw;
     }
     &__Description {
-      font-size: 1vw;
+      font-size: 1.3vw;
+      width: 43%;
+      text-align: start;
     }
   }
 
   .Compromise-Section {
-    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 6vw 0;
+    &__Image {
+      width: 45%;
+    }
+  }
+
+  .Compromise-Image1 {
+    margin: 0 -5% 0 0;
+  }
+  .Compromise-Image2 {
+    margin: 0 0 0 -5%;
+  }
+  .Compromise-Section2 {
+    flex-flow: row-reverse;
+  }
+
+  .Compromise-Section-Container {
+    width: 35%;
+    height: 23vw;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     position: relative;
     &__TitleContainer {
-      border: 2px solid red;
-
-      width: 30%;
+      width: 100%;
       margin: 0;
-      font-size: 1vw;
+      font-size: 1.8vw;
 
       &--Image {
-        width: 1vw;
-        margin-right: 1vw;
+        width: 3.5vw;
+        margin-right: 1.8vw;
       }
     }
     &__GreenLine {
-      width: 4vw;
+      width: 4.5vw;
       height: 0.5vw;
-      margin: 0.5vw 0 0.5vw 0;
+      margin: 1.3vw 0 1.5vw;
+    }
+    &__DesktopSubtitle {
+      display: flex;
+      font-style: italic;
+      font-weight: 500;
+      margin-bottom: 1vw;
+      color: $color-terciario;
     }
     &__Content {
-      line-height: 120%;
-      border: 2px solid red;
+      line-height: 130%;
 
-      width: 30%;
-      font-size: 1vw;
+      width: 100%;
+      font-size: 1.08vw;
       margin: 0vw 0;
+      opacity: 0.8;
       &--Image {
         width: 1vw;
         margin-right: 1vw;
       }
       &--Span {
         color: #6fd5bd;
-        margin-right: 1vw;
+        margin-right: 0.5vw;
       }
     }
-    &__Image {
-      width: 40%;
-      margin: 0;
-    }
+  }
+  .Compromise-Section-Container1 {
+    margin-left: 15%;
+  }
+  .Compromise-Section-Container2 {
+    margin-right: 15%;
   }
 }

@@ -73,3 +73,9 @@
 .swiper-pagination-bullet-active {
   background-color: #6fd5bd;
 }
+
+@media screen and (min-width: 1200px) {
+  .Compromise-Slider-Mobile {
+    display: none;
+  }
+}

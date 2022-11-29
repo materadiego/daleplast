@@ -222,4 +222,8 @@
       display: none;
     }
   }
+  .active {
+    color: $color-claro;
+    background-color: $color-variacion5;
+  }
 }

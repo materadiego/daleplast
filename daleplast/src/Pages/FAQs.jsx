@@ -1,7 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import FAQsBoxArrow from "../utils/images/FAQs-box-arrow.svg";
-import FAQsBoxArrowA from "../utils/images/FAQs-box-arrowa.svg";
 
 import "../scss/FAQsStyles.scss";
 

@@ -10,6 +10,9 @@ import Footer from "./Components/Footer/Footer";
 import "./scss/Style.scss";
 import PageLoader from "./Components/PageLoader/PageLoader";
 import CompromisePage from "./Pages/CompromisePage";
+import AboutUsPage from "./Pages/AboutUsPage";
+import ServicesPage from "./Pages/ServicesPage";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   const [pageLoading, setPageLoading] = useState(true);
@@ -30,11 +33,14 @@ function App() {
         <PageLoader />
       ) : (
         <BrowserRouter>
+          <ScrollToTop />
           <NavBar />
           <Chat />
           <Routes>
             <Route path="/daleplast" element={<HomePage />} />
+            <Route path="/Nosotros" element={<AboutUsPage />} />
             <Route path="/Catalogo" element={<CatalogsPage />} />
+            <Route path="/Servicios" element={<ServicesPage />} />
             <Route path="/FAQs" element={<FAQs />} />
             <Route path="/Compromiso" element={<CompromisePage />} />
           </Routes>

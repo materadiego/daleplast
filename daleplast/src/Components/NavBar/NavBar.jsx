@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../utils/images/navbar-logo.svg";
 import Logo2 from "../../utils/images/navbar-logo2.svg";
 import Menu from "../../utils/images/navbar-menu.svg";
@@ -49,54 +49,54 @@ const NavBar = () => {
         </div>
         <div className="Menu-Container">
           <div className="Menu-Container__Links">
-            <Link
+            <NavLink
               style={{ textDecoration: "inherit" }}
               className="Menu-Container__Links--Options link"
               to={"/daleplast"}
               onClick={toggleMenu}
             >
               HOME
-            </Link>
-            <a
+            </NavLink>
+            <NavLink
               style={{ textDecoration: "inherit" }}
-              href="#Nosotros"
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
+              to={"/Nosotros"}
             >
               NOSOTROS
-            </a>
-            <a
+            </NavLink>
+            <NavLink
               style={{ textDecoration: "inherit" }}
-              href="#Productos"
+              to={"/Catalogo"}
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
               PRODUCTOS
-            </a>
-            <a
+            </NavLink>
+            <NavLink
               style={{ textDecoration: "inherit" }}
-              href="#Servicios"
+              to={"/Servicios"}
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
               SERVICIOS
-            </a>
-            <Link
+            </NavLink>
+            <NavLink
               style={{ textDecoration: "inherit" }}
               to={"/Compromiso"}
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
               COMPROMISO
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               style={{ textDecoration: "inherit" }}
               to={"/FAQs"}
               className="Menu-Container__Links--Options"
               onClick={toggleMenu}
             >
               PREGUNTAS FRECUENTES
-            </Link>
+            </NavLink>
 
             <a
               style={{ textDecoration: "inherit" }}

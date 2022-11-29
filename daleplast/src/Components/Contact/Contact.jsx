@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ContactImage from "../../utils/images/contact-bg.png";
 import Loader from "../../utils/images/loader.svg";
 
@@ -50,7 +51,13 @@ const Contact = () => {
         <p className="Contact-Container__Text">
           Contactanos para recibir una cotización de acuerdo a tus necesidades.
         </p>
-        <div className="Contact-Container__Link">VER REFERENCIA DE MODELOS</div>
+        <Link
+          className="Contact-Container__Link"
+          to={"/Productos"}
+          style={{ textDecoration: "inherit" }}
+        >
+          VER REFERENCIA DE MODELOS
+        </Link>
         <form
           method="post"
           action=""

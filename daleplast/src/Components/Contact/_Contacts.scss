@@ -23,6 +23,7 @@
   }
   &__Link {
     width: 90%;
+    text-decoration: none;
     margin: 4vw 0;
     border-radius: 5vw;
     height: 12vw;
@@ -36,6 +37,9 @@
     font-family: $Fuente1;
     color: $color-claro;
     background-color: $color-variacion6;
+    &:hover {
+      color: $color-claro;
+    }
   }
   &__Form {
     display: flex;

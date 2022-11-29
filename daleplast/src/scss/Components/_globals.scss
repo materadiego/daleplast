@@ -63,6 +63,12 @@ p {
   }
 }
 
+.Top-Space {
+  display: flex;
+  width: 100%;
+  height: 26vw;
+}
+
 @keyframes loadAnimation {
   0% {
     opacity: 0;
@@ -90,5 +96,8 @@ p {
         background-color: $color-claro;
       }
     }
+  }
+  .Top-Space {
+    height: 7vw;
   }
 }

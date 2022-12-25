@@ -22,13 +22,10 @@
   }
 }
 
-.Compromise-Section {
-}
-
 .Compromise-Section-Container {
   width: 100%;
   margin: 0 auto;
-  padding: 14vw 0;
+  padding: 14vw 0 0;
 
   &__TitleContainer {
     display: flex;
@@ -99,7 +96,6 @@
     &__Description {
       font-size: 1.3vw;
       width: 43%;
-      text-align: start;
     }
   }
 
@@ -136,10 +132,10 @@
     &__TitleContainer {
       width: 100%;
       margin: 0;
-      font-size: 1.8vw;
+      font-size: 1.9vw;
 
       &--Image {
-        width: 3.5vw;
+        width: 4vw;
         margin-right: 1.8vw;
       }
     }
@@ -150,17 +146,16 @@
     }
     &__DesktopSubtitle {
       display: flex;
-      font-style: italic;
+      font-size: 1vw;
       font-weight: 500;
       margin-bottom: 1vw;
       color: $color-terciario;
     }
     &__Content {
       line-height: 130%;
-
       width: 100%;
       font-size: 1.08vw;
-      margin: 0vw 0;
+      margin: 0vw 0 0.8vw;
       opacity: 0.8;
       &--Image {
         width: 1vw;
@@ -170,6 +165,9 @@
         color: #6fd5bd;
         margin-right: 0.5vw;
       }
+    }
+    &__Image {
+      width: 45%;
     }
   }
   .Compromise-Section-Container1 {

@@ -3,14 +3,13 @@
   width: 15vw;
   height: 15vw;
   bottom: 14vw;
-  right: 8%;
+  right: 5%;
   z-index: 3;
   border-radius: 50vw;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   opacity: 0;
   will-change: opacity;
   animation: loadAnimation 0.5s ease-in-out 2.5s 1 normal forwards;
-
   &__Link {
     width: 100%;
     height: 100%;
@@ -32,14 +31,14 @@
 @media screen and (min-width: 1200px) {
   .Chat {
     border-radius: 0.4vw;
-    width: 14vw;
-    height: 4vw;
+    width: 16vw;
+    height: 4.5vw;
     bottom: 5vw;
     right: 4vw;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
-    transition: $animation-transition;
     will-change: box-shadow;
     background-color: $color-variacion3;
+    transition: $animation-transition;
     &__Link {
       text-decoration: none;
       display: flex;
@@ -48,16 +47,16 @@
       &--Text {
         display: flex;
         text-align: end;
-        width: 8vw;
+        width: 9vw;
         font-weight: 300;
-        font-size: 1vw;
+        font-size: 1.15vw;
         margin-right: 0.7vw;
         line-height: 120%;
         color: $color-claro;
       }
       &--Image {
-        width: 3vw;
-        height: 3vw;
+        width: 3.5vw;
+        height: 3.5vw;
       }
     }
     &:hover {

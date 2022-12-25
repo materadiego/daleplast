@@ -20,9 +20,6 @@ import FilmAptoParaAlimentos from "../../utils/images/catalogitem-FilmAptoParaAl
 function CatalogsList({ products }) {
   return (
     <div className="CatalogCardsContainer">
-      {/* {products.map((product) => (
-        <CatalogsItem key={product.id} product={product} />
-      ))} */}
       <div className="CardContainer">
         {/* CATEGORY 1 */}
         <div className="CategoryTitleContainer" id="1">
@@ -34,18 +31,22 @@ function CatalogsList({ products }) {
         </div>
         {/* PRODUCT 1 */}
         <div className="Card">
+          <div className="Card__DesktopImage ResiduosNegra"></div>
           <img
             src={residuosNegras}
             alt="Residuos-Negras"
-            className="Card__Image"
+            className="Card__Image MobileCardImage"
           />
           <div className="Card__Info">
             <p className="Card__Info--Name">DE RESIDUOS NEGRAS</p>
-            <p className="Card__Info--Description">
-              • Formato: en paquetes x10 unidades o por KG <br />• Contamos con
-              una Línea Reforzada y una Línea Estándar de acuerdo a tu
-              necesidad. <br />• Fabricamos a medida (ancho, largo, espesor)
-            </p>
+            <div className="Card__Info--Description">
+              <p>• Formato: en paquetes x10 unidades o por KG</p>
+              <p>
+                • Contamos con una Línea Reforzada y una Línea Estándar de
+                acuerdo a tu necesidad.
+              </p>
+              <p> • Fabricamos a medida (ancho, largo, espesor)</p>
+            </div>
             <div className="Card__Info--StockInfo">
               <p className="StockInfo-Title">
                 Stock permanente de medidas estándar:
@@ -58,21 +59,29 @@ function CatalogsList({ products }) {
         </div>
         {/* PRODUCT 2 */}
         <div className="Card">
+          <div className="Card__DesktopImage ResiduosPato"></div>
+
           <img
             src={residuosPatologicos}
             alt="Residuos-Negras"
-            className="Card__Image"
+            className="Card__Image MobileCardImage"
           />
           <div className="Card__Info">
             <p className="Card__Info--Name">
               PARA RESIDUOS PATOLÓGICOS Y PELIGROSOS
             </p>
-            <p className="Card__Info--Description">
-              • Bolsas amarillas, rojas o del color que necesites con o sin
-              impresión.
-              <br /> • Bolsas amarillas, rojas o del color que necesites con o
-              sin impresión.
-            </p>
+            <div className="Card__Info--Description">
+              <p>
+                {" "}
+                • Bolsas amarillas, rojas o del color que necesites con o sin
+                impresión.
+              </p>
+              <p>
+                {" "}
+                • Bolsas amarillas, rojas o del color que necesites con o sin
+                impresión.
+              </p>
+            </div>
           </div>
         </div>
         {/* CATEGORY 2 */}
@@ -415,10 +424,12 @@ function CatalogsList({ products }) {
           />
           <div className="Card__Info">
             <p className="Card__Info--Name">BANDEJAS Y OBLEAS EXPANDIDO</p>
-            <p className="Card__Info--Description">
-              • Medidas estándar: 615, 617, 618, 619 bandejas expandido. 618 y
-              619 obleas expandido.
-            </p>
+            <div className="Card__Info--Description">
+              <p>
+                • Medidas estándar: 615, 617, 618, 619 bandejas expandido. 618 y
+                619 obleas expandido.
+              </p>
+            </div>
             <div className="Card__Info--StockInfo">
               <p className="StockInfo-Title">Stock permanente.</p>
               <p className="StockInfo-Measures"></p>
@@ -434,9 +445,12 @@ function CatalogsList({ products }) {
           />
           <div className="Card__Info">
             <p className="Card__Info--Name">CINTA DE EMBALAR TRANSPARENTE</p>
-            <p className="Card__Info--Description">
-              • Medidas estándar: 20 x 25 / 25 x 25 • Por paquete de 1kg.
-            </p>
+            <div className="Card__Info--Description">
+              <p>
+                {" "}
+                • Medidas estándar: 20 x 25 / 25 x 25 • Por paquete de 1kg.
+              </p>
+            </div>
             <div className="Card__Info--StockInfo">
               <p className="StockInfo-Title">Stock permanente.</p>
               <p className="StockInfo-Measures"></p>
@@ -452,9 +466,12 @@ function CatalogsList({ products }) {
           />
           <div className="Card__Info">
             <p className="Card__Info--Name">LÁMINAS FOLEX SEPARADORAS AD</p>
-            <p className="Card__Info--Description">
-              • Medidas estándar: 20 x 25 / 25 x 25 • Por paquete de 1kg.
-            </p>
+            <div className="Card__Info--Description">
+              <p>
+                {" "}
+                • Medidas estándar: 20 x 25 / 25 x 25 • Por paquete de 1kg.
+              </p>
+            </div>
             <div className="Card__Info--StockInfo">
               <p className="StockInfo-Title">Stock permanente.</p>
               <p className="StockInfo-Measures"></p>
@@ -470,12 +487,18 @@ function CatalogsList({ products }) {
           />
           <div className="Card__Info">
             <p className="Card__Info--Name">FILM APTO PARA ALIMENTOS</p>
-            <p className="Card__Info--Description">
-              • Rolopac Rollo de 38cm de ancho x 900 mt Rollo de 45cm de ancho x
-              900 mt
-              <br /> • Resinite Rollo de 38cm de ancho x 1000 mt Rollo de 45cm
-              de ancho x 1000 mt
-            </p>
+            <div className="Card__Info--Description">
+              <p>
+                {" "}
+                • Rolopac Rollo de 38cm de ancho x 900 mt Rollo de 45cm de ancho
+                x 900 mt
+              </p>
+              <p>
+                {" "}
+                • Resinite Rollo de 38cm de ancho x 1000 mt Rollo de 45cm de
+                ancho x 1000 mt
+              </p>
+            </div>
             <div className="Card__Info--StockInfo">
               <p className="StockInfo-Title">Stock permanente.</p>
               <p className="StockInfo-Measures"></p>

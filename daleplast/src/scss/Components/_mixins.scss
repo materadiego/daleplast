@@ -23,7 +23,7 @@
   @include media(desktop-s) {
     height: 2.8vw;
     font-size: 1.2vw;
-    will-change: color;
+    will-change: background-color border box-shadow;
     cursor: pointer;
     border: 0.3vw solid $color-variacion6;
     transition: $animation-transition;
@@ -32,6 +32,8 @@
     @include media(desktop-s) {
       box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
       color: #fff;
+      background-color: $color-variacion5;
+      border: 0.3vw solid $color-variacion5;
     }
   }
 }
@@ -43,6 +45,7 @@
   @include media(desktop-s) {
     font-size: 1.6vw;
     margin: 0 0 4vw;
+    line-height: 120%;
   }
 }
 

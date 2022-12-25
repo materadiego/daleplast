@@ -2,7 +2,6 @@ import React from "react";
 import check from "../../utils/images/compromise-check.png";
 import plantaReciclado from "../../utils/images/compromise-planta.png";
 import plantaEtapa from "../../utils/images/compromise-etapas.png";
-import plantaFabricante from "../../utils/images/compromise-fabricantes.png";
 import icon1 from "../../utils/images/compromise-icon1.svg";
 import icon2 from "../../utils/images/compromise-icon2.svg";
 import icon3 from "../../utils/images/compromise-icon3.svg";
@@ -66,7 +65,7 @@ const CompromiseContent = () => {
         <img
           src={plantaReciclado}
           alt=""
-          className="Compromise-Section__Image Compromise-Image1"
+          className="Compromise-Section-Container__Image Compromise-Image1"
         ></img>
       </div>
       {/* SECTION 2 */}
@@ -119,7 +118,7 @@ const CompromiseContent = () => {
         <img
           src={plantaEtapa}
           alt=""
-          className="Compromise-Section__Image Compromise-Image2"
+          className="Compromise-Section-Container__Image Compromise-Image2"
         ></img>
       </div>
       {/* SECTION 3 */}
@@ -140,11 +139,6 @@ const CompromiseContent = () => {
           <div className="Compromise-Section-Container__GreenLine"></div>
           {/* SECTION CONTENT */}
           <CompromiseContentSlider />
-          <img
-            src={plantaFabricante}
-            alt=""
-            className="Compromise-Section-Container__Image"
-          ></img>
         </div>
       </div>
       <CompromiseContentSlider2 />

@@ -58,7 +58,7 @@
       color: $color-variacion5;
     }
     &--Description {
-      font-size: 3vw;
+      font-size: 3.5vw;
       margin-bottom: 6vw;
     }
     &--StockInfo {
@@ -132,12 +132,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 10vw;
-  margin: 7vw 0 0;
+  position: fixed;
+  bottom: 30vw;
+  border-radius: 50%;
+  right: 5.7vw;
+  width: 14vw;
+  height: 14vw;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   &__Link {
-    width: 10vw;
-    height: 10vw;
+    width: 14vw;
+    height: 14vw;
     display: flex;
     border-radius: 50vw;
     &--Image {
@@ -155,8 +159,18 @@
   .Catalogs-Page {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
+  }
+
+  .ContainerProducts {
+    width: 60%;
+    padding: 0;
+    margin-top: -1vw;
+  }
+
+  .CatalogCardsContainer {
+    display: flex;
   }
 
   .CardContainer {
@@ -168,33 +182,36 @@
     width: 60%;
   }
 
-  .CatalogCardsContainer {
-    display: flex;
-    margin-top: -4.2vw;
-  }
-
-  .ContainerProducts {
-    width: 60%;
-  }
-
   .CategoryTitleContainer {
     margin-bottom: 1vw;
     width: 100%;
     &__Title {
-      margin: 0 0 0.5vw;
+      margin: 0 0 0.2vw;
+      font-size: 1.3vw;
     }
     &__Description {
       font-size: 1vw;
       font-weight: 400;
+      width: 44.5vw;
     }
   }
 
   .Card {
-    width: 28%;
-    margin: 2.5vw 2vw 5vw 0;
+    width: 17vw;
+    margin: 1vw 2vw 3vw 0;
     border-radius: 0.4vw;
-    padding: 0.7vw 0;
+    padding: 1vw 0;
     height: auto;
+    &__DesktopImage {
+      width: 15vw;
+      height: 12.5vw;
+      border-radius: 0.4vw;
+      margin-bottom: 1vw;
+      background-size: 155%;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    }
     &__Image {
       margin: 0 0 1vw;
     }
@@ -206,8 +223,12 @@
         margin: 0 0 0.5vw;
       }
       &--Description {
-        font-size: 0.8vw;
         margin-bottom: 0.5vw;
+        & p {
+          margin-bottom: 0.5vw;
+          font-size: 1vw;
+          line-height: 120%;
+        }
       }
       &--StockInfo {
         border-radius: 0.4vw;
@@ -218,29 +239,43 @@
     }
   }
 
+  .MobileCardImage {
+    display: none;
+  }
+
+  .ResiduosNegra {
+    background-image: url(../utils/images/catalogitem-ResiduosNegra.png);
+  }
+  .ResiduosPato {
+    background-image: url(../utils/images/catalogitem-residuospatologicos.png);
+  }
+
   .StockInfo-Title {
-    font-size: 0.7vw;
+    font-size: 1vw;
+    line-height: 120%;
   }
 
   .StockInfo-Measures {
-    font-size: 0.7vw;
+    font-size: 1vw;
   }
 
   .Card2 {
     display: flex;
-    margin: 2.5vw 0 5vw 0;
+    margin: 1vw 0 3vw 0;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 2vw;
+    border-radius: 0.5vw;
     padding: 1vw 0;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     &__Image {
-      width: 60%;
+      width: 55%;
       margin: 0;
+      border-radius: 0.6vw;
+      overflow: hidden;
     }
     &__Info {
-      width: 25%;
+      width: 30%;
       margin: 0;
       &--Name {
         display: none;
@@ -257,35 +292,24 @@
   }
 
   .StockInfo2-Title {
-    font-size: 0.7vw;
+    font-size: 1vw;
+    line-height: 120%;
     font-weight: 500;
     color: $color-variacion5;
   }
 
   .StockInfo2-Measures {
-    font-size: 0.7vw;
+    font-size: 1vw;
   }
 
   .UpContainerCatalog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 10vw;
-    margin: 1vw 0 0;
+    bottom: 10vw;
+    right: 5.7vw;
+    width: 3vw;
+    height: 3vw;
     &__Link {
-      width: 3.8vw;
-      height: 3.8vw;
-      display: flex;
-      border-radius: 50vw;
-      &--Image {
-        width: 100%;
-        height: 100%;
-        background-image: url(../utils/images/FAQsUp.svg);
-        background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+      width: 3vw;
+      height: 3vw;
     }
   }
 }

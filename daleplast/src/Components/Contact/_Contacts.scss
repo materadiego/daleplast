@@ -37,9 +37,6 @@
     font-family: $Fuente1;
     color: $color-claro;
     background-color: $color-variacion6;
-    &:hover {
-      color: $color-claro;
-    }
   }
   &__Form {
     display: flex;
@@ -141,11 +138,12 @@
       padding: 0.5vw 0;
       font-size: 1vw;
       cursor: pointer;
-      will-change: box-shadow;
+      will-change: box-shadow color background-color;
       transition: $animation-transition;
-
       &:hover {
         box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+        color: $color-claro;
+        background-color: $color-variacion5;
       }
     }
     &__Form {
@@ -163,7 +161,6 @@
         height: 8vw;
         padding: 0.8vw;
         border-radius: 0.3vw;
-
         border: 0.1vw solid #b3b3b3;
       }
       &--Submit {

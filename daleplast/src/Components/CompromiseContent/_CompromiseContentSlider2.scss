@@ -120,7 +120,6 @@
       align-items: flex-start;
       font-size: 1.8vw;
       font-weight: 500;
-
       color: $color-variacion5;
       &--Image {
         width: 3.5vw;
@@ -135,11 +134,9 @@
       background-color: #6fd5bd;
       display: flex;
     }
-
     &__Content {
       width: 30%;
       font-size: 1.1vw;
-
       margin: 0 0 0 15%;
     }
     &__Subcontainer {
@@ -169,6 +166,7 @@
     }
     &__Title {
       font-size: 1.4vw;
+      margin-left: 1vw;
       font-weight: 600;
       color: $color-variacion5;
     }
@@ -182,18 +180,17 @@
 
   .PaginationContainer {
     display: flex;
-
     align-items: center;
     justify-content: space-evenly;
     z-index: 2;
     margin: -3vw auto 0;
-    width: 4vw;
+    width: 3vw;
     height: 2vw;
     &__Checkbox {
       cursor: pointer;
-      width: 1vw;
+      width: 0.8vw;
       display: flex;
-      height: 1vw;
+      height: 0.8vw;
       border-radius: 100vw;
       border: 0.2vw solid #6fd5bd;
       transition: 0.3s;

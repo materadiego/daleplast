@@ -22,10 +22,8 @@
       opacity: 1;
       font-size: 3.8vw;
       font-weight: 500;
-
       margin-top: 0;
       display: none;
-      font-style: italic;
       position: relative;
       color: $color-terciario;
       transition: $animation-transition;
@@ -76,7 +74,6 @@
       margin: 2vw 0;
       height: 4.2vw;
       will-change: box-shadow;
-
       cursor: pointer;
       transition: 0.5s;
       &--Response {

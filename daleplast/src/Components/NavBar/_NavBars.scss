@@ -39,7 +39,7 @@
   height: 100vh;
   z-index: 4;
   top: 0;
-  padding: 10vh 0;
+  padding: 9vw 0 0;
   margin-left: -100%;
   transition: 1s;
   background-color: $color-variacion5;
@@ -51,7 +51,6 @@
   right: 5vw;
   top: 8vw;
   position: absolute;
-
   &__Image {
     width: 100%;
   }
@@ -59,28 +58,25 @@
 
 .Logo {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 10%;
   &__Image {
-    width: 80%;
+    width: 60%;
   }
 }
 
 .Menu-Container {
   width: 98%;
-  height: 84vh;
-  padding: 0 0 10vw 0;
+  padding: 0;
   margin: 0 auto;
   overflow: auto;
   position: relative;
-
   &__Links {
     width: 82.8%;
-    height: 120vw;
-    margin: 10vw auto 6vw;
+    margin: 6vw auto 4vw;
     display: flex;
     flex-direction: column;
     &--Options {
-      margin: 4vw 0;
+      margin: 2vw 0;
       font-size: 6vw;
       text-decoration: none;
       transition: $animation-transition;

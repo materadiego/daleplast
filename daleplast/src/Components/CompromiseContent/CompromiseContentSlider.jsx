@@ -1,6 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import plantaFabricante from "../../utils/images/compromise-fabricantes.png";
+
 import sliderIcon1 from "../../utils/images/compromise-slider-icon1.svg";
 import sliderIcon2 from "../../utils/images/compromise-slider-icon2.svg";
 import "swiper/css";
@@ -8,14 +10,25 @@ import "swiper/css/pagination";
 const CompromiseContentSlider = () => {
   return (
     <div className="CompromiseContentSlider">
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper
+        pagination={true}
+        modules={[Pagination]}
+        className="mySwiper Compromise-Mobile-Slider"
+      >
         <SwiperSlide className="CompromiseContentSlider-Slide1">
-          <p className="CompromiseContentSlider-Slide__Text">
+          <p className="CompromiseContentSlider-Slide1__Text">
             La tecnología D2W le brinda al plástico una vida útil de entre 2 y 5
             años, esto significa que cumplido este tiempo se degrada evitando la
             contaminación del suelo, a diferencia del plástico convencional que
             demora hasta 200 años en desaparecer del ambiente.
           </p>
+          <figure className="CompromiseContentSlider-Slide1__Image">
+            <img
+              src={plantaFabricante}
+              alt=""
+              className="CompromiseContentSlider-Slide1__Image--img"
+            ></img>
+          </figure>
         </SwiperSlide>
         <SwiperSlide className="CompromiseContentSlider-Slide2">
           <p className="CompromiseContentSlider-Slide2__Title">

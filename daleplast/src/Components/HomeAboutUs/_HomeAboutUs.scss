@@ -8,7 +8,6 @@
   width: 85%;
   margin: 0 auto 8vw;
   display: flex;
-
   flex-direction: column;
   align-items: center;
   color: $color-claro;
@@ -24,7 +23,6 @@
   &__TextTwo {
     margin-top: 6vw;
     @include section-description;
-
     &--Desktop {
       display: none;
     }
@@ -65,11 +63,6 @@
     }
   }
 }
-
-// .AboutUs-ImageOne {
-
-//   background-image: url(../../utils/images/aboutus-box1.svg);
-// }
 
 .AboutUs-ImageTwo {
   background-image: url(../../utils/images/aboutus-box2.svg);
@@ -134,20 +127,20 @@
       transition: 0.3s ease-in-out;
       will-change: transform background-color scale color box-shadow;
       &--Image {
-        width: 4vw;
-        height: 4vw;
-        margin: 1vw 0;
+        width: 3.5vw;
+        height: 3.5vw;
+        margin: 1.2vw 0;
         transition: 0.1s ease-in-out;
         will-change: background-image;
       }
       &--Text {
         width: 90%;
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         transition: 0.5s ease-in-out;
         will-change: color;
       }
       &:hover {
-        transform: scale(1.17);
+        transform: scale(1.1);
         background-color: $color-variacion5;
         color: $color-claro;
         box-shadow: $light-shadow;

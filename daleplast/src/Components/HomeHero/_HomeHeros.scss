@@ -16,7 +16,6 @@
   height: 100%;
   z-index: 1;
   position: absolute;
-  // background-color: rgba($color: $color-variacion4, $alpha: 0.7);
   background: rgb(27, 118, 122);
   background: linear-gradient(
     90deg,
@@ -42,7 +41,7 @@
     width: 100%;
     height: 60vw;
     font-weight: 500;
-    font-size: 6.24vw;
+    font-size: 6.1vw;
     line-height: 150%;
     color: $color-claro;
     @include basic-flex;
@@ -98,7 +97,6 @@
     opacity: 0;
     will-change: opacity;
     animation: loadAnimation 0.5s ease-in-out 1.4s 1 normal forwards;
-
     &__Link {
       width: 2vw;
       height: 2vw;
@@ -121,7 +119,6 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     padding: 0;
-
     &__Text {
       width: 66%;
       font-size: 2.5vw;
@@ -142,7 +139,6 @@
       opacity: 0;
       will-change: opacity;
       animation: loadAnimation 0.5s ease-in-out 0.7s 1 normal forwards;
-
       color: $color-claro;
     }
     &__ButtonContainer {
@@ -151,7 +147,6 @@
       opacity: 0;
       will-change: opacity;
       animation: loadAnimation 0.5s ease-in-out 0.9s 1 normal forwards;
-
       &--Button {
         width: 100%;
         display: flex;

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/scss";
@@ -33,18 +33,7 @@ const HomeProductsSlider = () => {
         <SwiperSlide>
           <div className="Slide-Image Slide4"></div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide5"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide6"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide7"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide8"></div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <div className="Slide-Image Slide9"></div>
         </SwiperSlide>
@@ -77,18 +66,7 @@ const HomeProductsSlider = () => {
         <SwiperSlide>
           <div className="Slide-Image Slide4"></div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide5"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide6"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide7"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="Slide-Image Slide8"></div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <div className="Slide-Image Slide9"></div>
         </SwiperSlide>

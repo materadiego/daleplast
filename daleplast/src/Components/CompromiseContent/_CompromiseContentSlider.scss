@@ -1,14 +1,27 @@
 .CompromiseContentSlider {
   width: 80%;
+  margin: 10vw auto 0;
+}
+
+.Compromise-Mobile-Slider {
   height: 120vw;
-  margin: 0 auto;
 }
 
 .CompromiseContentSlider-Slide1 {
   box-shadow: none;
   border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   &__Text {
-    font-size: 1vw;
+    font-size: 3.8vw;
+  }
+  &__Image {
+    width: 100%;
+    margin-top: 5vw;
+    &--img {
+      width: 100%;
+    }
   }
 }
 
@@ -59,9 +72,7 @@
   align-items: flex-start;
 }
 .swiper-slide.CompromiseContentSlider-Slide1 {
-  font-size: 3.8vw;
   align-items: flex-start;
-  padding-top: 10vw;
 }
 
 .swiper-pagination-bullet {

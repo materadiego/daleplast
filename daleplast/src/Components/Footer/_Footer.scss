@@ -4,20 +4,17 @@
 }
 .Footer-Container {
   width: 80%;
-
   margin: 0 auto;
   color: $color-claro;
 }
 .Footer-Logo {
   width: 60vw;
-
   margin: 0 0 4vw;
 }
 .Footer-Title {
   font-size: 4.5vw;
   font-weight: 600;
   margin: 4vw 0;
-
   width: 100%;
 }
 .Footer-Contact {
@@ -98,7 +95,6 @@
   }
   &__txt {
     font-size: 3.3vw;
-
     margin-left: 3vw;
     opacity: 0.7;
   }
@@ -152,7 +148,6 @@
     width: 35%;
     &__Data {
       margin: 2vw 0 0;
-
       &--Image {
         width: 1.8vw;
         height: 1.8vw;
@@ -161,7 +156,6 @@
       &--txt {
         font-size: 0.75vw;
         will-change: opacity;
-
         transition: $animation-transition;
       }
       &:hover .Footer-Contact__Data--txt {
@@ -178,12 +172,10 @@
   .Footer-Redes {
     width: 35%;
     flex-direction: column;
-
     &__Facebook {
       width: 1.8vw;
       height: 1.8vw;
       margin: 1.6vw 0 0;
-
       display: flex;
       align-items: center;
       color: $color-claro;
@@ -227,7 +219,6 @@
       margin-top: 0.5vw;
       margin-left: 0.5vw;
       will-change: opacity;
-
       transition: $animation-transition;
     }
     &__Map {

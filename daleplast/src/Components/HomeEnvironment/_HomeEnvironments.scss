@@ -80,7 +80,6 @@
 
   .Environment-Container {
     width: 65%;
-
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,7 +90,6 @@
       margin-right: 33%;
     }
     &__Description {
-      text-align: start;
       width: 70%;
       margin-left: 15%;
       margin-right: 15%;
@@ -108,18 +106,37 @@
       padding: 0;
       justify-content: flex-start;
       align-items: center;
+      transition: 0.3s ease-in-out;
+      will-change: transform background-color scale color;
       &--Image {
         width: 7vw;
         height: 7vw;
         margin: 1.5vw 0 1vw;
+        transition: 0.1s ease-in-out;
+        will-change: background-image;
       }
       &--Title {
         font-size: 1.45079vw;
         width: 80%;
         text-align: center;
+        transition: 0.5s ease-in-out;
+        will-change: color;
       }
       &--VerMas {
         display: none;
+      }
+      &:hover {
+        transform: scale(1.1);
+
+        background-color: $color-variacion5;
+        color: $color-claro;
+      }
+      &:hover .Environment-Container__Button--Image {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+          saturate(0%) hue-rotate(177deg) brightness(104%) contrast(101%);
+      }
+      &:hover .Environment-Container__Button--Title {
+        color: $color-claro;
       }
     }
   }
@@ -139,13 +156,11 @@
     overflow: hidden;
     opacity: 0.34;
     background-color: $color-variacion5;
-
     &__Line {
       display: flex;
       width: 500vw;
       height: 500vw;
       bottom: 23vw;
-
       position: absolute;
       margin-left: -200vw;
       border-radius: 100%;

@@ -22,7 +22,7 @@ const Contact = () => {
   const enviarDatos = (event) => {
     event.preventDefault();
 
-    fetch("https://formsubmit.co/ajax/noguessofia@gmail.com", {
+    fetch("https://formsubmit.co/ajax/administracion@daleplast.com.ar", {
       method: "post",
       body: new FormData(event.target),
     })
@@ -53,7 +53,7 @@ const Contact = () => {
         </p>
         <Link
           className="Contact-Container__Link"
-          to={"/Productos"}
+          to={"/Catalogo"}
           style={{ textDecoration: "inherit" }}
         >
           VER REFERENCIA DE MODELOS

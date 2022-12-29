@@ -14,6 +14,8 @@ const HomeServices = () => {
         <div className="Services-Subcontainer">
           {/* BOX 1 */}
           <div className="Services-Subcontainer__Box">
+            <div className="Services-Subcontainer__Box--TopBox Services-TopBox-Left"></div>
+            <div className="Services-Subcontainer__Box--TopBox Services-TopBox-Right"></div>
             <div className="Services-Subcontainer__Box--Image Services-Image">
               {" "}
               <img src={servicesIcon1} className="Services-Icon" alt=""></img>
@@ -33,6 +35,8 @@ const HomeServices = () => {
           </div>
           {/* BOX 2 */}
           <div className="Services-Subcontainer__Box">
+            <div className="Services-Subcontainer__Box--TopBox Services-TopBox-Left"></div>
+            <div className="Services-Subcontainer__Box--TopBox Services-TopBox-Right"></div>
             <div className="Services-Subcontainer__Box--Image">
               <img src={servicesIcon2} className="Services-Icon" alt=""></img>
             </div>
@@ -51,6 +55,8 @@ const HomeServices = () => {
           </div>
           {/* BOX 3 */}
           <div className="Services-Subcontainer__Box">
+            <div className="Services-Subcontainer__Box--TopBox Services-TopBox-Left"></div>
+            <div className="Services-Subcontainer__Box--TopBox Services-TopBox-Right"></div>
             <div className="Services-Subcontainer__Box--Image">
               <img src={servicesIcon3} className="Services-Icon" alt=""></img>
             </div>

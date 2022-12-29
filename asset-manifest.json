@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/daleplast/static/css/main.64e51a7f.css",
-    "main.js": "/daleplast/static/js/main.82f761f4.js",
+    "main.css": "/daleplast/static/css/main.f6bc6f58.css",
+    "main.js": "/daleplast/static/js/main.ec42e242.js",
     "static/js/787.2a34aaf6.chunk.js": "/daleplast/static/js/787.2a34aaf6.chunk.js",
     "static/media/hero-desktop-bg.png": "/daleplast/static/media/hero-desktop-bg.269653d694dfae151a41.png",
     "static/media/compromise-herodesk.png": "/daleplast/static/media/compromise-herodesk.13d9c56dd85f758b1563.png",
@@ -13,6 +13,7 @@
     "static/media/products-image.png": "/daleplast/static/media/products-image.82fea680f7e7b19d27ec.png",
     "static/media/compromise-etapas.png": "/daleplast/static/media/compromise-etapas.5372a891ad1ca1d429b1.png",
     "static/media/compromise-fabricantes.png": "/daleplast/static/media/compromise-fabricantes.968ac9f331733d5c0a3e.png",
+    "static/media/services-desktop-bg.png": "/daleplast/static/media/services-desktop-bg.4e39422e8819ac2e8cc2.png",
     "static/media/catalogitem-BolsasConCaracteristicasAntiestaticasYOTermoconraibles.png": "/daleplast/static/media/catalogitem-BolsasConCaracteristicasAntiestaticasYOTermoconraibles.1ff277832f4ca59cdfd4.png",
     "static/media/catalogitem-ResiduosNegra.png": "/daleplast/static/media/catalogitem-ResiduosNegra.8054e51922e50cf302e0.png",
     "static/media/catalogitem-BolsaDeArranqueOCorte.png": "/daleplast/static/media/catalogitem-BolsaDeArranqueOCorte.200cfa7f2be1f31ae761.png",
@@ -75,12 +76,12 @@
     "static/media/services-arrowa.svg": "/daleplast/static/media/services-arrowa.afa16bd7147d2042b817.svg",
     "static/media/services-arrow.svg": "/daleplast/static/media/services-arrow.7a26483033b54b4b9d76.svg",
     "static/media/navbar-fb.svg": "/daleplast/static/media/navbar-fb.6d4caa760868e068b33c.svg",
-    "main.64e51a7f.css.map": "/daleplast/static/css/main.64e51a7f.css.map",
-    "main.82f761f4.js.map": "/daleplast/static/js/main.82f761f4.js.map",
+    "main.f6bc6f58.css.map": "/daleplast/static/css/main.f6bc6f58.css.map",
+    "main.ec42e242.js.map": "/daleplast/static/js/main.ec42e242.js.map",
     "787.2a34aaf6.chunk.js.map": "/daleplast/static/js/787.2a34aaf6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64e51a7f.css",
-    "static/js/main.82f761f4.js"
+    "static/css/main.f6bc6f58.css",
+    "static/js/main.ec42e242.js"
   ]
 }

@@ -22,12 +22,14 @@ const Contact = () => {
   const enviarDatos = (event) => {
     event.preventDefault();
 
-    fetch("https://formsubmit.co/ajax/administracion@daleplast.com.ar", {
+    fetch("https://formsubmit.co/ajax/a@a.com.ar", {
       method: "post",
       body: new FormData(event.target),
     })
       .then((res) =>
-        res.ok ? setResponse("Mensaje enviado") : Promise.reject(res)
+        res.ok
+          ? setResponse("¡Mensaje enviado exitosamente!")
+          : Promise.reject(res)
       )
       .catch(
         (error) => console.log(error),

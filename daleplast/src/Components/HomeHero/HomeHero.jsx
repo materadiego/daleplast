@@ -9,7 +9,7 @@ const HomeHero = () => {
       <div className="Hero-Container">
         <div className="Hero-Media-Container">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/daleplastbolsas"
             target="_blank"
             rel="noreferrer"
             className="Hero-Media-Container__Link Hero-Media-Fb"
@@ -21,7 +21,7 @@ const HomeHero = () => {
             ></img>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/daleplastbolsas/"
             target="_blank"
             rel="noreferrer"
             className="Hero-Media-Container__Link Hero-Media-Ig"
@@ -35,11 +35,11 @@ const HomeHero = () => {
         </div>
         <p className="Hero-Container__Text Hero-Text-Mobile">
           Somos una empresa familiar líder en la fabricación de bolsas, láminas
-          y film de polietileno con tecnología oxi-biodegradable
+          y film de polietileno con tecnología oxi-biodegradables
         </p>
         <p className="Hero-Container__Text Hero-Text-Desktop">
           Somos una empresa familiar líder en la fabricación de bolsas, láminas
-          y film de polietileno oxi-biodegradable
+          y film de polietileno oxi-biodegradables
         </p>
         <p className="Hero-Container__Description">
           Más de 30 años acompañando a los fueguinos con la mejor calidad y

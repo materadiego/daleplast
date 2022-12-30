@@ -41,7 +41,7 @@ const FAQs = () => {
           className={`FAQsContainer__Box ${q1 ? "BoxIsActive" : " "}`}
           onClick={Q1}
         >
-          ¿Cuál es la compra mínima?
+          ¿Cuál es la compra mínima de bolsas personalizadas?
           <div
             className={`FAQsContainer__Box--Arrow ${
               q1 ? "ArrowIsActive" : " "
@@ -52,9 +52,7 @@ const FAQs = () => {
               q1 ? "ResponseIsActive" : " "
             }`}
           >
-            Para pedidos de bolsas personalizadas la cantidad minima son 15 kg
-            por medida. Para pedidos de bolsas de stock o artículos
-            descartables, 1 kg o 1 unidad
+            La cantidad mínima de fabricación es de 15 kg por medida
           </p>
         </div>
         {/* Q2 */}
@@ -62,7 +60,7 @@ const FAQs = () => {
           className={`FAQsContainer__Box ${q2 ? "BoxIsActive" : " "}`}
           onClick={Q2}
         >
-          ¿Con cuanta anticipación debo hacer mi pedido?
+          ¿Hacen envíos a domicilio?
           <div
             className={`FAQsContainer__Box--Arrow ${
               q2 ? "ArrowIsActive" : " "
@@ -73,8 +71,9 @@ const FAQs = () => {
               q2 ? "ResponseIsActive" : " "
             }`}
           >
-            Productos fabricados a medida: con 7 días hábiles de anticipación.
-            Productos en stock permanente: Entrega inmediata a coordinar
+            Con un mínimo de compra, el envío es GRATIS a Tolhuin, Ushuaia y Río
+            Grande. No hacemos envíos fuera de la provincia. Consultanos para
+            más información.
           </p>
         </div>
         {/* Q3 */}
@@ -82,7 +81,7 @@ const FAQs = () => {
           className={`FAQsContainer__Box ${q3 ? "BoxIsActive" : " "}`}
           onClick={Q3}
         >
-          ¿Tiene algún costo adicional el envío a domicilio?
+          ¿Cuales son los medios de pago?
           <div
             className={`FAQsContainer__Box--Arrow ${
               q3 ? "ArrowIsActive" : " "
@@ -93,7 +92,8 @@ const FAQs = () => {
               q3 ? "ResponseIsActive" : " "
             }`}
           >
-            RESPUESTA
+            Aceptamos todos los medios de pago. Consultanos para más
+            información.
           </p>
         </div>
         {/* Q4 */}
@@ -101,7 +101,7 @@ const FAQs = () => {
           className={`FAQsContainer__Box ${q4 ? "BoxIsActive" : " "}`}
           onClick={Q4}
         >
-          ¿Cómo puedo pagar?
+          Política de Devolución:
           <div
             className={`FAQsContainer__Box--Arrow ${
               q4 ? "ArrowIsActive" : " "
@@ -112,26 +112,9 @@ const FAQs = () => {
               q4 ? "ResponseIsActive" : " "
             }`}
           >
-            RESPUESTA
-          </p>
-        </div>
-        {/* Q5 */}
-        <div
-          className={`FAQsContainer__Box ${q5 ? "BoxIsActive" : " "}`}
-          onClick={Q5}
-        >
-          Política de cambios/devolución
-          <div
-            className={`FAQsContainer__Box--Arrow ${
-              q5 ? "ArrowIsActive" : " "
-            }`}
-          ></div>
-          <p
-            className={`FAQsContainer__Box--Response ${
-              q5 ? "ResponseIsActive" : " "
-            }`}
-          >
-            RESPUESTA
+            Aceptamos devoluciones o cambios cuando se trate de una falla en el
+            proceso de fabricación que afecte a la calidad del producto y/o a su
+            uso sin excepción.-
           </p>
         </div>
       </div>

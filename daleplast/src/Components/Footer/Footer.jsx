@@ -50,7 +50,7 @@ const Footer = () => {
             <p className="Footer-Title">SEGUINOS EN NUESTRAS REDES</p>
             <a
               style={{ textDecoration: "inherit" }}
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/daleplastbolsas"
               target="_blank"
               rel="noreferrer"
               className="Footer-Redes__Facebook"
@@ -64,7 +64,7 @@ const Footer = () => {
             </a>
             <a
               style={{ textDecoration: "inherit" }}
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/daleplastbolsas/"
               target="_blank"
               rel="noreferrer"
               className="Footer-Redes__Instagram"

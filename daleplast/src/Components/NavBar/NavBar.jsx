@@ -114,8 +114,24 @@ const NavBar = () => {
           </div>
           {/* SOCIAL MEDIA */}
           <div className="Menu-Container__Social">
-            <div className="Menu-Container__Social--Image fb"></div>
-            <div className="Menu-Container__Social--Image ig"></div>
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="https://www.facebook.com/daleplastbolsas"
+              target={"_blank"}
+              rel="noreferrer"
+              className="Menu-Container__Social--Image"
+            >
+              <figure className="NavBar-fb" id="NavBar-fb"></figure>
+            </a>
+            <a
+              style={{ textDecoration: "inherit" }}
+              href="https://www.instagram.com/daleplastbolsas/"
+              target={"_blank"}
+              rel="noreferrer"
+              className="Menu-Container__Social--Image"
+            >
+              <figure className="NavBar-ig" id="NavBar-ig"></figure>
+            </a>
           </div>
         </div>
       </div>

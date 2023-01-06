@@ -68,8 +68,8 @@ const HomeServices = () => {
               ENVÍOS SIN CARGO DENTRO DE LA PROVINCIA
             </h6>
             <p className="Services-Subcontainer__Box--Text">
-              Enviamos tu pedido sin cargo en compras a partir de $3000 en Rio
-              Grande y $5000 en Tolhuin y/o Ushuaia.
+              Llegamos a distintos puntos de la provincia, hacemos envíos a
+              Ushuaia, Tolhuin y Río Grande
             </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ function App() {
           <NavBar />
           <Chat />
           <Routes>
-            <Route path="/daleplast" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/Nosotros" element={<AboutUsPage />} />
             <Route path="/Catalogo" element={<CatalogsPage />} />
             <Route path="/Servicios" element={<ServicesPage />} />

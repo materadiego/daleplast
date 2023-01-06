@@ -22,7 +22,7 @@ const Contact = () => {
   const enviarDatos = (event) => {
     event.preventDefault();
 
-    fetch("https://formsubmit.co/ajax/a@a.com.ar", {
+    fetch("https://formsubmit.co/ajax/administracion@daleplast.com.ar", {
       method: "post",
       body: new FormData(event.target),
     })

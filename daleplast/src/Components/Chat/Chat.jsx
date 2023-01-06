@@ -14,7 +14,7 @@ const Chat = () => {
       <a
         style={{ textDecoration: "inherit" }}
         className="Chat__Link"
-        href="https://wa.me/2964503046"
+        href="https://wa.me/5492964503046"
         target="_blank"
         rel="noreferrer"
       >

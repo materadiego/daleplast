@@ -76,11 +76,6 @@ function CatalogsList({ products }) {
                 • Bolsas amarillas, rojas o del color que necesites con o sin
                 impresión.
               </p>
-              <p>
-                {" "}
-                • Bolsas amarillas, rojas o del color que necesites con o sin
-                impresión.
-              </p>
             </div>
           </div>
         </div>

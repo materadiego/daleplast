@@ -51,27 +51,27 @@
 }
 
 .Slide1 {
-  background-image: url(../../utils/images/products-slider1.png);
+  background-image: url(../../utils/images/products-slider1.webp);
 }
 .Slide2 {
-  background-image: url(../../utils/images/products-slider2.png);
+  background-image: url(../../utils/images/products-slider2.webp);
 }
 .Slide3 {
-  background-image: url(../../utils/images/products-slider3.png);
+  background-image: url(../../utils/images/products-slider3.webp);
 }
 .Slide4 {
-  background-image: url(../../utils/images/products-slider4.png);
+  background-image: url(../../utils/images/products-slider4.webp);
 }
 
 .Slide9 {
-  background-image: url(../../utils/images/products-slider9.png);
+  background-image: url(../../utils/images/products-slider9.webp);
 }
 
 .Desktop-Slider {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .Mobile-Slider {
     display: none;
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ContactImage from "../../utils/images/contact-bg.png";
+import ContactImage from "../../utils/images/contact-bg.webp";
 import Loader from "../../utils/images/loader.svg";
 
 const Contact = () => {
@@ -19,30 +19,38 @@ const Contact = () => {
     });
   };
 
-  const enviarDatos = (event) => {
+  const formNotSubmit = (event) => {
     event.preventDefault();
-
-    fetch("https://formsubmit.co/ajax/administracion@daleplast.com.ar", {
-      method: "post",
-      body: new FormData(event.target),
-    })
-      .then((res) =>
-        res.ok
-          ? setResponse("¡Mensaje enviado exitosamente!")
-          : Promise.reject(res)
-      )
-      .catch(
-        (error) => console.log(error),
-        setResponse(<img alt="" className="loader" src={Loader}></img>)
-      )
-      .finally(() => {
-        setDatos({
-          inp_name: "",
-          inp_business: "",
-          inp_mesage: "",
-        });
-      });
+    setResponse(<img alt="" className="loader" src={Loader}></img>);
+    setTimeout(() => {
+      setResponse("¡Mensaje enviado exitosamente!");
+    }, 2000);
   };
+
+  // const enviarDatos = (event) => {
+  //   event.preventDefault();
+
+  //   fetch("https://formsubmit.co/ajax/diegomatera@gmail.com", {
+  //     method: "post",
+  //     body: new FormData(event.target),
+  //   })
+  //     .then((res) =>
+  //       res.ok
+  //         ? setResponse("¡Mensaje enviado exitosamente!")
+  //         : Promise.reject(res)
+  //     )
+  //     .catch(
+  //       (error) => console.log(error),
+  //       setResponse(<img alt="" className="loader" src={Loader}></img>)
+  //     )
+  //     .finally(() => {
+  //       setDatos({
+  //         inp_name: "",
+  //         inp_business: "",
+  //         inp_mesage: "",
+  //       });
+  //     });
+  // };
 
   return (
     <div className="Contact" id="Contacto">
@@ -64,7 +72,7 @@ const Contact = () => {
           method="post"
           action=""
           id="form"
-          onSubmit={enviarDatos}
+          onSubmit={formNotSubmit}
           className="Contact-Container__Form"
         >
           <input

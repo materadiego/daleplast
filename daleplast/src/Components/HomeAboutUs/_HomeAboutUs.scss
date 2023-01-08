@@ -88,7 +88,44 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .AboutUs {
+    padding: 10vw 0;
+  }
+
+  .AboutUs-TextContainer {
+    width: 80%;
+    &__TextOne {
+      font-size: 4vw;
+    }
+    &__TextTwo {
+      margin-top: 5vw;
+    }
+  }
+
+  .AboutUs-BoxContainer {
+    width: 65%;
+    &__Box {
+      width: 60vw;
+      height: 60vw;
+      margin-bottom: 10vw;
+      border-top-left-radius: 8vw;
+      border-bottom-right-radius: 8vw;
+      @include basic-flex;
+      &--Image {
+        width: 18vw;
+        height: 18vw;
+        margin-bottom: 4vw;
+      }
+      &--Text {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1100px) {
   .AboutUs {
     padding: 6vw 0 2vw;
   }

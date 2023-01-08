@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProductsImage from "../../utils/images/products-image.png";
+import ProductsImage from "../../utils/images/products-image.webp";
 import HomeProductsSlider from "./HomeProductsSlider";
 
 const HomeProducts = () => {

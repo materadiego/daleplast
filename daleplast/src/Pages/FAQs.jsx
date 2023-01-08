@@ -8,7 +8,7 @@ const FAQs = () => {
   const [q2, setQ2] = useState(false);
   const [q3, setQ3] = useState(false);
   const [q4, setQ4] = useState(false);
-  const [q5, setQ5] = useState(false);
+
   const Q1 = () => {
     setQ1(!q1);
   };
@@ -21,9 +21,7 @@ const FAQs = () => {
   const Q4 = () => {
     setQ4(!q4);
   };
-  const Q5 = () => {
-    setQ5(!q5);
-  };
+
   return (
     <div className="FAQs">
       <div className="Pages-Title-Container">

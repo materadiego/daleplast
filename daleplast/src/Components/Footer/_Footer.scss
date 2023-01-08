@@ -118,7 +118,80 @@
   display: none;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
+  .Footer {
+    padding: 8vw 0;
+  }
+
+  .Footer-Logo {
+    margin: 0 0 3vw;
+  }
+  .Footer-Title {
+    font-size: 3vw;
+    margin: 2vw 0;
+  }
+  .Footer-Contact {
+    &__Data {
+      margin: 2.5vw 0;
+      &--Image {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 2vw;
+      }
+      &--txt {
+        font-size: 2.5vw;
+        line-height: 120%;
+        opacity: 0.7;
+      }
+    }
+  }
+  .Footer-Redes {
+    &__Facebook {
+      width: 7vw;
+      height: 7vw;
+      border-radius: 2vw;
+      margin-top: 1vw;
+      margin-right: 3vw;
+      background-color: $color-variacion3;
+    }
+    &__Instagram {
+      width: 7vw;
+      height: 7vw;
+      margin-top: 1vw;
+      margin-right: 3vw;
+    }
+    &__Linkedin {
+      width: 7vw;
+      height: 7vw;
+      margin-top: 1vw;
+      margin-right: 3vw;
+    }
+  }
+  .Footer-Maps {
+    &__Image {
+      width: 7vw;
+      height: 7vw;
+    }
+    &__txt {
+      font-size: 2.5vw;
+      margin-left: 2vw;
+    }
+  }
+  .Green-Line {
+    width: 50%;
+    margin: 6vw 0 4vw;
+    border-bottom: 2px solid $color-variacion2;
+  }
+  .Green-Line__Logo {
+    display: none;
+  }
+
+  .Footer-Redes-DesktopText {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .Footer {
     padding: 4vw 0;
   }

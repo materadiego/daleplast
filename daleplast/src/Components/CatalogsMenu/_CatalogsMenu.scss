@@ -25,6 +25,11 @@
   display: flex;
 }
 
+button#basic-button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.ContactsIndex-IndexContainer__Button.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  outline: none;
+  border: none;
+}
+
 .ContactsIndex-IndexContainer {
   margin: 5vw auto;
   padding: 0.5vw 0;
@@ -84,7 +89,61 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 .DesktopMenu {
   display: none;
 }
-@media screen and (min-width: 1199px) {
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .ContactsIndex {
+    padding: 1vw 0;
+  }
+  .MobileMenu-ArrowDown {
+    width: 2.5vw;
+    margin: -0.5vw 0 0.5vw;
+  }
+  .MobileMenu-ArrowUp-Container {
+    margin: 2vw 0 0;
+    padding: 0;
+  }
+  .MobileMenu-ArrowUp {
+    width: 2.5vw;
+  }
+
+  .ContactsIndex-IndexContainer {
+    margin: 2vw auto;
+    padding: 0;
+    width: 60%;
+    border-radius: 1vw;
+
+    &__Button {
+      & p {
+        font-size: 3vw;
+      }
+    }
+    &__txt {
+      width: 100%;
+
+      & p {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root,
+  .css-6hp17o-MuiList-root-MuiMenu-list {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    min-height: 1vw;
+  }
+  .MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list {
+    padding-bottom: 4vw;
+    width: 60vw;
+  }
+  .Line {
+    border-bottom: 0.4vw solid #bbb;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1100px) {
   .ContactsIndex {
     width: 20%;
     padding: 0;

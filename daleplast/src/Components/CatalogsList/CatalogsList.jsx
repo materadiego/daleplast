@@ -1,21 +1,21 @@
 import React from "react";
-import residuosNegras from "../../utils/images/catalogitem-ResiduosNegra.png";
-import residuosPatologicos from "../../utils/images/catalogitem-residuospatologicos.png";
-import bolsaCamiseta from "../../utils/images/catalogitem-BolsaTipoCamiseta.png";
-import BolsaDeArranqueOCorte from "../../utils/images/catalogitem-BolsaDeArranqueOCorte.png";
-import BolsasConManijaTipoOvaloORinon from "../../utils/images/catalogitem-BolsasConManijaTipoOvaloORinon.png";
-import BolsasConManijasFlexibles from "../../utils/images/catalogitem-BolsasConManijasFlexibles.png";
-import BolsasParaEnvasadoAlVacio from "../../utils/images/catalogitem-BolsasParaEnvasadoAlVacio.png";
-import BolsasParaHielo from "../../utils/images/catalogitem-BolsasParaHielo.png";
-import BolsaParaLenaYArena from "../../utils/images/catalogitem-BolsaParaLenaYArena.png";
-import BolsaParaSustratoTurba from "../../utils/images/catalogitem-BolsaParaSustratoTurba.png";
-import BolsasConCaracteristicasAntiestaticasYOTermoconraibles from "../../utils/images/catalogitem-BolsasConCaracteristicasAntiestaticasYOTermoconraibles.png";
-import FilmAgrotilenoDe200MicronesCristalONegro from "../../utils/images/catalogitem-FilmAgrotilenoDe200MicronesCristalONegro.png";
-import FilmStretch from "../../utils/images/catalogitem-FilmStretch.png";
-import BandejasYObleasExpandido from "../../utils/images/catalogitem-BandejasYObleasExpandido.png";
-import CintaDeEmbalarTransparente from "../../utils/images/catalogitem-CintaDeEmbalarTransparente.png";
-import LaminasFolexSeparadorasAD from "../../utils/images/catalogitem-LaminasFolexSeparadorasAD.png";
-import FilmAptoParaAlimentos from "../../utils/images/catalogitem-FilmAptoParaAlimentos.png";
+import residuosNegras from "../../utils/images/catalogitem-ResiduosNegra.webp";
+import residuosPatologicos from "../../utils/images/catalogitem-residuospatologicos.webp";
+import bolsaCamiseta from "../../utils/images/catalogitem-BolsaTipoCamiseta.webp";
+import BolsaDeArranqueOCorte from "../../utils/images/catalogitem-BolsaDeArranqueOCorte.webp";
+import BolsasConManijaTipoOvaloORinon from "../../utils/images/catalogitem-BolsasConManijaTipoOvaloORinon.webp";
+import BolsasConManijasFlexibles from "../../utils/images/catalogitem-BolsasConManijasFlexibles.webp";
+import BolsasParaEnvasadoAlVacio from "../../utils/images/catalogitem-BolsasParaEnvasadoAlVacio.webp";
+import BolsasParaHielo from "../../utils/images/catalogitem-BolsasParaHielo.webp";
+import BolsaParaLenaYArena from "../../utils/images/catalogitem-BolsaParaLenaYArena.webp";
+import BolsaParaSustratoTurba from "../../utils/images/catalogitem-BolsaParaSustratoTurba.webp";
+import BolsasConCaracteristicasAntiestaticasYOTermoconraibles from "../../utils/images/catalogitem-BolsasConCaracteristicasAntiestaticasYOTermoconraibles.webp";
+import FilmAgrotilenoDe200MicronesCristalONegro from "../../utils/images/catalogitem-FilmAgrotilenoDe200MicronesCristalONegro.webp";
+import FilmStretch from "../../utils/images/catalogitem-FilmStretch.webp";
+import BandejasYObleasExpandido from "../../utils/images/catalogitem-BandejasYObleasExpandido.webp";
+import CintaDeEmbalarTransparente from "../../utils/images/catalogitem-CintaDeEmbalarTransparente.webp";
+import LaminasFolexSeparadorasAD from "../../utils/images/catalogitem-LaminasFolexSeparadorasAD.webp";
+import FilmAptoParaAlimentos from "../../utils/images/catalogitem-FilmAptoParaAlimentos.webp";
 
 function CatalogsList({ products }) {
   return (
@@ -114,7 +114,7 @@ function CatalogsList({ products }) {
         <div className="CategoryTitleContainer" id="3">
           <div className="Orange-Line"></div>
           <p className="CategoryTitleContainer__Title">
-            BOLSAS DE ARRANQUE O DE CORTE:
+            BOLSAS DE ARRANQUE O DE CORTE
           </p>
           <p className="CategoryTitleContainer__Description">
             Bolsas de arranque de polietileno de alta o baja densidad con o sin
@@ -136,7 +136,7 @@ function CatalogsList({ products }) {
             </p>
             <div className="Card2__Info--StockInfo">
               <p className="StockInfo2-Title">
-                Stock permanente de medidas estándar sin impresión::{" "}
+                Stock permanente de medidas estándar sin impresión:{" "}
               </p>
               <p className="StockInfo2-Measures">
                 15x20, 20x30, 25x35, 30x40, 35x45, 40x50 y 50x70.

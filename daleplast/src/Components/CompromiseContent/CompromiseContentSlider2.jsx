@@ -4,7 +4,7 @@ import sliderIcon1 from "../../utils/images/compromise-slider-icon1.svg";
 import sliderIcon2 from "../../utils/images/compromise-slider-icon2.svg";
 import icon3 from "../../utils/images/compromise-icon3.svg";
 import buttonImage from "../../utils/images/compromise-slider2button.svg";
-import plantaFabricante from "../../utils/images/compromise-fabricantes.png";
+import plantaFabricante from "../../utils/images/compromise-fabricantes.webp";
 
 const CompromiseContentSlider2 = () => {
   const [sliderActive, setSliderActive] = useState(false);

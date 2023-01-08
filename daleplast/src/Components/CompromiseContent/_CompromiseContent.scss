@@ -68,7 +68,7 @@
   }
   &__Image {
     width: 90%;
-    margin: 0 5% 15vw;
+    margin: 5vw 5% 15vw;
   }
 }
 
@@ -81,7 +81,7 @@
   color: $color-claro;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .CompromiseContent {
     padding: 0;
   }

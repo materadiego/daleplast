@@ -1,8 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import plantaFabricante from "../../utils/images/compromise-fabricantes.png";
-
+import plantaFabricante from "../../utils/images/compromise-fabricantes.webp";
 import sliderIcon1 from "../../utils/images/compromise-slider-icon1.svg";
 import sliderIcon2 from "../../utils/images/compromise-slider-icon2.svg";
 import "swiper/css";

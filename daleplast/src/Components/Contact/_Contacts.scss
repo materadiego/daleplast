@@ -102,7 +102,65 @@
   margin: 0;
 }
 
-@media screen and (min-width: 1200px) {
+// TABLET
+@media screen and (min-width: 768px) {
+  .Contact {
+    padding: 2vw 0;
+  }
+
+  .Contact-Container {
+    width: 75%;
+    &__Title {
+      font-size: 4vw;
+      margin-top: 2vw;
+    }
+    &__Text {
+      font-size: 3vw;
+    }
+    &__Link {
+      margin: 3vw 0;
+      border-radius: 10vw;
+      height: 8vw;
+      font-size: 3vw;
+    }
+    &__Form {
+      &--Input {
+        font-size: 2vw;
+        padding: 1.2vw;
+        margin: 1vw 0;
+      }
+      &--TextArea {
+        font-size: 2vw;
+        padding: 1.2vw;
+        margin: 1vw 0;
+
+        height: 18vw;
+      }
+      &--Submit {
+        width: 40%;
+        margin: 2vw 0 0 auto;
+        @include button;
+      }
+    }
+  }
+
+  .contact-response {
+    width: 58%;
+    height: 8vw;
+    transform: translateY(-8vw);
+  }
+
+  .contact-response-text {
+    font-size: 2vw;
+  }
+
+  .loader {
+    width: 7vw;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1100px) {
   .Contact {
     width: 100%;
     padding: 12vw 0;

@@ -19,7 +19,6 @@
     position: relative;
     color: $color-variacion5;
     &--Response {
-      opacity: 1;
       font-size: 3.8vw;
       font-weight: 500;
       margin-top: 0;
@@ -58,12 +57,47 @@
 }
 
 .ResponseIsActive {
-  opacity: 1;
   display: block;
   margin-top: 3vw;
 }
 
-@media screen and (min-width: 1200px) {
+// TABLET
+@media screen and (min-width: 768px) {
+  .FAQsContainer {
+    width: 75%;
+    padding: 2vw 0;
+    &__Box {
+      padding: 5vw 7vw 5vw 7vw;
+      border-radius: 2vw;
+      &--Response {
+        font-size: 2vw;
+        margin-top: 0;
+      }
+      &--Arrow {
+        width: 3vw;
+        height: 3vw;
+        right: 4vw;
+      }
+    }
+  }
+
+  .BoxIsActive {
+    height: auto;
+    padding: 5vw 7vw 8vw 7vw;
+  }
+
+  .ArrowIsActive {
+    transform: rotateX(0deg);
+  }
+
+  .ResponseIsActive {
+    display: block;
+    margin-top: 3vw;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1100px) {
   .FAQsContainer {
     padding: 0;
     width: 60%;

@@ -5,15 +5,12 @@
 @import "./Components/globals";
 @import "../Components/CatalogsMenu/CatalogsMenu";
 
+// MOBILE
 .ContainerProducts {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3vw 0;
-}
-
-.Catalog-Loader {
-  width: 20vw;
 }
 
 .CatalogCardsContainer {
@@ -44,6 +41,8 @@
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   &__Image {
     width: 90%;
+    border-radius: 2vw;
+
     margin: 0 0 4vw;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   }
@@ -79,10 +78,6 @@
   font-size: 3.6vw;
 }
 
-.CardContainer2 {
-  border: 2px solid red;
-}
-
 .Card2 {
   display: flex;
   margin: 8vw 0;
@@ -93,6 +88,8 @@
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   &__Image {
     width: 90%;
+    border-radius: 2vw;
+
     margin: 0 0 4vw;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   }
@@ -155,7 +152,106 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+// TABLET
+@media screen and (min-width: 768px) {
+  .CatalogCardsContainer {
+    width: 70%;
+  }
+
+  .CategoryTitleContainer {
+    margin: 8vw 0 2vw;
+    &__Title {
+      font-weight: 500;
+      font-size: 2vw;
+    }
+    &__Description {
+      font-size: 2.5vw;
+    }
+  }
+
+  .Card {
+    margin: 4vw 0;
+    padding: 3vw 0;
+    width: 100%;
+    &__Image {
+      margin: 0 0 2vw;
+    }
+    &__Info {
+      &--Name {
+        font-size: 2.5vw;
+        margin: 0 0 2vw;
+      }
+      &--Description {
+        font-size: 2vw;
+        margin-bottom: 3vw;
+      }
+      &--StockInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1vw;
+        padding: 1vw;
+      }
+    }
+  }
+
+  .Card2 {
+    margin: 4vw 0;
+    padding: 3vw 0;
+    &__Image {
+      margin: 0 0 2vw;
+    }
+    &__Info {
+      &--Name {
+        font-size: 2.5vw;
+        margin: 0 0 2vw;
+      }
+      &--Description {
+        font-size: 2vw;
+        margin-bottom: 3vw;
+      }
+      &--StockInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1vw;
+        padding: 1vw;
+      }
+    }
+  }
+
+  .StockInfo-Title {
+    font-size: 2vw;
+  }
+
+  .StockInfo-Measures {
+    font-size: 2vw;
+  }
+
+  .StockInfo2-Title {
+    font-size: 2vw;
+  }
+
+  .StockInfo2-Measures {
+    font-size: 2vw;
+  }
+}
+
+.UpContainerCatalog {
+  bottom: 15vw;
+
+  right: 4vw;
+  width: 8vw;
+  height: 8vw;
+
+  &__Link {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1100px) {
   .Catalogs-Page {
     display: flex;
     flex-wrap: wrap;
@@ -171,6 +267,7 @@
 
   .CatalogCardsContainer {
     display: flex;
+    width: 90%;
   }
 
   .CardContainer {
@@ -183,6 +280,7 @@
   }
 
   .CategoryTitleContainer {
+    margin-top: 0;
     margin-bottom: 1vw;
     width: 100%;
     &__Title {
@@ -244,10 +342,10 @@
   }
 
   .ResiduosNegra {
-    background-image: url(../utils/images/catalogitem-ResiduosNegra.png);
+    background-image: url(../utils/images/catalogitem-ResiduosNegra.webp);
   }
   .ResiduosPato {
-    background-image: url(../utils/images/catalogitem-residuospatologicos.png);
+    background-image: url(../utils/images/catalogitem-residuospatologicos.webp);
   }
 
   .StockInfo-Title {

@@ -20,6 +20,12 @@
   font-family: $Fuente1;
   color: $color-claro;
   background-color: $color-variacion6;
+  &:hover {
+    color: $color-claro;
+  }
+  &:active {
+    color: $color-claro;
+  }
   @include media(tablet) {
     height: 8vw;
     font-size: 3vw;
@@ -34,10 +40,9 @@
   }
   &:hover {
     @include media(desktop-s) {
-      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
       color: #fff;
-      background-color: $color-variacion5;
-      border: 0.3vw solid $color-variacion5;
+      background-color: #b0253a;
+      border: 0.3vw solid #b0253a;
     }
   }
 }

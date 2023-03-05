@@ -30,7 +30,7 @@ const Contact = () => {
   // const enviarDatos = (event) => {
   //   event.preventDefault();
 
-  //   fetch("https://formsubmit.co/ajax/diegomatera@gmail.com", {
+  //   fetch("https://formsubmit.co/ajax/administracion@daleplast.com.ar", {
   //     method: "post",
   //     body: new FormData(event.target),
   //   })
@@ -41,7 +41,7 @@ const Contact = () => {
   //     )
   //     .catch(
   //       (error) => console.log(error),
-  //       setResponse(<img alt="" className="loader" src={Loader}></img>)
+  //       setResponse(<img alt="loader" className="loader" src={Loader}></img>)
   //     )
   //     .finally(() => {
   //       setDatos({
@@ -52,22 +52,34 @@ const Contact = () => {
   //     });
   // };
 
+  const [popUp, setPopUp] = useState(false);
+
+  function ActivatePopUp() {
+    setPopUp(!popUp);
+    console.log("popup");
+  }
+
+  function DeactivatePopUp() {
+    setPopUp(!popUp);
+  }
   return (
     <div className="Contact" id="Contacto">
-      <img className="Contact-Image" src={ContactImage} alt="Contact"></img>
+      <div className="Contact-ImageContainer">
+        <img
+          className="Contact-ImageContainer--Image"
+          src={ContactImage}
+          alt="Contact"
+        ></img>
+      </div>
       <div className="Contact-Container">
-        <div className="Orange-Line"></div>
+        <div className="Orange-Line Contact-OrangeLine"></div>
         <h5 className="Contact-Container__Title">PEDÍ TU PRESUPUESTO</h5>
         <p className="Contact-Container__Text">
           Contactanos para recibir una cotización de acuerdo a tus necesidades.
         </p>
-        <Link
-          className="Contact-Container__Link"
-          to={"/Catalogo"}
-          style={{ textDecoration: "inherit" }}
-        >
+        <div className="Contact-Container__Link" onClick={ActivatePopUp}>
           VER REFERENCIA DE MODELOS
-        </Link>
+        </div>
         <form
           method="post"
           action=""
@@ -108,12 +120,17 @@ const Contact = () => {
           >
             ENVIAR
           </button>
-          <div className="contact-response">
-            <div className="contact-response-text" id="contact-response">
-              {response}
-            </div>
-          </div>
+          <div className="contact-response">{response}</div>
         </form>
+      </div>
+      <div className={`Contact-PopUp ${popUp ? "PopUp-Active" : ""}`}>
+        <div className="Contact-PopUp__Container">
+          <div
+            className="Contact-PopUp__Container--Close"
+            onClick={DeactivatePopUp}
+          ></div>
+          <div className="Contact-PopUp__Container--Image"></div>
+        </div>
       </div>
     </div>
   );

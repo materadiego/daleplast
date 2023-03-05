@@ -1,6 +1,142 @@
 .Compromise-Slider-Desktop {
-  display: none;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  padding: 5vw 0;
+  overflow: hidden;
 }
+.DesktopSlider-Container {
+  width: 200%;
+  display: flex;
+  will-change: margin;
+  transition: 0.3s ease-in-out;
+}
+.Compromise-Desktop-Slide1 {
+  width: 100vw;
+  display: flex;
+  margin-left: 0;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  &__TitleContainer {
+    display: none;
+  }
+  &__GreenLine {
+    display: none;
+  }
+  &__Image {
+    width: 90%;
+    margin: 2vw auto 8vw;
+  }
+  &__Content {
+    width: 80%;
+    line-height: 130%;
+    font-size: 4.35vw;
+    margin: 0 auto;
+    opacity: 0.7;
+  }
+}
+
+.Slider-Button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5vw auto;
+  padding: 3.5vw 0;
+  width: 80%;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  will-change: box-shadow;
+  border-radius: 1vw;
+
+  &__Text {
+    font-size: 3.45vw;
+    font-weight: 600;
+    color: $color-variacion5;
+  }
+  &__Image {
+    width: 7vw;
+  }
+}
+.Slider-Button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  border-radius: 50vw;
+  margin-left: 5vw;
+  position: absolute;
+  bottom: 2vw;
+  &__Image {
+    width: 10vw;
+    transform: rotateZ(180deg);
+    transition: 0.3s;
+    border-radius: 50vw;
+    will-change: box-shadow;
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.Compromise-Desktop-Slide2 {
+  width: 100vw;
+  display: flex;
+  margin-left: 0;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  &__TitleContainer {
+    display: none;
+  }
+  &__GreenLine {
+    display: none;
+  }
+  &__Content {
+    display: none;
+  }
+  &__Subcontainer {
+    width: 90%;
+    margin: 0 auto;
+    &--Title {
+      font-size: 5vw;
+      font-weight: 500;
+      color: $color-variacion2;
+    }
+  }
+}
+
+.Compromise-Desktop-Slide2-Box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5vw 0;
+  padding: 5vw 3vw 5vw 7vw;
+  border-top-left-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  background-color: $color-variacion2;
+  &__Image {
+    width: 9vw;
+  }
+  &__Title {
+    font-size: 4.9vw;
+    margin-left: 3vw;
+    font-weight: 600;
+    color: $color-variacion5;
+  }
+  &__Description {
+    margin-top: 4vw;
+    font-size: 4vw;
+    line-height: 130%;
+    color: $color-claro;
+  }
+}
+
+.Desktop-Slide-Active {
+  margin-left: -100%;
+}
+
 @media screen and (min-width: 1100px) {
   .Compromise-Slider-Desktop {
     display: flex;
@@ -22,7 +158,9 @@
     width: 100vw;
     display: flex;
     margin-left: 0;
+    padding-bottom: 3vw;
     flex-direction: column;
+    align-items: flex-start;
     position: relative;
     overflow: hidden;
     &__TitleContainer {
@@ -36,8 +174,20 @@
       line-height: 120%;
       color: $color-variacion5;
       &--Image {
-        width: 4vw;
-        margin-right: 1.8vw;
+        display: flex;
+        width: 7vw;
+        height: 4.5vw;
+        margin-right: 1.6vw;
+        border-radius: 50vw;
+        background-image: url(../../utils/images/compromise-icon3.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transition: $animation-transition;
+        &:hover {
+          background-color: $color-variacion4;
+          background-image: url(../../utils/images/compromise-icon3a.svg);
+        }
       }
     }
     &__GreenLine {
@@ -55,6 +205,7 @@
       right: -7%;
     }
     &__Content {
+      display: block;
       width: 30%;
       font-size: 1.1vw;
       margin: 0 0 0 15%;
@@ -86,6 +237,7 @@
     }
   }
   .Slider-Button2 {
+    position: relative;
     display: flex;
     cursor: pointer;
     justify-content: center;
@@ -136,6 +288,7 @@
       display: flex;
     }
     &__Content {
+      display: flex;
       width: 30%;
       font-size: 1.1vw;
       margin: 0 0 0 15%;
@@ -179,29 +332,7 @@
     }
   }
 
-  .PaginationContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 2;
-    margin: -3vw auto 0;
-    width: 3vw;
-    height: 2vw;
-    &__Checkbox {
-      cursor: pointer;
-      width: 0.8vw;
-      display: flex;
-      height: 0.8vw;
-      border-radius: 100vw;
-      border: 0.2vw solid #6fd5bd;
-      transition: 0.3s;
-      will-change: background-color;
-    }
-  }
   .Desktop-Slide-Active {
     margin-left: -100%;
-  }
-  .Desktop-Slide-Active-Check {
-    background-color: #6fd5bd;
   }
 }

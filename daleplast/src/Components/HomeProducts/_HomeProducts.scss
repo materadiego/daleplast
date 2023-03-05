@@ -34,9 +34,16 @@
   width: 90%;
   margin: 0 auto;
   position: relative;
-  &__Image {
+  &__ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    overflow: hidden;
     z-index: 1;
+    &--Image {
+      width: 101%;
+    }
   }
   &__Text {
     padding: 3vw 1vw;
@@ -48,7 +55,7 @@
     font-size: 3.3vw;
     font-weight: 500;
     z-index: 2;
-    box-shadow: $light-shadow;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     color: $color-variacion5;
     background-color: $color-claro;
   }
@@ -113,11 +120,21 @@
   .Products-ImageContainer {
     width: 75%;
     margin: 0%;
+
     position: absolute;
     top: 13vw;
     left: 12.5%;
-    &__Image {
+
+    &__ImageContainer {
       width: 46%;
+      border-radius: 2vw;
+      &--Image {
+        transition: 0.5s;
+        will-change: transform;
+      }
+      &:hover .Products-ImageContainer__ImageContainer--Image {
+        transform: scale(1.05);
+      }
     }
     &__Text {
       font-size: 1.4vw;
@@ -127,6 +144,12 @@
       margin: -1vw auto 0;
       line-height: 120%;
       border-radius: 0.4vw;
+      transition: 0.6s;
+      will-change: box-shadow;
+      &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
+        color: $color-variacion3;
+      }
     }
   }
 

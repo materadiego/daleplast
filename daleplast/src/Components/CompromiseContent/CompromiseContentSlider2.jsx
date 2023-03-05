@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import sliderIcon1 from "../../utils/images/compromise-slider-icon1.svg";
 import sliderIcon2 from "../../utils/images/compromise-slider-icon2.svg";
-import icon3 from "../../utils/images/compromise-icon3.svg";
 import buttonImage from "../../utils/images/compromise-slider2button.svg";
 import plantaFabricante from "../../utils/images/compromise-fabricantes.webp";
 
@@ -10,14 +9,6 @@ const CompromiseContentSlider2 = () => {
   const [sliderActive, setSliderActive] = useState(false);
   const toggleSlider = () => {
     setSliderActive(!sliderActive);
-    console.log("toggle");
-    console.log(sliderActive);
-  };
-  const togglePagination1 = () => {
-    setSliderActive(false);
-  };
-  const togglePagination2 = () => {
-    setSliderActive(true);
   };
 
   return (
@@ -30,11 +21,7 @@ const CompromiseContentSlider2 = () => {
         {/* SLIDE 1 */}
         <div className="Compromise-Desktop-Slide1">
           <div className="Compromise-Desktop-Slide1__TitleContainer">
-            <img
-              src={icon3}
-              alt="Icon"
-              className="Compromise-Desktop-Slide1__TitleContainer--Image"
-            ></img>
+            <div className="Compromise-Desktop-Slide1__TitleContainer--Image"></div>
             <p className="Compromise-Desktop-Slide1__TitleContainer--Title">
               SOMOS FABRICANTES CERTIFICADOS DE D2W
             </p>
@@ -67,11 +54,7 @@ const CompromiseContentSlider2 = () => {
         {/* SLIDE 2 */}
         <div className="Compromise-Desktop-Slide2">
           <div className="Compromise-Desktop-Slide2__TitleContainer">
-            <img
-              src={icon3}
-              alt="Icon"
-              className="Compromise-Desktop-Slide2__TitleContainer--Image"
-            ></img>
+            <div className="Compromise-Desktop-Slide2__TitleContainer--Image"></div>
             <p className="Compromise-Desktop-Slide2__TitleContainer--Title">
               ¿QUÉ ES EL ADITIVO OXI-BIODEGRADABLE?
             </p>
@@ -128,20 +111,6 @@ const CompromiseContentSlider2 = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="PaginationContainer">
-        <div
-          className={`PaginationContainer__Checkbox ${
-            sliderActive ? "" : "Desktop-Slide-Active-Check"
-          }`}
-          onClick={togglePagination1}
-        ></div>
-        <div
-          className={`PaginationContainer__Checkbox ${
-            sliderActive ? "Desktop-Slide-Active-Check" : ""
-          }`}
-          onClick={togglePagination2}
-        ></div>
       </div>
     </div>
   );

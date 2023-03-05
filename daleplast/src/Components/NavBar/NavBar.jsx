@@ -20,7 +20,7 @@ const NavBar = () => {
       <div className="NavBar-Container">
         {/* LOGO */}
         <Link
-          to={"/daleplast"}
+          to={"/"}
           style={{ textDecoration: "inherit" }}
           className="NavBar-Container__Logo"
         >
@@ -46,7 +46,7 @@ const NavBar = () => {
         </div>
         <Link
           onClick={toggleMenu}
-          to={"/daleplast"}
+          to={"/"}
           style={{ textDecoration: "inherit" }}
           className="Logo"
         >
@@ -56,9 +56,10 @@ const NavBar = () => {
           <div className="Menu-Container__Links">
             <NavLink
               style={{ textDecoration: "inherit" }}
-              className="Menu-Container__Links--Options link"
-              to={"/daleplast"}
+              className="Menu-Container__Links--Options"
+              to={"/"}
               onClick={toggleMenu}
+              end
             >
               HOME
             </NavLink>

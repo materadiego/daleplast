@@ -16,11 +16,7 @@ const HomeEnvironment = () => {
           sus consecuencias a nivel ambiental.
         </p>
         {/* SECTION BUTTONS */}
-        <Link
-          style={{ textDecoration: "inherit" }}
-          to={"/Compromiso"}
-          className="Environment-Container__Button"
-        >
+        <div className="Environment-Container__Button">
           <div className="Environment-Container__Button--Image Environment-Icon1"></div>
           <p className="Environment-Container__Button--Title Environment-Button-Text-Mobile">
             PLANTA DE RECICLADO
@@ -28,13 +24,8 @@ const HomeEnvironment = () => {
           <p className="Environment-Container__Button--Title Environment-Button-Text-Desktop">
             Reciclamos el 100% de nuestro residuo post-industrial
           </p>
-          <p className="Environment-Container__Button--VerMas">Ver más</p>
-        </Link>
-        <Link
-          style={{ textDecoration: "inherit" }}
-          to={"/Compromiso"}
-          className="Environment-Container__Button"
-        >
+        </div>
+        <div className="Environment-Container__Button">
           <div className="Environment-Container__Button--Image Environment-Icon2"></div>
           <p className="Environment-Container__Button--Title Environment-Button-Text-Mobile">
             ETAPAS DE RECICLADO
@@ -42,13 +33,8 @@ const HomeEnvironment = () => {
           <p className="Environment-Container__Button--Title Environment-Button-Text-Desktop">
             Cumplimos con las etapas de reciclado de manera responsable
           </p>
-          <p className="Environment-Container__Button--VerMas">Ver más</p>
-        </Link>
-        <Link
-          style={{ textDecoration: "inherit" }}
-          to={"/Compromiso"}
-          className="Environment-Container__Button"
-        >
+        </div>
+        <div className="Environment-Container__Button">
           <div className="Environment-Container__Button--Image Environment-Icon3"></div>
           <p className="Environment-Container__Button--Title Environment-Button-Text-Mobile">
             SOMOS FABRICANTES CERTIFICADOS DE D2W
@@ -56,8 +42,7 @@ const HomeEnvironment = () => {
           <p className="Environment-Container__Button--Title Environment-Button-Text-Desktop">
             Somos fabricantes certficados de D2W
           </p>
-          <p className="Environment-Container__Button--VerMas">Ver más</p>
-        </Link>
+        </div>
         <div className="Environment-Container__DesktopButton">
           <Link
             style={{ textDecoration: "inherit" }}

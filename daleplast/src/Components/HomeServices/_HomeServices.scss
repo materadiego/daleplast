@@ -1,7 +1,7 @@
 .Services {
   padding: 5vw 0;
   background-image: url(../../utils/images/services-bg.webp);
-  background-size: 160%;
+  background-size: 170%;
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -26,7 +26,7 @@
     border-bottom-left-radius: 4vw;
     border-bottom-right-radius: 4vw;
     position: relative;
-    margin: 6vw 0 15vw;
+    margin: 6vw 0 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +68,7 @@
     &--Text {
       width: 80%;
       font-size: 4vw;
-      line-height: 120%;
+      line-height: 130%;
       font-weight: 300;
       text-align: center;
       opacity: 0.8;
@@ -141,10 +141,10 @@
       &--Text {
         width: 80%;
         font-size: 4vw;
-        line-height: 120%;
+        line-height: 130%;
         font-weight: 300;
         text-align: center;
-        opacity: 0.8;
+        opacity: 0.9;
         color: $color-claro;
       }
     }
@@ -178,11 +178,11 @@
     &__Box {
       transform: scale(1);
       width: 20vw;
-      height: 18.5vw;
+      height: 18.7vw;
       margin: 0;
       border-bottom-left-radius: 1.2vw;
       border-bottom-right-radius: 1.2vw;
-      will-change: background-color;
+      will-change: background-color transform;
       transition: $animation-transition;
       background-color: $color-variacion3;
       &--TopBox {
@@ -217,10 +217,11 @@
         margin: 0 0 2vw;
       }
       &--Text {
-        font-size: 1vw;
+        font-size: 1.06vw;
       }
       &:hover {
         background-color: $color-variacion5;
+        transform: scale(1.05);
         & .Services-Arrow {
           background-image: url(../../utils/images/services-arrow.svg);
         }

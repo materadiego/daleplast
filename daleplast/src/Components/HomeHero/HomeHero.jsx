@@ -1,6 +1,4 @@
 import React from "react";
-import fbLogo from "../../utils/images/hero-media-fb.svg";
-import igLogo from "../../utils/images/hero-media-ig.svg";
 
 const HomeHero = () => {
   return (
@@ -14,11 +12,7 @@ const HomeHero = () => {
             rel="noreferrer"
             className="Hero-Media-Container__Link Hero-Media-Fb"
           >
-            <img
-              src={fbLogo}
-              alt="Facebook"
-              className="Hero-Media-Container__Link--Image"
-            ></img>
+            <div className="Hero-Media-Container__Link--Image Hero-Fb"></div>
           </a>
           <a
             href="https://www.instagram.com/daleplastbolsas/"
@@ -26,11 +20,7 @@ const HomeHero = () => {
             rel="noreferrer"
             className="Hero-Media-Container__Link Hero-Media-Ig"
           >
-            <img
-              src={igLogo}
-              alt="Instagram"
-              className="Hero-Media-Container__Link--Image"
-            ></img>
+            <div className="Hero-Media-Container__Link--Image Hero-Ig"></div>
           </a>
         </div>
         <p className="Hero-Container__Text Hero-Text-Mobile">

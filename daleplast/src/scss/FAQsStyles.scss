@@ -31,10 +31,10 @@
       width: 5vw;
       height: 5vw;
       position: absolute;
-      bottom: 2vw;
-      right: 7vw;
+      right: 4vw;
+      bottom: 2.5vw;
       transform: rotateX(180deg);
-      background-image: url(../utils/images/FAQs-box-arrow.svg);
+      background-image: url(../utils/images/FAQs-box-arrowa.svg);
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -104,7 +104,7 @@
     &__Box {
       font-size: 1vw;
       border-radius: 0.8vw;
-      padding: 1.5vw 2vw 1.5vw 2vw;
+      padding: 1.5vw 2vw 1vw 2vw;
       margin: 2vw 0;
       height: 4.2vw;
       will-change: box-shadow;
@@ -115,7 +115,7 @@
         opacity: 0;
         width: 70%;
         display: block;
-        margin-top: 0.5vw;
+        margin-top: 1vw;
         position: relative;
       }
       &--Arrow {
@@ -124,6 +124,7 @@
         bottom: 1vw;
         top: 1.6vw;
         right: 3vw;
+        background-image: url(../utils/images/FAQs-box-arrow.svg);
       }
       &:hover {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);

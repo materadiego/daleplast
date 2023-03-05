@@ -2,12 +2,13 @@
   padding: 2vw 0 10vw;
 }
 
-.Contact-Image {
+.Contact-ImageContainer {
   display: none;
 }
 
 .Contact-Container {
   width: 90%;
+
   margin: 0 auto;
   &__Title {
     font-size: 6vw;
@@ -35,8 +36,9 @@
     outline: none;
     font-weight: 500;
     font-family: $Fuente1;
-    color: $color-claro;
-    background-color: $color-variacion6;
+    border: 0.8vw solid $color-variacion3;
+    color: $color-variacion3;
+    background-color: $color-claro;
   }
   &__Form {
     display: flex;
@@ -102,6 +104,46 @@
   margin: 0;
 }
 
+.Contact-PopUp {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  &__Container {
+    width: auto;
+    position: relative;
+    &--Close {
+      position: absolute;
+      top: -10vw;
+      right: 0;
+      width: 10vw;
+      height: 10vw;
+      background-image: url(../../utils/images/navbar-x.png);
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &--Image {
+      width: 90vw;
+      border-radius: 4vw;
+      height: 125vw;
+      background-image: url(../../utils/images/popup-mobile.webp);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.PopUp-Active {
+  display: flex;
+}
+
 // TABLET
 @media screen and (min-width: 768px) {
   .Contact {
@@ -122,6 +164,11 @@
       border-radius: 10vw;
       height: 8vw;
       font-size: 3vw;
+      box-shadow: none;
+      will-change: color background-color;
+      border: 0.25vw solid $color-variacion3;
+
+      transition: $animation-transition;
     }
     &__Form {
       &--Input {
@@ -163,21 +210,33 @@
 @media screen and (min-width: 1100px) {
   .Contact {
     width: 100%;
-    padding: 12vw 0;
+    padding: 8vw 0;
     display: flex;
     align-items: center;
   }
 
-  .Contact-Image {
+  .Contact-ImageContainer {
     display: flex;
-    width: 50%;
-    padding-top: 1vw;
+    width: 50vw;
+    height: 35vw;
+    border-top-right-radius: 2.8vw;
+    border-bottom-right-radius: 2.8vw;
+
+    overflow: hidden;
+    &:hover .Contact-ImageContainer--Image {
+      transform: scale(1.05);
+    }
+    &--Image {
+      width: 50vw;
+      height: 35vw;
+      transition: 0.3s;
+      will-change: transform;
+    }
   }
 
   .Contact-Container {
     width: 30%;
-    height: 36vw;
-    margin: 0 0 0 10%;
+    margin: 2vw 0 0 10%;
     display: flex;
     flex-direction: column;
     &__Title {
@@ -193,6 +252,7 @@
     &__Link {
       margin: 0 0 1vw;
       width: 65%;
+      height: 2.8vw;
       border-radius: 5vw;
       padding: 0.5vw 0;
       font-size: 1vw;
@@ -200,9 +260,8 @@
       will-change: box-shadow color background-color;
       transition: $animation-transition;
       &:hover {
-        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
         color: $color-claro;
-        background-color: $color-variacion5;
+        background-color: $color-variacion3;
       }
     }
     &__Form {
@@ -245,5 +304,36 @@
 
   .loader {
     width: 3vw;
+  }
+
+  .Contact-PopUp {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &__Container {
+      &--Close {
+        cursor: pointer;
+        top: -1vw;
+        right: -2vw;
+        width: 2vw;
+        height: 2vw;
+      }
+      &--Image {
+        width: 50vw;
+        border-radius: 0;
+        height: 36vw;
+        background-image: url(../../utils/images/popup-desk.webp);
+      }
+    }
+  }
+
+  .PopUp-Active {
+    display: flex;
   }
 }

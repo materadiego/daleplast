@@ -2,8 +2,7 @@ import React from "react";
 import check from "../../utils/images/compromise-check.png";
 import plantaReciclado from "../../utils/images/compromise-planta.webp";
 import plantaEtapa from "../../utils/images/compromise-etapas.webp";
-import icon1 from "../../utils/images/compromise-icon1.svg";
-import icon2 from "../../utils/images/compromise-icon2.svg";
+
 import icon3 from "../../utils/images/compromise-icon3.svg";
 import CompromiseContentSlider from "./CompromiseContentSlider";
 import CompromiseContentSlider2 from "./CompromiseContentSlider2";
@@ -24,12 +23,8 @@ const CompromiseContent = () => {
       <div className="Compromise-Section Compromise-Section1">
         {/* SECTION TITLE */}
         <div className="Compromise-Section-Container Compromise-Section-Container1">
-          <div className="Compromise-Section-Container__TitleContainer">
-            <img
-              src={icon1}
-              alt="Icon"
-              className="Compromise-Section-Container__TitleContainer--Image"
-            ></img>
+          <div className="Compromise-Section-Container__TitleContainer ">
+            <div className="Compromise-Section-Container__TitleContainer--Image Compromise-Section-Icon1"></div>
             <p className="Compromise-Section-Container__TitleContainer--Title">
               PLANTA DE RECICLADO
             </p>
@@ -62,22 +57,20 @@ const CompromiseContent = () => {
             residuo industrial.
           </div>
         </div>
-        <img
-          src={plantaReciclado}
-          alt=""
-          className="Compromise-Section-Container__Image Compromise-Image1"
-        ></img>
+        <div className="Compromise-Section-Container__ImageContainer Compromise-Image1">
+          <img
+            src={plantaReciclado}
+            alt=""
+            className="Compromise-Section-Container__ImageContainer--Image "
+          ></img>
+        </div>
       </div>
       {/* SECTION 2 */}
       <div className="Compromise-Section Compromise-Section2">
         {/* SECTION TITLE */}
         <div className="Compromise-Section-Container Compromise-Section-Container2">
           <div className="Compromise-Section-Container__TitleContainer">
-            <img
-              src={icon2}
-              alt="Icon"
-              className="Compromise-Section-Container__TitleContainer--Image"
-            ></img>
+            <div className="Compromise-Section-Container__TitleContainer--Image Compromise-Section-Icon2"></div>
             <p className="Compromise-Section-Container__TitleContainer--Title Compromise-SectionTitle2">
               ETAPAS DEL RECICLADO
             </p>
@@ -115,11 +108,13 @@ const CompromiseContent = () => {
             de fabricación.
           </div>
         </div>
-        <img
-          src={plantaEtapa}
-          alt=""
-          className="Compromise-Section-Container__Image Compromise-Image2"
-        ></img>
+        <div className="Compromise-Section-Container__ImageContainer Compromise-Image2">
+          <img
+            src={plantaEtapa}
+            alt=""
+            className="Compromise-Section-Container__ImageContainer--Image"
+          ></img>
+        </div>
       </div>
       {/* SECTION 3 */}
       <div className="Compromise-Section Compromise-Section3 Compromise-Slider-Mobile">
@@ -129,7 +124,7 @@ const CompromiseContent = () => {
             <img
               src={icon3}
               alt="Icon"
-              className="Compromise-Section-Container__TitleContainer--Image"
+              className="Compromise-Section-Container__TitleContainer--Image Compromise-Section-Icon3"
             ></img>
             <p className="Compromise-Section-Container__TitleContainer--Title">
               SOMOS FABRICANTES CERTIFICADOS DE D2W

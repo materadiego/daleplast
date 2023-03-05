@@ -24,7 +24,7 @@ function App() {
         <Chat />
         <Routes>
           <Route
-            path="/daleplast"
+            path="/"
             element={
               <Suspense fallback={<PageLoader />}>
                 <LazyHomePage />

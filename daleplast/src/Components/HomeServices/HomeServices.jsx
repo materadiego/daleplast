@@ -68,8 +68,8 @@ const HomeServices = () => {
               ENVÍOS SIN CARGO DENTRO DE LA PROVINCIA
             </h6>
             <p className="Services-Subcontainer__Box--Text">
-              Llegamos a distintos puntos de la provincia, hacemos envíos a
-              Ushuaia, Tolhuin y Río Grande
+              Te acercamos nuestros productos. Llegamos a distintos puntos de la
+              provincia, hacemos envíos a Ushuaia, Tolhuin y Río Grande
             </p>
           </div>
         </div>

@@ -64,12 +64,6 @@
         width: 100%;
         height: 100%;
         cursor: pointer;
-        will-change: filter;
-        transition: 0.1s;
-      }
-      &:hover img {
-        filter: brightness(0) saturate(100%) invert(41%) sepia(77%)
-          saturate(4780%) hue-rotate(338deg) brightness(89%) contrast(98%);
       }
     }
 

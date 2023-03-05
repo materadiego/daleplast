@@ -33,9 +33,18 @@ const HomeProductsSlider = () => {
         <SwiperSlide>
           <div className="Slide-Image Slide4"></div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="Slide-Image Slide5"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="Slide-Image Slide6"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="Slide-Image Slide7"></div>
+        </SwiperSlide>
 
         <SwiperSlide>
-          <div className="Slide-Image Slide9"></div>
+          <div className="Slide-Image Slide8"></div>
         </SwiperSlide>
       </Swiper>
       {/* SLIDER DESKTOP */}
@@ -66,9 +75,18 @@ const HomeProductsSlider = () => {
         <SwiperSlide>
           <div className="Slide-Image Slide4"></div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="Slide-Image Slide5"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="Slide-Image Slide6"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="Slide-Image Slide7"></div>
+        </SwiperSlide>
 
         <SwiperSlide>
-          <div className="Slide-Image Slide9"></div>
+          <div className="Slide-Image Slide8"></div>
         </SwiperSlide>
       </Swiper>
     </div>

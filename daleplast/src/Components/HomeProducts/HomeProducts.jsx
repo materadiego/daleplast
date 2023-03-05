@@ -20,11 +20,13 @@ const HomeProducts = () => {
         </p>
       </div>
       <div className="Products-ImageContainer">
-        <img
-          src={ProductsImage}
-          alt=""
-          className="Products-ImageContainer__Image"
-        ></img>
+        <div className="Products-ImageContainer__ImageContainer">
+          <img
+            src={ProductsImage}
+            alt="Productos"
+            className="Products-ImageContainer__ImageContainer--Image"
+          ></img>
+        </div>
         <p className="Products-ImageContainer__Text">
           Podés personalizar medidas, colores e impresión, del producto que
           desees.

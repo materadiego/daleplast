@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: space-between;
     width: 2.5vw;
-    height: 5vw;
+    height: 5.5vw;
     position: absolute;
     right: 4vw;
     top: 10vw;
@@ -98,16 +98,39 @@
     will-change: opacity;
     animation: loadAnimation 0.5s ease-in-out 1.4s 1 normal forwards;
     &__Link {
-      width: 2vw;
-      height: 2vw;
+      width: 2.3vw;
+      height: 2.3vw;
       display: flex;
       border-radius: 50vw;
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
       &--Image {
+        background-color: #fff;
         width: 100%;
+        border-radius: 100vw;
+        background-size: 95%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+        will-change: background-image background-color;
+        &:hover {
+          background-color: $color-variacion3;
+        }
       }
+    }
+  }
+
+  .Hero-Ig {
+    background-image: url(../../utils/images/hero-media-ig.svg);
+    &:hover {
+      background-image: url(../../utils/images/hero-media-iga.svg);
+    }
+  }
+  .Hero-Fb {
+    background-image: url(../../utils/images/hero-media-fb.svg);
+    &:hover {
+      background-image: url(../../utils/images/hero-media-fba.svg);
     }
   }
 
@@ -132,7 +155,7 @@
     &__Description {
       display: flex;
       width: 48%;
-      margin: 2vw 0;
+      margin: 2vw 0 4vw;
       font-size: 1.35vw;
       font-weight: 300;
       line-height: 110%;

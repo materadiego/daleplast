@@ -1,19 +1,19 @@
 .SliderContainer {
   width: 100%;
-  margin: 10vw 0 0;
+  margin: 6vw 0 0;
 }
 
 .swiper {
   width: 100%;
-  height: 40vw;
-  padding: 2vw 0;
+  height: 52vw;
+  padding: 2vw 0 0 0;
+  align-items: center;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  width: 30vw;
-  height: 40vw;
+  height: 47vw;
   border-radius: 4vw;
   overflow: hidden;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
@@ -63,8 +63,20 @@
   background-image: url(../../utils/images/products-slider4.webp);
 }
 
-.Slide9 {
-  background-image: url(../../utils/images/products-slider9.webp);
+.Slide5 {
+  background-image: url(../../utils/images/products-slider5.webp);
+}
+
+.Slide6 {
+  background-image: url(../../utils/images/products-slider6.webp);
+}
+
+.Slide7 {
+  background-image: url(../../utils/images/products-slider7.webp);
+}
+
+.Slide8 {
+  background-image: url(../../utils/images/products-slider8.webp);
 }
 
 .Desktop-Slider {
@@ -82,19 +94,24 @@
 
   .SliderContainer {
     width: 80%;
-    margin: 6vw auto 0;
+    margin: 3vw auto 0;
   }
 
   .swiper {
     width: 94%;
-    height: 15vw;
-    padding: 2vw 0;
+    height: 19.5vw;
+    padding: 2vw 1.3vw 0;
   }
 
   .swiper-slide {
-    width: 4vw;
-    height: 15vw;
-    border-radius: 0.4vw;
+    height: 16vw;
+    border-radius: 1.3vw;
+    overflow: hidden;
+    will-change: transform;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   .swiper-slide img {
@@ -122,10 +139,12 @@
     border-radius: 100vw;
     color: #fff;
     transform: scale(0.3);
+    will-change: transform background-color;
     transition: $animation-transition;
     background-color: $color-variacion5;
     &:hover {
-      background-color: $color-variacion6;
+      transform: scale(0.4);
+      background-color: $color-variacion3;
     }
   }
   .swiper-button-prev,
@@ -133,7 +152,7 @@
     &:after {
       content: "prev";
     }
-    left: -2.7vw;
+    left: -2.4vw;
     right: auto;
   }
   .swiper-button-next,
@@ -141,7 +160,7 @@
     &:after {
       content: "next";
     }
-    right: -2.7vw;
+    right: -2.4vw;
     left: auto;
   }
 }

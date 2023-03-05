@@ -184,10 +184,6 @@
         & p {
           color: $color-claro;
         }
-        & .AboutUs-BoxContainer__Box--Image {
-          filter: brightness(0) saturate(100%) invert(13%) sepia(62%)
-            saturate(1364%) hue-rotate(151deg) brightness(98%) contrast(95%);
-        }
       }
     }
   }

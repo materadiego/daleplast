@@ -40,16 +40,18 @@
   z-index: 4;
   top: 0;
   padding: 9vw 0 0;
-  margin-left: -100%;
-  transition: 1s;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+  transition: 0.5s;
   background-color: $color-variacion5;
 }
 
 .Menu-Close {
   width: 10vw;
   height: 10vw;
-  right: 5vw;
-  top: 8vw;
+  right: 10vw;
+  top: 8.5vw;
   position: absolute;
   &__Image {
     width: 100%;
@@ -77,7 +79,7 @@
     flex-direction: column;
     &--Options {
       margin: 2vw 0;
-      font-size: 6vw;
+      font-size: 5vw;
       text-decoration: none;
       transition: $animation-transition;
       color: $color-claro;
@@ -86,10 +88,10 @@
       }
     }
     &--Contact {
-      width: 90%;
+      width: 75%;
       margin: 4vw 0;
-      font-weight: 500;
-      font-size: 6vw;
+      font-weight: 400;
+      font-size: 5vw;
       border-radius: 1.4vw;
       text-align: center;
       text-decoration: none;
@@ -99,16 +101,16 @@
   }
   &__Social {
     width: 80%;
-    height: 20vw;
+    height: 14vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
     &--Image {
-      width: 14vw;
+      width: 12vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 14vw;
+      height: 12vw;
       margin-right: 6vw;
       border-radius: 100vw;
       background-color: $color-variacion2;
@@ -143,7 +145,8 @@
 }
 
 .isActive {
-  margin-left: 0;
+  opacity: 1;
+  pointer-events: all;
 }
 
 // TABLET
@@ -164,6 +167,8 @@
 
   .Menu {
     padding: 6vw 0 0;
+    opacity: 1;
+    pointer-events: all;
   }
 
   .Logo {

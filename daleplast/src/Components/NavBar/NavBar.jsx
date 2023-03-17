@@ -46,7 +46,7 @@ const NavBar = () => {
         </div>
         <Link
           onClick={toggleMenu}
-          to={"/"}
+          to={"/daleplast"}
           style={{ textDecoration: "inherit" }}
           className="Logo"
         >
@@ -57,7 +57,7 @@ const NavBar = () => {
             <NavLink
               style={{ textDecoration: "inherit" }}
               className="Menu-Container__Links--Options"
-              to={"/"}
+              to={"/daleplast"}
               onClick={toggleMenu}
               end
             >
